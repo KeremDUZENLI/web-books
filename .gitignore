@@ -1,0 +1,27 @@
+# Environment and configuration files
+*.env
+*.spec
+docker-compose.override.yml
+
+# Logs and system files
+*.log
+.DS_Store
+Thumbs.db
+
+# IDE and editor directories
+.vscode
+.idea
+
+# Python cache and build artifacts
+__pycache__
+.py_cache
+*.py[cod]
+
+# Virtual environments and build directories
+.venv
+venv
+build
+dist
+
+# Project-specific directories
+helpers/
