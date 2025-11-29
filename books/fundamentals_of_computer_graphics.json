@@ -1,0 +1,144 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "name": "Introduction",
+      "summary": "<p><strong>Core Idea:</strong> Computers use math to build, color, and move pictures of 3D things so they look real on screens in games, movies, and tools.</p>\n\n<p><strong>Key Concepts / Formulas:</strong></p>\n<ul>\n  <li><strong>Modeling:</strong> Describe any object with points, curves, and surface rules. Example: store a car as thousands of connected points and how shiny its paint is.</li>\n  <li><strong>Rendering:</strong> Turn points into a colored picture with light and shadows. Example: make a 3D apple look red, round, and glossy.</li>\n  <li><strong>Animation:</strong> Change the model over time and render many pictures quickly. Example: make a character wave or run smoothly at 60 pictures per second.</li>\n  <li><strong>Graphics API:</strong> Toolkits like OpenGL or Direct3D that let your code draw fast on any computer or phone.</li>\n  <li><strong>Graphics Pipeline:</strong> Fast factory inside the graphics card that takes triangles, moves them to screen position, shades them, and hides what is behind. Example: every game on your phone uses this to draw millions of triangles per second.</li>\n</ul>\n\n<p><strong>Visual / Practical Example:</strong> A video game character: points define the body (modeling), light and texture make skin and clothes look real (rendering), changing the arm positions 60 times a second makes it wave (animation), all drawn instantly by the graphics pipeline using OpenGL.</p>\n\n<p><strong>Connections:</strong> Everything in games, movies, VR, medical scans, and design software starts here: modeling creates the objects, rendering makes them visible, animation makes them move, and the pipeline + API make it run fast on real hardware.</p>\n\n<p><strong>One-Sentence Summary:</strong> Computer graphics turns math descriptions of 3D objects into fast, beautiful, moving pictures using modeling, rendering, animation, and the graphics pipeline.</p>"
+    },
+    {
+      "number": 2,
+      "name": "Miscellaneous Math",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 3,
+      "name": "Raster Images",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 4,
+      "name": "Ray Tracing",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 5,
+      "name": "Linear Algebra",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 6,
+      "name": "Transformation Matrices",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 7,
+      "name": "Viewing",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 8,
+      "name": "The Graphics Pipeline",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 9,
+      "name": "Signal Processing",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 10,
+      "name": "Surface Shading",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 11,
+      "name": "Texture Mapping",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 12,
+      "name": "Data Structures for Graphics",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 13,
+      "name": "More Ray Tracing",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 14,
+      "name": "Sampling",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 15,
+      "name": "Curves",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 16,
+      "name": "Implicit Modeling",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 17,
+      "name": "Computer Animation",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 18,
+      "name": "Using Graphics Hardware",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 19,
+      "name": "Building Interactive Graphics Applications",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 20,
+      "name": "Light",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 21,
+      "name": "Color",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 22,
+      "name": "Visual Perception",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 23,
+      "name": "Tone Reproduction",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 24,
+      "name": "Global Illumination",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 25,
+      "name": "Reflection Models",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 26,
+      "name": "Computer Graphics in Games",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 27,
+      "name": "Visualization",
+      "summary": "<p>Write your summary here...</p>"
+    },
+    {
+      "number": 28,
+      "name": "Spatial-Field Visualization",
+      "summary": "<p>Write your summary here...</p>"
+    }
+  ]
+}

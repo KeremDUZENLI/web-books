@@ -1,62 +1,118 @@
-var libraryData = {
-  "Category 1": [
-    { title: "Book 1", author: "Author A" },
-    { title: "Book 2", author: "Author B" },
-  ],
-  "Category 2": [
-    { title: "Book 3", author: "Author C" },
-    { title: "Book 4", author: "Author D" },
-  ],
-};
-
 var booksEl = document.getElementById("books");
 var countEl = document.getElementById("count");
 var categoriesEl = document.getElementById("categories");
+var searchInput = document.getElementById("search");
+
 var currentCategory = null;
+var libraryData = {};
 
-function renderBooks() {
-  booksEl.innerHTML = "";
-  var total = 0;
+function _createButton(text, onClick) {
+  var btn = document.createElement("button");
+  btn.textContent = text;
+  btn.className = "cat";
+  btn.onclick = onClick;
+  return btn;
+}
 
-  for (var category in libraryData) {
-    if (currentCategory !== null && category !== currentCategory) {
-      continue;
-    }
+function _highlight(text, query) {
+  if (!query) return text;
+  var re = new RegExp(
+    "(" + query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")",
+    "gi"
+  );
+  return text.replace(re, "<mark>$1</mark>");
+}
 
-    var books = libraryData[category];
-    for (var i = 0; i < books.length; i++) {
-      var book = books[i];
-      var bookDiv = document.createElement("div");
-      bookDiv.textContent = book.title + " — " + book.author;
-      booksEl.appendChild(bookDiv);
-      total++;
-    }
+function _updatePressedState() {
+  var buttons = categoriesEl.querySelectorAll(".cat");
+  for (var i = 0; i < buttons.length; i++) {
+    var cat = buttons[i].textContent;
+    buttons[i].setAttribute(
+      "aria-pressed",
+      (currentCategory === null && cat === "All") || cat === currentCategory
+        ? "true"
+        : "false"
+    );
   }
-
-  countEl.textContent = total + " books";
 }
 
 function renderCategories() {
   categoriesEl.innerHTML = "";
 
-  var allBtn = document.createElement("button");
-  allBtn.textContent = "All";
-  allBtn.onclick = function () {
-    currentCategory = null;
-    renderBooks();
-  };
-  categoriesEl.appendChild(allBtn);
-
-  for (let category in libraryData) {
-    let btn = document.createElement("button");
-    btn.textContent = category;
-    btn.onclick = function () {
-      currentCategory = category;
+  categoriesEl.appendChild(
+    _createButton("All", function () {
+      currentCategory = null;
+      _updatePressedState();
       renderBooks();
-    };
-    categoriesEl.appendChild(btn);
+    })
+  );
+
+  for (var category in libraryData) {
+    categoriesEl.appendChild(
+      _createButton(
+        category,
+        (function (cat) {
+          return function () {
+            currentCategory = cat;
+            _updatePressedState();
+            renderBooks();
+          };
+        })(category)
+      )
+    );
   }
+
+  _updatePressedState();
 }
 
-renderCategories();
-renderBooks();
+function renderBooks() {
+  booksEl.innerHTML = "";
+  var total = 0;
+  var query = (searchInput.value || "").toLowerCase();
+
+  for (var category in libraryData) {
+    if (currentCategory && category !== currentCategory) continue;
+
+    libraryData[category].forEach(function (book) {
+      if (
+        query &&
+        !book.title.toLowerCase().includes(query) &&
+        !book.author.toLowerCase().includes(query)
+      )
+        return;
+
+      var div = document.createElement("div");
+      div.className = "book";
+
+      var text =
+        _highlight(book.author, query) + " - " + _highlight(book.title, query);
+
+      if (book.url) {
+        var a = document.createElement("a");
+        a.href = book.url;
+        a.target = "_blank";
+        a.innerHTML = text;
+        div.appendChild(a);
+      } else {
+        div.innerHTML = text;
+      }
+
+      booksEl.appendChild(div);
+      total++;
+    });
+  }
+
+  countEl.textContent = total + " books";
+}
+
+searchInput.addEventListener("input", renderBooks);
+
+fetch("data/library.json")
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    libraryData = data;
+    renderCategories();
+    renderBooks();
+  });
