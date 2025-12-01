@@ -1,93 +1,132 @@
-function _createLink(ch) {
-  var a = document.createElement("a");
-  a.href = "#chapter" + ch.number;
-  a.textContent = "Chapter " + ch.number + ": " + ch.name;
-  return a;
+var booksEl = document.getElementById("books");
+var countEl = document.getElementById("count");
+var categoriesEl = document.getElementById("categories");
+var searchInput = document.getElementById("search");
+
+var currentCategory = null;
+var libraryData = {};
+
+function _createButton(text, onClick) {
+  var btn = document.createElement("button");
+  btn.textContent = text;
+  btn.className = "cat";
+  btn.onclick = onClick;
+  return btn;
 }
 
-function _createSection(ch) {
-  var section = document.createElement("section");
-  section.id = "chapter" + ch.number;
-
-  var title = document.createElement("h3");
-  title.textContent = "Chapter " + ch.number + ": " + ch.name;
-
-  var content = document.createElement("div");
-  content.innerHTML = ch.summary || "";
-
-  section.appendChild(title);
-  section.appendChild(content);
-  return section;
+function _highlight(text, query) {
+  if (!query) return text;
+  var re = new RegExp(
+    "(" + query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")",
+    "gi"
+  );
+  return text.replace(re, "<mark>$1</mark>");
 }
 
-function _attachClickEvents(links) {
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function (e) {
-      e.preventDefault();
-      var id = this.getAttribute("href").slice(1);
-
-      document.getElementById(id).scrollIntoView({
-        behavior: "smooth",
-      });
-
-      for (var j = 0; j < links.length; j++) {
-        links[j].classList.remove("active");
-      }
-      this.classList.add("active");
-    });
+function _updatePressedState() {
+  var buttons = categoriesEl.querySelectorAll(".cat");
+  for (var i = 0; i < buttons.length; i++) {
+    var cat = buttons[i].textContent;
+    buttons[i].setAttribute(
+      "aria-pressed",
+      (currentCategory === null && cat === "ALL") || cat === currentCategory
+        ? "true"
+        : "false"
+    );
   }
 }
 
-function _attachScrollHighlight(links, sections) {
-  window.addEventListener("scroll", function () {
-    var current = "";
+function renderCategories() {
+  categoriesEl.innerHTML = "";
 
-    for (var i = 0; i < sections.length; i++) {
-      if (window.scrollY >= sections[i].offsetTop - 10) {
-        current = sections[i].id;
-      }
-    }
-
-    for (var i = 0; i < links.length; i++) {
-      links[i].classList.remove("active");
-    }
-
-    if (current) {
-      var active = document.querySelector(
-        '#contents a[href="#' + current + '"]'
-      );
-      if (active) active.classList.add("active");
-    }
-  });
-}
-
-function loadSummary(path) {
-  fetch(path)
-    .then(function (res) {
-      return res.json();
+  categoriesEl.appendChild(
+    _createButton("ALL", function () {
+      currentCategory = null;
+      _updatePressedState();
+      renderBooks();
     })
-    .then(function (data) {
-      var list = document.getElementById("chapter-list");
-      var out = document.getElementById("summaries");
+  );
 
-      list.innerHTML = "";
-      out.innerHTML = "";
+  categoriesEl.appendChild(
+    _createButton("ACTIVE", function () {
+      currentCategory = "ACTIVE";
+      _updatePressedState();
+      renderBooks();
+    })
+  );
 
-      // Build left + right panels
-      for (var i = 0; i < data.chapters.length; i++) {
-        var ch = data.chapters[i];
+  for (var category in libraryData) {
+    categoriesEl.appendChild(
+      _createButton(
+        category,
+        (function (cat) {
+          return function () {
+            currentCategory = cat;
+            _updatePressedState();
+            renderBooks();
+          };
+        })(category)
+      )
+    );
+  }
 
-        var li = document.createElement("li");
-        li.appendChild(_createLink(ch));
-        list.appendChild(li);
+  _updatePressedState();
+}
 
-        out.appendChild(_createSection(ch));
+function renderBooks() {
+  booksEl.innerHTML = "";
+  var total = 0;
+  var query = (searchInput.value || "").toLowerCase();
+
+  for (var category in libraryData) {
+    if (
+      currentCategory &&
+      currentCategory !== "ACTIVE" &&
+      category !== currentCategory
+    ) {
+      continue;
+    }
+
+    libraryData[category].forEach(function (book) {
+      if (currentCategory === "ACTIVE" && !book.url) return;
+      if (
+        query &&
+        !book.title.toLowerCase().includes(query) &&
+        !book.author.toLowerCase().includes(query)
+      )
+        return;
+
+      var div = document.createElement("div");
+      div.className = "book";
+
+      var text =
+        _highlight(book.author, query) + " - " + _highlight(book.title, query);
+
+      if (book.url) {
+        var a = document.createElement("a");
+        a.href = book.url;
+        a.innerHTML = text;
+        div.appendChild(a);
+      } else {
+        div.innerHTML = text;
       }
 
-      var links = document.querySelectorAll("#contents a");
-      var sections = document.querySelectorAll("#summaries section");
-
-      _attachClickEvents(links);
-      _attachScrollHighlight(links, sections);
+      booksEl.appendChild(div);
+      total++;
     });
+  }
+
+  countEl.textContent = total + " books";
 }
+
+searchInput.addEventListener("input", renderBooks);
+
+fetch("books/books.json")
+  .then(function (res) {
+    return res.json();
+  })
+  .then(function (data) {
+    libraryData = data;
+    renderCategories();
+    renderBooks();
+  });

@@ -4,9 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Peter Shirley - Fundamentals of Computer Graphics</title>
-    <link rel="stylesheet" href="../css/books.css" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/contents.css" />
   </head>
   <body>
+    <a
+      href="../index.html"
+      class="home-btn"
+      aria-label="Return to library"
+      title="Home"
+      >← Home</a
+    >
+
     <div id="container">
       <nav id="contents">
         <h2 id="book-title"></h2>
@@ -16,7 +25,11 @@
       <main id="summaries"></main>
     </div>
 
-    <script src="../js/books.js"></script>
+    <footer>
+      <p>&copy; 2025 Kerem Düzenli</p>
+    </footer>
+
+    <script src="../js/contents.js"></script>
     <script>
       loadSummary("fundamentals_of_computer_graphics.json");
     </script>
