@@ -1,7 +1,20 @@
 function createLink(ch) {
   var a = document.createElement("a");
   a.href = "#chapter" + ch.number;
-  a.textContent = ch.number + ": " + ch.name;
+
+  var numberSpan = document.createElement("span");
+  numberSpan.textContent = ch.number;
+
+  var colonSpan = document.createElement("span");
+  colonSpan.textContent = ":";
+
+  var titleSpan = document.createElement("span");
+  titleSpan.textContent = ch.name;
+
+  a.appendChild(numberSpan);
+  a.appendChild(colonSpan);
+  a.appendChild(titleSpan);
+
   return a;
 }
 
