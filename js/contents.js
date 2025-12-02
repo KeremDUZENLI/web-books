@@ -31,72 +31,79 @@ function createSection(ch) {
   section.appendChild(title);
   section.appendChild(content);
 
-  // Initially hide all sections
   section.style.display = "none";
 
   return section;
 }
 
-// Add click events to links for showing only the selected chapter
-function attachClickEvents(links, sections) {
-  for (var i = 0; i < links.length; i++) {
-    links[i].addEventListener("click", function (e) {
-      e.preventDefault();
-      var id = this.getAttribute("href").slice(1);
+function createChapterElements(ch) {
+  return {
+    chapter: ch,
+    link: createLink(ch),
+    section: createSection(ch),
+  };
+}
 
-      // Hide all sections
-      for (var j = 0; j < sections.length; j++) {
-        sections[j].style.display = "none";
-      }
-
-      // Show the selected section
-      var section = document.getElementById(id);
-      if (section) section.style.display = "block";
-
-      // Highlight the selected link
-      for (var j = 0; j < links.length; j++) {
-        links[j].classList.remove("active");
-      }
-      this.classList.add("active");
-    });
+function loadChapterContent(section, chapter, baseFolder) {
+  if (chapter.file && !chapter.loaded) {
+    fetch(baseFolder + chapter.file)
+      .then(function (res) {
+        return res.text();
+      })
+      .then(function (md) {
+        section.innerHTML += marked.parse(md);
+        chapter.loaded = true;
+        if (window.MathJax) MathJax.typesetPromise([section]);
+      });
+  } else if (window.MathJax) {
+    MathJax.typesetPromise([section]);
   }
 }
 
-function loadSummary(path) {
-  fetch(path)
+function showChapter(index, chaptersArr, baseFolder) {
+  for (var i = 0; i < chaptersArr.length; i++) {
+    chaptersArr[i].section.style.display = "none";
+    chaptersArr[i].link.classList.remove("active");
+  }
+
+  chaptersArr[index].section.style.display = "block";
+  chaptersArr[index].link.classList.add("active");
+
+  loadChapterContent(
+    chaptersArr[index].section,
+    chaptersArr[index].chapter,
+    baseFolder
+  );
+}
+
+function loadSummary(jsonPath) {
+  fetch(jsonPath)
     .then(function (res) {
       return res.json();
     })
     .then(function (data) {
       var list = document.getElementById("chapter-list");
       var out = document.getElementById("summaries");
-
       list.innerHTML = "";
       out.innerHTML = "";
 
-      var links = [];
-      var sections = [];
+      var baseFolder = jsonPath.replace(/\/0\.json$/, "/");
+      var chaptersArr = [];
 
-      for (var i = 0; i < data.chapters.length; i++) {
-        var ch = data.chapters[i];
+      for (let i = 0; i < data.chapters.length; i++) {
+        let ch = data.chapters[i];
+        let elems = createChapterElements(ch);
 
-        var li = document.createElement("li");
-        var link = createLink(ch);
-        li.appendChild(link);
-        list.appendChild(li);
-        links.push(link);
+        list.appendChild(document.createElement("li")).appendChild(elems.link);
+        out.appendChild(elems.section);
+        chaptersArr.push(elems);
 
-        var section = createSection(ch);
-        out.appendChild(section);
-        sections.push(section);
+        elems.link.addEventListener("click", function (e) {
+          e.preventDefault();
+          showChapter(i, chaptersArr, baseFolder);
+        });
       }
 
-      attachClickEvents(links, sections);
-
-      // Show the first chapter by default
-      if (sections.length > 0) {
-        sections[0].style.display = "block";
-        links[0].classList.add("active");
-      }
+      showChapter(0, chaptersArr, baseFolder);
     });
 }

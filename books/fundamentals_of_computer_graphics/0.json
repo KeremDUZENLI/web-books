@@ -1,0 +1,144 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "name": "Introduction",
+      "file": "1.md"
+    },
+    {
+      "number": 2,
+      "name": "Miscellaneous Math",
+      "file": ""
+    },
+    {
+      "number": 3,
+      "name": "Raster Images",
+      "file": ""
+    },
+    {
+      "number": 4,
+      "name": "Ray Tracing",
+      "file": ""
+    },
+    {
+      "number": 5,
+      "name": "Linear Algebra",
+      "file": ""
+    },
+    {
+      "number": 6,
+      "name": "Transformation Matrices",
+      "file": ""
+    },
+    {
+      "number": 7,
+      "name": "Viewing",
+      "file": ""
+    },
+    {
+      "number": 8,
+      "name": "The Graphics Pipeline",
+      "file": ""
+    },
+    {
+      "number": 9,
+      "name": "Signal Processing",
+      "file": ""
+    },
+    {
+      "number": 10,
+      "name": "Surface Shading",
+      "file": ""
+    },
+    {
+      "number": 11,
+      "name": "Texture Mapping",
+      "file": ""
+    },
+    {
+      "number": 12,
+      "name": "Data Structures for Graphics",
+      "file": ""
+    },
+    {
+      "number": 13,
+      "name": "More Ray Tracing",
+      "file": ""
+    },
+    {
+      "number": 14,
+      "name": "Sampling",
+      "file": ""
+    },
+    {
+      "number": 15,
+      "name": "Curves",
+      "file": ""
+    },
+    {
+      "number": 16,
+      "name": "Implicit Modeling",
+      "file": ""
+    },
+    {
+      "number": 17,
+      "name": "Computer Animation",
+      "file": ""
+    },
+    {
+      "number": 18,
+      "name": "Using Graphics Hardware",
+      "file": ""
+    },
+    {
+      "number": 19,
+      "name": "Building Interactive Graphics Applications",
+      "file": ""
+    },
+    {
+      "number": 20,
+      "name": "Light",
+      "file": ""
+    },
+    {
+      "number": 21,
+      "name": "Color",
+      "file": ""
+    },
+    {
+      "number": 22,
+      "name": "Visual Perception",
+      "file": ""
+    },
+    {
+      "number": 23,
+      "name": "Tone Reproduction",
+      "file": ""
+    },
+    {
+      "number": 24,
+      "name": "Global Illumination",
+      "file": ""
+    },
+    {
+      "number": 25,
+      "name": "Reflection Models",
+      "file": ""
+    },
+    {
+      "number": 26,
+      "name": "Computer Graphics in Games",
+      "file": ""
+    },
+    {
+      "number": 27,
+      "name": "Visualization",
+      "file": ""
+    },
+    {
+      "number": 28,
+      "name": "Spatial-Field Visualization",
+      "file": ""
+    }
+  ]
+}
