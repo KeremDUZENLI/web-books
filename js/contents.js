@@ -1,3 +1,10 @@
+marked.setOptions({
+  mangle: false,
+  headerIds: true,
+  gfm: true,
+  breaks: true,
+});
+
 function createLink(ch) {
   var a = document.createElement("a");
   a.href = "#chapter" + ch.number;
@@ -26,7 +33,7 @@ function createSection(ch) {
   title.textContent = "Chapter " + ch.number + ": " + ch.name;
 
   var content = document.createElement("div");
-  content.innerHTML = ch.summary || "";
+  content.className = "chapter-content";
 
   section.appendChild(title);
   section.appendChild(content);
@@ -44,20 +51,45 @@ function createChapterElements(ch) {
   };
 }
 
+function getContentDiv(section) {
+  var contentDiv = section.querySelector(".chapter-content");
+  if (!contentDiv) {
+    contentDiv = document.createElement("div");
+    contentDiv.className = "chapter-content";
+    section.appendChild(contentDiv);
+  }
+  return contentDiv;
+}
+
+function typesetSection(section) {
+  if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
+    MathJax.startup.promise.then(function () {
+      return MathJax.typesetPromise([section]);
+    });
+  }
+}
+
 function loadChapterContent(section, chapter, baseFolder) {
   if (chapter.file && !chapter.loaded) {
-    fetch(baseFolder + chapter.file)
-      .then(function (res) {
-        return res.text();
-      })
-      .then(function (md) {
-        section.innerHTML += marked.parse(md);
-        chapter.loaded = true;
-        if (window.MathJax) MathJax.typesetPromise([section]);
-      });
-  } else if (window.MathJax) {
-    MathJax.typesetPromise([section]);
+    fetchChapterMarkdown(section, chapter, baseFolder);
+    return;
   }
+
+  typesetSection(section);
+}
+
+function fetchChapterMarkdown(section, chapter, baseFolder) {
+  fetch(baseFolder + chapter.file)
+    .then(function (res) {
+      return res.text();
+    })
+    .then(function (md) {
+      var contentDiv = getContentDiv(section);
+
+      contentDiv.innerHTML = marked.parse(md);
+      chapter.loaded = true;
+      typesetSection(section);
+    });
 }
 
 function showChapter(index, chaptersArr, baseFolder) {

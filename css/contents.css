@@ -81,7 +81,7 @@
 #summaries {
   flex: 1;
   overflow: visible;
-  padding: 16px;
+  padding: 10px 50px 10px 50px;
 }
 
 @media (max-width: 640px) {
