@@ -1,12 +1,8 @@
-var booksEl = document.getElementById("books");
-var countEl = document.getElementById("count");
-var categoriesEl = document.getElementById("categories");
-var searchInput = document.getElementById("search");
+function alpha(a, b) {
+  return a.toLowerCase().localeCompare(b.toLowerCase());
+}
 
-var currentCategory = null;
-var libraryData = {};
-
-function _createButton(text, onClick) {
+function createButton(text, onClick) {
   var btn = document.createElement("button");
   btn.textContent = text;
   btn.className = "cat";
@@ -14,119 +10,146 @@ function _createButton(text, onClick) {
   return btn;
 }
 
-function _highlight(text, query) {
+function highlight(text, query) {
   if (!query) return text;
-  var re = new RegExp(
-    "(" + query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + ")",
-    "gi"
-  );
+  var safe = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  var re = new RegExp("(" + safe + ")", "gi");
   return text.replace(re, "<mark>$1</mark>");
 }
 
-function _updatePressedState() {
-  var buttons = categoriesEl.querySelectorAll(".cat");
-  for (var i = 0; i < buttons.length; i++) {
-    var cat = buttons[i].textContent;
-    buttons[i].setAttribute(
-      "aria-pressed",
-      (currentCategory === null && cat === "ALL") || cat === currentCategory
-        ? "true"
-        : "false"
-    );
-  }
-}
-
-function renderCategories() {
+function renderCategories(
+  libraryData,
+  categoriesEl,
+  onSelect,
+  currentCategory
+) {
   categoriesEl.innerHTML = "";
 
-  categoriesEl.appendChild(
-    _createButton("ALL", function () {
-      currentCategory = null;
-      _updatePressedState();
-      renderBooks();
-    })
-  );
+  var allBtn = createButton("ALL", function () {
+    onSelect(null);
+  });
+  var activeBtn = createButton("ACTIVE", function () {
+    onSelect("ACTIVE");
+  });
 
-  categoriesEl.appendChild(
-    _createButton("ACTIVE", function () {
-      currentCategory = "ACTIVE";
-      _updatePressedState();
-      renderBooks();
-    })
-  );
+  if (!currentCategory) allBtn.setAttribute("aria-pressed", "true");
+  if (currentCategory === "ACTIVE")
+    activeBtn.setAttribute("aria-pressed", "true");
 
-  for (var category in libraryData) {
-    categoriesEl.appendChild(
-      _createButton(
-        category,
-        (function (cat) {
-          return function () {
-            currentCategory = cat;
-            _updatePressedState();
-            renderBooks();
-          };
-        })(category)
-      )
+  categoriesEl.appendChild(allBtn);
+  categoriesEl.appendChild(activeBtn);
+
+  var cats = Object.keys(libraryData);
+  for (var i = 0; i < cats.length; i++) {
+    var cat = cats[i];
+    var btn = createButton(
+      cat,
+      (function (c) {
+        return function () {
+          onSelect(c);
+        };
+      })(cat)
     );
+    if (cat === currentCategory) btn.setAttribute("aria-pressed", "true");
+    categoriesEl.appendChild(btn);
   }
-
-  _updatePressedState();
 }
 
-function renderBooks() {
+function renderBooks(libraryData, booksEl, query, currentCategory) {
   booksEl.innerHTML = "";
+  var q = (query || "").toLowerCase();
   var total = 0;
-  var query = (searchInput.value || "").toLowerCase();
 
-  for (var category in libraryData) {
+  var booksToShow = [];
+
+  Object.keys(libraryData).forEach((category) => {
     if (
       currentCategory &&
       currentCategory !== "ACTIVE" &&
       category !== currentCategory
-    ) {
-      continue;
-    }
+    )
+      return;
 
-    libraryData[category].forEach(function (book) {
+    libraryData[category].forEach((book) => {
+      // Skip books without URL in ACTIVE
       if (currentCategory === "ACTIVE" && !book.url) return;
-      if (
-        query &&
-        !book.title.toLowerCase().includes(query) &&
-        !book.author.toLowerCase().includes(query)
-      )
-        return;
 
-      var div = document.createElement("div");
-      div.className = "book";
+      var authorLower = book.author.toLowerCase();
+      var titleLower = book.title.toLowerCase();
+      if (q && !authorLower.includes(q) && !titleLower.includes(q)) return;
 
-      var text =
-        _highlight(book.author, query) + " - " + _highlight(book.title, query);
+      booksToShow.push(book);
+    });
+  });
 
-      if (book.url) {
-        var a = document.createElement("a");
-        a.href = book.url;
-        a.innerHTML = text;
-        div.appendChild(a);
-      } else {
-        div.innerHTML = text;
-      }
-
-      booksEl.appendChild(div);
-      total++;
+  // Sort alphabetically by author, then title (for ALL or ACTIVE)
+  if (!currentCategory || currentCategory === "ACTIVE") {
+    booksToShow.sort((a, b) => {
+      var authorCompare = alpha(a.author, b.author);
+      return authorCompare !== 0 ? authorCompare : alpha(a.title, b.title);
     });
   }
 
-  countEl.textContent = total + " books";
+  booksToShow.forEach((book) => {
+    var div = document.createElement("div");
+    div.className = "book";
+
+    var html = highlight(book.author, q) + " — " + highlight(book.title, q);
+
+    if (book.url) {
+      var a = document.createElement("a");
+      a.href = book.url;
+      a.innerHTML = html;
+      div.appendChild(a);
+    } else {
+      div.innerHTML = html;
+    }
+
+    booksEl.appendChild(div);
+    total++;
+  });
+
+  return total;
 }
 
-searchInput.addEventListener("input", renderBooks);
+document.addEventListener("DOMContentLoaded", function () {
+  var searchInput = document.getElementById("search");
+  var categoriesEl = document.getElementById("categories");
+  var booksEl = document.getElementById("books");
+  var countEl = document.getElementById("count");
 
-fetch("books/books.json")
-  .then(function (res) {
-    return res.json();
-  })
-  .then(function (data) {
-    libraryData = data;
-    renderCategories();
-    renderBooks();
-  });
+  var libraryData = {};
+  var currentCategory = null;
+
+  function update() {
+    var total = renderBooks(
+      libraryData,
+      booksEl,
+      searchInput.value,
+      currentCategory
+    );
+    countEl.textContent = total + (total === 1 ? " book" : " books");
+  }
+
+  function onSelectCategory(cat) {
+    currentCategory = cat;
+    renderCategories(
+      libraryData,
+      categoriesEl,
+      onSelectCategory,
+      currentCategory
+    );
+    update();
+  }
+
+  fetch("books/books.json")
+    .then((res) => res.json())
+    .then((data) => {
+      libraryData = data;
+      renderCategories(libraryData, categoriesEl, onSelectCategory);
+      update();
+    })
+    .catch((err) => console.error("Failed to load books.json:", err));
+
+  searchInput.addEventListener("input", update);
+});
