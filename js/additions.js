@@ -1,19 +1,3 @@
-window.MathJax = {
-  tex: {
-    inlineMath: [
-      ["$", "$"],
-      ["\\(", "\\)"],
-    ],
-    displayMath: [
-      ["$$", "$$"],
-      ["\\[", "\\]"],
-    ],
-  },
-  options: {
-    skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"],
-  },
-};
-
 var script1 = document.createElement("script");
 script1.src = "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
 
