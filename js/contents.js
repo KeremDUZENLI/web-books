@@ -10,38 +10,24 @@ marked.setOptions({
 
 // Create clickable link for a chapter
 function createLink(ch) {
-  var a = document.createElement("a");
+  const a = document.createElement("a");
   a.href = "#chapter" + ch.number;
 
-  var numberSpan = document.createElement("span");
+  const numberSpan = document.createElement("span");
   numberSpan.textContent = ch.number;
 
-  var colonSpan = document.createElement("span");
+  const colonSpan = document.createElement("span");
   colonSpan.textContent = ":";
 
-  var titleSpan = document.createElement("span");
+  const titleSpan = document.createElement("span");
   titleSpan.textContent = ch.name;
 
-  a.appendChild(numberSpan);
-  a.appendChild(colonSpan);
-  a.appendChild(titleSpan);
-
+  a.append(numberSpan, colonSpan, titleSpan);
   return a;
 }
 
-// Create section container for a chapter
-function createSection(ch) {
-  const section = document.createElement("section");
-  section.id = "chapter" + ch.number;
-  section.style.display = "none";
-
-  const title = document.createElement("h2");
-  title.textContent = `Chapter ${ch.number}: ${ch.name}`;
-
-  const content = document.createElement("div");
-  content.className = "chapter-content";
-
-  // Slider container
+// Create slider and return references to all its elements
+function createSlider() {
   const slider = document.createElement("div");
   slider.className = "question-slider";
   slider.style.display = "none";
@@ -58,12 +44,32 @@ function createSection(ch) {
   nextBtn.className = "next-btn";
 
   slider.append(display, prevBtn, nextBtn);
-  section.append(title, content, slider);
+
+  return { slider, display, prevBtn, nextBtn };
+}
+
+// Create section for a chapter and attach slider references
+function createSection(ch) {
+  const section = document.createElement("section");
+  section.id = "chapter" + ch.number;
+  section.style.display = "none";
+
+  const title = document.createElement("h2");
+  title.textContent = `Chapter ${ch.number}: ${ch.name}`;
+
+  const content = document.createElement("div");
+  content.className = "chapter-content";
+
+  const sliderElements = createSlider();
+  section.append(title, content, sliderElements.slider);
+
+  // Store slider elements for easy access later
+  section.sliderElements = sliderElements;
 
   return section;
 }
 
-// Package chapter info
+// Package chapter elements together
 function createChapterElements(ch) {
   return {
     chapter: ch,
@@ -84,7 +90,7 @@ function getContentDiv(section) {
 }
 
 function typesetSection(section) {
-  if (window.MathJax && MathJax.startup && MathJax.startup.promise) {
+  if (window.MathJax?.startup?.promise) {
     MathJax.startup.promise.then(() => MathJax.typesetPromise([section]));
   }
 }
@@ -105,41 +111,46 @@ function loadChapterContent(section, chapter, baseFolder) {
 }
 
 // ===================== QUESTIONS / SLIDER =====================
+function goPrev(index) {
+  return index > 0 ? index - 1 : index;
+}
+
+function goNext(index, questions) {
+  return index < questions.length - 1 ? index + 1 : index;
+}
+
+function showQuestion(display, slider, questions, index) {
+  display.textContent = questions[index];
+  slider.style.display = "flex";
+}
+
 function loadQuestions(section, chapter, baseFolder) {
   if (!chapter.fileQuestion) return;
 
-  const slider = section.querySelector(".question-slider");
-  const display = slider.querySelector(".question-display");
-  const prevBtn = slider.querySelector(".prev-btn");
-  const nextBtn = slider.querySelector(".next-btn");
+  const { slider, display, prevBtn, nextBtn } = section.sliderElements;
 
   fetch(baseFolder + chapter.fileQuestion)
     .then((res) => res.json())
     .then((data) => {
       const questions = data.questions || [];
-      if (questions.length === 0) {
+      if (!questions.length) {
         slider.style.display = "none";
         return;
       }
 
       let index = 0;
 
-      function showQuestion(i) {
-        display.textContent = questions[i];
-        slider.style.display = "flex";
-      }
-
       prevBtn.onclick = () => {
-        index = index > 0 ? index - 1 : questions.length - 1;
-        showQuestion(index);
+        index = goPrev(index);
+        showQuestion(display, slider, questions, index);
       };
 
       nextBtn.onclick = () => {
-        index = index < questions.length - 1 ? index + 1 : 0;
-        showQuestion(index);
+        index = goNext(index, questions);
+        showQuestion(display, slider, questions, index);
       };
 
-      showQuestion(index);
+      showQuestion(display, slider, questions, index);
     });
 }
 
@@ -171,8 +182,7 @@ function loadSummary(jsonPath) {
       const baseFolder = jsonPath.substring(0, jsonPath.lastIndexOf("/") + 1);
       const chaptersArr = [];
 
-      for (let i = 0; i < data.chapters.length; i++) {
-        const ch = data.chapters[i];
+      data.chapters.forEach((ch, i) => {
         const elems = createChapterElements(ch);
 
         list.appendChild(document.createElement("li")).appendChild(elems.link);
@@ -183,7 +193,7 @@ function loadSummary(jsonPath) {
           e.preventDefault();
           showChapter(i, chaptersArr, baseFolder);
         });
-      }
+      });
 
       showChapter(0, chaptersArr, baseFolder);
     });
