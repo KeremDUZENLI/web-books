@@ -14,9 +14,13 @@ window.MathJax = {
   },
 };
 
-var script = document.createElement("script");
-script.id = "MathJax-script";
-script.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
-script.async = true;
+var script1 = document.createElement("script");
+script1.src = "https://cdn.jsdelivr.net/npm/marked/marked.min.js";
 
-document.head.appendChild(script);
+var script2 = document.createElement("script");
+script2.id = "MathJax-script";
+script2.src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+script2.async = true;
+
+document.head.appendChild(script1);
+document.head.appendChild(script2);
