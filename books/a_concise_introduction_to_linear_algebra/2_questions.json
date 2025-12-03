@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "name": "2.1",
+      "question": "Find the length of the vector (3, 4).",
+      "answer": "2_answers/2.1.md"
+    },
+    {
+      "name": "2.2",
+      "question": "Determine the dot product of vectors (1, 2) and (3, 4).",
+      "answer": "2_answers/2.2.md"
+    },
+    {
+      "name": "2.3",
+      "question": "Show that the vector (5, -2) is orthogonal to (2, 5).",
+      "answer": "2_answers/2.3.md"
+    }
+  ]
+}

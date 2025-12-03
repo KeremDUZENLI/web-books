@@ -3,43 +3,44 @@
     {
       "number": 1,
       "name": "Analytic Geometry of Euclidean Spaces",
-      "file": "1.md",
-      "fileQuestion": "1.json"
+      "abstract": "1_abstract.md",
+      "questions": "1_questions.json"
     },
     {
       "number": 2,
       "name": "Systems of Linear Equations, Matrices",
-      "file": ""
+      "abstract": "2_abstract.md",
+      "questions": "2_questions.json"
     },
     {
       "number": 3,
       "name": "Vector Spaces and Subspaces",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 4,
       "name": "Linear Transformations",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 5,
       "name": "Orthogonal Projections and Bases",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 6,
       "name": "Determinants",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 7,
       "name": "Eigenvalues and Eigenvectors",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 8,
       "name": "Numerical Methods",
-      "file": ""
+      "abstract": ""
     }
   ]
 }

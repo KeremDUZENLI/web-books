@@ -3,143 +3,144 @@
     {
       "number": 1,
       "name": "Introduction",
-      "file": "1.md",
-      "fileQuestion": "1.json"
+      "abstract": "1_abstract.md",
+      "questions": "1_questions.json"
     },
     {
       "number": 2,
       "name": "Miscellaneous Math",
-      "file": ""
+      "abstract": "2_abstract.md",
+      "questions": "2_questions.json"
     },
     {
       "number": 3,
       "name": "Raster Images",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 4,
       "name": "Ray Tracing",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 5,
       "name": "Linear Algebra",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 6,
       "name": "Transformation Matrices",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 7,
       "name": "Viewing",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 8,
       "name": "The Graphics Pipeline",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 9,
       "name": "Signal Processing",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 10,
       "name": "Surface Shading",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 11,
       "name": "Texture Mapping",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 12,
       "name": "Data Structures for Graphics",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 13,
       "name": "More Ray Tracing",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 14,
       "name": "Sampling",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 15,
       "name": "Curves",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 16,
       "name": "Implicit Modeling",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 17,
       "name": "Computer Animation",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 18,
       "name": "Using Graphics Hardware",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 19,
       "name": "Building Interactive Graphics Applications",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 20,
       "name": "Light",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 21,
       "name": "Color",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 22,
       "name": "Visual Perception",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 23,
       "name": "Tone Reproduction",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 24,
       "name": "Global Illumination",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 25,
       "name": "Reflection Models",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 26,
       "name": "Computer Graphics in Games",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 27,
       "name": "Visualization",
-      "file": ""
+      "abstract": ""
     },
     {
       "number": 28,
       "name": "Spatial-Field Visualization",
-      "file": ""
+      "abstract": ""
     }
   ]
 }

@@ -32,8 +32,21 @@ function createSlider() {
   slider.className = "question-slider";
   slider.style.display = "none";
 
-  const display = document.createElement("div");
-  display.className = "question-display";
+  // Exercise title
+  const exerciseTitle = document.createElement("div");
+  exerciseTitle.className = "exercise-title";
+
+  // Question content
+  const questionContent = document.createElement("div");
+  questionContent.className = "question-content";
+
+  // Page indicator
+  const pageIndicator = document.createElement("div");
+  pageIndicator.className = "page-indicator";
+
+  // Buttons container
+  const buttonsContainer = document.createElement("div");
+  buttonsContainer.className = "question-buttons";
 
   const prevBtn = document.createElement("button");
   prevBtn.textContent = "Previous";
@@ -43,9 +56,22 @@ function createSlider() {
   nextBtn.textContent = "Next";
   nextBtn.className = "next-btn";
 
-  slider.append(display, prevBtn, nextBtn);
+  buttonsContainer.append(prevBtn, nextBtn);
+  slider.append(
+    exerciseTitle,
+    questionContent,
+    pageIndicator,
+    buttonsContainer
+  );
 
-  return { slider, display, prevBtn, nextBtn };
+  return {
+    slider,
+    exerciseTitle,
+    questionContent,
+    pageIndicator,
+    prevBtn,
+    nextBtn,
+  };
 }
 
 // Create section for a chapter and attach slider references
@@ -96,8 +122,8 @@ function typesetSection(section) {
 }
 
 function loadChapterContent(section, chapter, baseFolder) {
-  if (chapter.file && !chapter.loaded) {
-    fetch(baseFolder + chapter.file)
+  if (chapter.abstract && !chapter.loaded) {
+    fetch(baseFolder + chapter.abstract)
       .then((res) => res.text())
       .then((md) => {
         const contentDiv = getContentDiv(section);
@@ -119,39 +145,61 @@ function goNext(index, questions) {
   return index < questions.length - 1 ? index + 1 : index;
 }
 
-function showQuestion(display, slider, questions, index) {
-  display.textContent = questions[index];
+function renderMath(contentDiv) {
+  contentDiv.innerHTML = contentDiv.innerHTML.replace(/\\\\/g, "\\");
+  if (window.MathJax?.typesetPromise) {
+    MathJax.typesetPromise([contentDiv]);
+  }
+}
+
+function showQuestion(sliderElements, questions, index) {
+  const { slider, exerciseTitle, questionContent, pageIndicator } =
+    sliderElements;
+
+  exerciseTitle.textContent = questions[index].name;
+
+  questionContent.innerHTML = marked.parse(questions[index].question || "");
+  pageIndicator.textContent = `Page: ${index + 1} / ${questions.length}`;
+
   slider.style.display = "flex";
+
+  renderMath(questionContent);
+}
+
+function fetchQuestions(baseFolder, chapter) {
+  if (!chapter.questions) return Promise.resolve([]);
+  return fetch(baseFolder + chapter.questions)
+    .then((res) => res.json())
+    .then((data) => data.questions || []);
+}
+
+function initSlider(sliderElements, questions) {
+  if (!questions.length) {
+    sliderElements.slider.style.display = "none";
+    return;
+  }
+
+  let index = 0;
+
+  const { prevBtn, nextBtn } = sliderElements;
+
+  prevBtn.onclick = () => {
+    index = goPrev(index);
+    showQuestion(sliderElements, questions, index);
+  };
+
+  nextBtn.onclick = () => {
+    index = goNext(index, questions);
+    showQuestion(sliderElements, questions, index);
+  };
+
+  showQuestion(sliderElements, questions, index);
 }
 
 function loadQuestions(section, chapter, baseFolder) {
-  if (!chapter.fileQuestion) return;
-
-  const { slider, display, prevBtn, nextBtn } = section.sliderElements;
-
-  fetch(baseFolder + chapter.fileQuestion)
-    .then((res) => res.json())
-    .then((data) => {
-      const questions = data.questions || [];
-      if (!questions.length) {
-        slider.style.display = "none";
-        return;
-      }
-
-      let index = 0;
-
-      prevBtn.onclick = () => {
-        index = goPrev(index);
-        showQuestion(display, slider, questions, index);
-      };
-
-      nextBtn.onclick = () => {
-        index = goNext(index, questions);
-        showQuestion(display, slider, questions, index);
-      };
-
-      showQuestion(display, slider, questions, index);
-    });
+  fetchQuestions(baseFolder, chapter).then((questions) => {
+    initSlider(section.sliderElements, questions);
+  });
 }
 
 // ===================== CHAPTER DISPLAY =====================
@@ -169,32 +217,42 @@ function showChapter(index, chaptersArr, baseFolder) {
   loadQuestions(current.section, current.chapter, baseFolder);
 }
 
-// ===================== LOAD SUMMARY JSON =====================
-function loadSummary(jsonPath) {
-  fetch(jsonPath)
+// ===================== LOAD ABSTRACT JSON =====================
+function fetchAbstract(jsonPath) {
+  return fetch(jsonPath)
     .then((res) => res.json())
     .then((data) => {
-      const list = document.getElementById("chapter-list");
-      const out = document.getElementById("summaries");
-      list.innerHTML = "";
-      out.innerHTML = "";
-
       const baseFolder = jsonPath.substring(0, jsonPath.lastIndexOf("/") + 1);
-      const chaptersArr = [];
-
-      data.chapters.forEach((ch, i) => {
-        const elems = createChapterElements(ch);
-
-        list.appendChild(document.createElement("li")).appendChild(elems.link);
-        out.appendChild(elems.section);
-        chaptersArr.push(elems);
-
-        elems.link.addEventListener("click", (e) => {
-          e.preventDefault();
-          showChapter(i, chaptersArr, baseFolder);
-        });
-      });
-
-      showChapter(0, chaptersArr, baseFolder);
+      return { data, baseFolder };
     });
+}
+
+function renderAbstract(data, baseFolder) {
+  const list = document.getElementById("chapter-list");
+  const out = document.getElementById("summaries");
+  list.innerHTML = "";
+  out.innerHTML = "";
+
+  const chaptersArr = [];
+
+  data.chapters.forEach((ch, i) => {
+    const elems = createChapterElements(ch);
+
+    list.appendChild(document.createElement("li")).appendChild(elems.link);
+    out.appendChild(elems.section);
+    chaptersArr.push(elems);
+
+    elems.link.addEventListener("click", (e) => {
+      e.preventDefault();
+      showChapter(i, chaptersArr, baseFolder);
+    });
+  });
+
+  showChapter(0, chaptersArr, baseFolder);
+}
+
+function loadAbstract(jsonPath) {
+  fetchAbstract(jsonPath).then(({ data, baseFolder }) => {
+    renderAbstract(data, baseFolder);
+  });
 }
