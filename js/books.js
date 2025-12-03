@@ -94,7 +94,7 @@ function renderBooks(libraryData, booksEl, query, currentCategory) {
     var div = document.createElement("div");
     div.className = "book";
 
-    var html = highlight(book.author, q) + " — " + highlight(book.title, q);
+    var html = highlight(book.author, q) + " - " + highlight(book.title, q);
 
     if (book.url) {
       var a = document.createElement("a");

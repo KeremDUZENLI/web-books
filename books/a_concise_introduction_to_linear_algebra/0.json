@@ -1,0 +1,44 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "name": "Analytic Geometry of Euclidean Spaces",
+      "file": "1.md"
+    },
+    {
+      "number": 2,
+      "name": "Systems of Linear Equations, Matrices",
+      "file": ""
+    },
+    {
+      "number": 3,
+      "name": "Vector Spaces and Subspaces",
+      "file": ""
+    },
+    {
+      "number": 4,
+      "name": "Linear Transformations",
+      "file": ""
+    },
+    {
+      "number": 5,
+      "name": "Orthogonal Projections and Bases",
+      "file": ""
+    },
+    {
+      "number": 6,
+      "name": "Determinants",
+      "file": ""
+    },
+    {
+      "number": 7,
+      "name": "Eigenvalues and Eigenvectors",
+      "file": ""
+    },
+    {
+      "number": 8,
+      "name": "Numerical Methods",
+      "file": ""
+    }
+  ]
+}

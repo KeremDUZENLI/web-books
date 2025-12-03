@@ -29,7 +29,7 @@ function createSection(ch) {
   var section = document.createElement("section");
   section.id = "chapter" + ch.number;
 
-  var title = document.createElement("h3");
+  var title = document.createElement("h2");
   title.textContent = "Chapter " + ch.number + ": " + ch.name;
 
   var content = document.createElement("div");
