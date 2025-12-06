@@ -1,331 +1,348 @@
-{
-  "Artistic": [
-    {
-      "author": "Burak Pak",
-      "title": "Cocreating the Future"
-    },
-    {
-      "author": "William J Mitchell",
-      "title": "City of Bits"
-    }
-  ],
-
-  "Business": [
-    {
-      "author": "Ashlee Vance",
-      "title": "Elon Musk"
-    },
-    {
-      "author": "Benjamin Graham",
-      "title": "The Intelligent Investor"
-    },
-    {
-      "author": "Dan Sisson",
-      "title": "Google SEO Secrets"
-    },
-    {
-      "author": "Erin Meyer",
-      "title": "No Rules Rule"
-    },
-    {
-      "author": "Erin Meyer",
-      "title": "The Culture Map"
-    },
-    {
-      "author": "Frederick Betz",
-      "title": "Managing Technological Innovation"
-    },
-    {
-      "author": "Gregory Zuckerman",
-      "title": "The Man Who Solved the Market"
-    },
-    {
-      "author": "Philip Kotler",
-      "title": "Chaotics"
-    },
-    {
-      "author": "Simon Sinek",
-      "title": "Leaders Eat Last"
-    },
-    {
-      "author": "Thiago Nigro",
-      "title": "Do Mil Ao Milhao"
-    }
-  ],
-
-  "Computer Graphics": [
-    {
-      "author": "Eric Lengyel",
-      "title": "Mathematics for 3D Game Programming and Computer Graphics"
-    },
-    {
-      "author": "Geza Schay",
-      "title": "A Concise Introduction to Linear Algebra",
-      "url": "contents/a_concise_introduction_to_linear_algebra.html"
-    },
-    {
-      "author": "John Hughes",
-      "title": "Computer Graphics Principles and Practice"
-    },
-    {
-      "author": "North Holland",
-      "title": "Handbook of Computer Aided Geometric Design"
-    },
-    {
-      "author": "Peter Shirley",
-      "title": "Fundamentals of Computer Graphics",
-      "url": "contents/fundamentals_of_computer_graphics.html"
-    }
-  ],
-
-  "Literature": [
-    {
-      "author": "Albert Camus",
-      "title": "Yabancı"
-    },
-    {
-      "author": "Cengiz Aytmatov",
-      "title": "Cengiz Hana Küsen Bulut"
-    },
-    {
-      "author": "George Orwell",
-      "title": "1984"
-    },
-    {
-      "author": "George Orwell",
-      "title": "Animal Farm"
-    },
-    {
-      "author": "Paulo Coelho",
-      "title": "Simyacı"
-    },
-    {
-      "author": "Sabahattin Ali",
-      "title": "Kürk Mantolu Madonna"
-    },
-    {
-      "author": "Sabahattin Ali",
-      "title": "İçimizdeki Şeytan"
-    },
-    {
-      "author": "Stefan Zweig",
-      "title": "Satranç"
-    },
-    {
-      "author": "Tarık Buğra",
-      "title": "Küçük Ağa"
-    },
-    {
-      "author": "William Shakespeare",
-      "title": "Hamlet"
-    }
-  ],
-
-  "Must-Read": [
-    {
-      "author": "Cal Newport",
-      "title": "Deep Work"
-    },
-    {
-      "author": "Carol Dweck",
-      "title": "Mindset"
-    },
-    {
-      "author": "Dale Carnegie",
-      "title": "How To Stop Worrying And Start Living"
-    },
-    {
-      "author": "Daron Acemoğlu",
-      "title": "Ulusların Düşüşü"
-    },
-    {
-      "author": "David Allen",
-      "title": "Getting Things Done"
-    },
-    {
-      "author": "Gary Chapman",
-      "title": "The 5 Love Languages"
-    },
-    {
-      "author": "Gary Keller",
-      "title": "The One Thing"
-    },
-    {
-      "author": "Grant Cardone",
-      "title": "The 10x Rule"
-    },
-    {
-      "author": "Gretchen Rubin",
-      "title": "The Happiness Project"
-    },
-    {
-      "author": "Hector Garcia",
-      "title": "Ikigai"
-    },
-    {
-      "author": "Ian Robertson",
-      "title": "The Winner Effect"
-    },
-    {
-      "author": "Jackson MacKenzie",
-      "title": "Psychopath Free"
-    },
-    {
-      "author": "James Clear",
-      "title": "Atomic Habits"
-    },
-    {
-      "author": "James Collins",
-      "title": "Good to Great"
-    },
-    {
-      "author": "Jordan Peterson",
-      "title": "12 Rules for Life"
-    },
-    {
-      "author": "Joseph Shaules",
-      "title": "The Intercultural Mind"
-    },
-    {
-      "author": "Katty Kay",
-      "title": "The Confidence Code"
-    },
-    {
-      "author": "Keith Ferrazzi",
-      "title": "Never Eat Alone"
-    },
-    {
-      "author": "Laura Vanderkam",
-      "title": "168 Hours"
-    },
-    {
-      "author": "Leil Lowndes",
-      "title": "How to Talk to Anyone"
-    },
-    {
-      "author": "Malcolm Gladwell",
-      "title": "Talking to Strangers"
-    },
-    {
-      "author": "Morgan Housel",
-      "title": "Same as Ever"
-    },
-    {
-      "author": "Morten Hansen",
-      "title": "Great at Work"
-    },
-    {
-      "author": "Napoleon Hill",
-      "title": "Think and Grow Rich"
-    },
-    {
-      "author": "Richard Koch",
-      "title": "The 80-20 Principle"
-    },
-    {
-      "author": "Robert Kiyosaki",
-      "title": "Rich Dad Poor Dad"
-    },
-    {
-      "author": "Robin Sharma",
-      "title": "The 5 AM Club"
-    },
-    {
-      "author": "Scott Gerber",
-      "title": "Never Get a Real Job"
-    },
-    {
-      "author": "Stephen Covey",
-      "title": "The 7 Habits of Highly Effective People"
-    },
-    {
-      "author": "Susan Cain",
-      "title": "Quiet"
-    },
-    {
-      "author": "William Irvine",
-      "title": "A Guide to the Good Life"
-    },
-    {
-      "author": "William McRaven",
-      "title": "Make Your Bed"
-    }
-  ],
-
-  "Self-Development": [
-    {
-      "author": "Charles Henderson",
-      "title": "You Can Do It with Self-Hypnosis"
-    },
-    {
-      "author": "Jack Canfield",
-      "title": "The Success Principles"
-    },
-    {
-      "author": "Kim Scott",
-      "title": "Radical Candor"
-    },
-    {
-      "author": "Malcolm Gladwell",
-      "title": "Outliers"
-    },
-    {
-      "author": "Napoleon Hill",
-      "title": "Outwitting the Devil"
-    },
-    {
-      "author": "Robert Cialdini",
-      "title": "The Psychology of Persuasion"
-    },
-    {
-      "author": "Üstün Dökmen",
-      "title": "Küçük Şeyler"
-    }
-  ],
-
-  "Software": [
-    {
-      "author": "Charles Petzold",
-      "title": "Code"
-    },
-    {
-      "author": "Derek Runberg",
-      "title": "The SparkFun Guide to Processing"
-    },
-    {
-      "author": "Paul Graham",
-      "title": "Hackers and Painters"
-    },
-    {
-      "author": "Robert Martin",
-      "title": "Clean Architecture"
-    },
-    {
-      "author": "Robert Martin",
-      "title": "Clean Code"
-    },
-    {
-      "author": "Robert Martin",
-      "title": "The Clean Coder"
-    }
-  ],
-
-  "VR": [
-    {
-      "author": "Jason Jerald",
-      "title": "The VR Book"
-    },
-    {
-      "author": "Steven LaValle",
-      "title": "Virtual Reality"
-    },
-    {
-      "author": "Tony Parisi",
-      "title": "Learning Virtual Reality"
-    },
-    {
-      "author": "William Sherman",
-      "title": "Understanding Virtual Reality"
-    }
-  ]
-}
+[
+  {
+    "category": "Artistic",
+    "books": [
+      {
+        "author": "Burak Pak",
+        "title": "Cocreating the Future"
+      },
+      {
+        "author": "William J Mitchell",
+        "title": "City of Bits"
+      }
+    ]
+  },
+  {
+    "category": "Business",
+    "books": [
+      {
+        "author": "Ashlee Vance",
+        "title": "Elon Musk"
+      },
+      {
+        "author": "Benjamin Graham",
+        "title": "The Intelligent Investor"
+      },
+      {
+        "author": "Dan Sisson",
+        "title": "Google SEO Secrets"
+      },
+      {
+        "author": "Erin Meyer",
+        "title": "No Rules Rule"
+      },
+      {
+        "author": "Erin Meyer",
+        "title": "The Culture Map"
+      },
+      {
+        "author": "Frederick Betz",
+        "title": "Managing Technological Innovation"
+      },
+      {
+        "author": "Gregory Zuckerman",
+        "title": "The Man Who Solved the Market"
+      },
+      {
+        "author": "Philip Kotler",
+        "title": "Chaotics"
+      },
+      {
+        "author": "Simon Sinek",
+        "title": "Leaders Eat Last"
+      },
+      {
+        "author": "Thiago Nigro",
+        "title": "Do Mil Ao Milhao"
+      }
+    ]
+  },
+  {
+    "category": "Computer Graphics",
+    "books": [
+      {
+        "author": "Eric Lengyel",
+        "title": "Mathematics for 3D Game Programming and Computer Graphics"
+      },
+      {
+        "author": "Geza Schay",
+        "title": "A Concise Introduction to Linear Algebra",
+        "url": "contents/a_concise_introduction_to_linear_algebra.html"
+      },
+      {
+        "author": "John Hughes",
+        "title": "Computer Graphics Principles and Practice"
+      },
+      {
+        "author": "North Holland",
+        "title": "Handbook of Computer Aided Geometric Design"
+      },
+      {
+        "author": "Peter Shirley",
+        "title": "Fundamentals of Computer Graphics",
+        "url": "contents/fundamentals_of_computer_graphics.html"
+      }
+    ]
+  },
+  {
+    "category": "Literature",
+    "books": [
+      {
+        "author": "Albert Camus",
+        "title": "Yabancı"
+      },
+      {
+        "author": "Cengiz Aytmatov",
+        "title": "Cengiz Hana Küsen Bulut"
+      },
+      {
+        "author": "George Orwell",
+        "title": "1984"
+      },
+      {
+        "author": "George Orwell",
+        "title": "Animal Farm"
+      },
+      {
+        "author": "Paulo Coelho",
+        "title": "Simyacı"
+      },
+      {
+        "author": "Sabahattin Ali",
+        "title": "Kürk Mantolu Madonna"
+      },
+      {
+        "author": "Sabahattin Ali",
+        "title": "İçimizdeki Şeytan"
+      },
+      {
+        "author": "Stefan Zweig",
+        "title": "Satranç"
+      },
+      {
+        "author": "Tarık Buğra",
+        "title": "Küçük Ağa"
+      },
+      {
+        "author": "William Shakespeare",
+        "title": "Hamlet"
+      }
+    ]
+  },
+  {
+    "category": "Must-Read",
+    "books": [
+      {
+        "author": "Cal Newport",
+        "title": "Deep Work"
+      },
+      {
+        "author": "Carol Dweck",
+        "title": "Mindset"
+      },
+      {
+        "author": "Dale Carnegie",
+        "title": "How To Stop Worrying And Start Living"
+      },
+      {
+        "author": "Daron Acemoğlu",
+        "title": "Ulusların Düşüşü"
+      },
+      {
+        "author": "David Allen",
+        "title": "Getting Things Done"
+      },
+      {
+        "author": "Gary Chapman",
+        "title": "The 5 Love Languages"
+      },
+      {
+        "author": "Gary Keller",
+        "title": "The One Thing"
+      },
+      {
+        "author": "Grant Cardone",
+        "title": "The 10x Rule"
+      },
+      {
+        "author": "Gretchen Rubin",
+        "title": "The Happiness Project"
+      },
+      {
+        "author": "Hector Garcia",
+        "title": "Ikigai"
+      },
+      {
+        "author": "Ian Robertson",
+        "title": "The Winner Effect"
+      },
+      {
+        "author": "Jackson MacKenzie",
+        "title": "Psychopath Free"
+      },
+      {
+        "author": "James Clear",
+        "title": "Atomic Habits"
+      },
+      {
+        "author": "James Collins",
+        "title": "Good to Great"
+      },
+      {
+        "author": "Jordan Peterson",
+        "title": "12 Rules for Life"
+      },
+      {
+        "author": "Joseph Shaules",
+        "title": "The Intercultural Mind"
+      },
+      {
+        "author": "Katty Kay",
+        "title": "The Confidence Code"
+      },
+      {
+        "author": "Keith Ferrazzi",
+        "title": "Never Eat Alone"
+      },
+      {
+        "author": "Laura Vanderkam",
+        "title": "168 Hours"
+      },
+      {
+        "author": "Leil Lowndes",
+        "title": "How to Talk to Anyone"
+      },
+      {
+        "author": "Malcolm Gladwell",
+        "title": "Talking to Strangers"
+      },
+      {
+        "author": "Morgan Housel",
+        "title": "Same as Ever"
+      },
+      {
+        "author": "Morten Hansen",
+        "title": "Great at Work"
+      },
+      {
+        "author": "Napoleon Hill",
+        "title": "Think and Grow Rich"
+      },
+      {
+        "author": "Richard Koch",
+        "title": "The 80-20 Principle"
+      },
+      {
+        "author": "Robert Kiyosaki",
+        "title": "Rich Dad Poor Dad"
+      },
+      {
+        "author": "Robin Sharma",
+        "title": "The 5 AM Club"
+      },
+      {
+        "author": "Scott Gerber",
+        "title": "Never Get a Real Job"
+      },
+      {
+        "author": "Stephen Covey",
+        "title": "The 7 Habits of Highly Effective People"
+      },
+      {
+        "author": "Susan Cain",
+        "title": "Quiet"
+      },
+      {
+        "author": "William Irvine",
+        "title": "A Guide to the Good Life"
+      },
+      {
+        "author": "William McRaven",
+        "title": "Make Your Bed"
+      }
+    ]
+  },
+  {
+    "category": "Self-Development",
+    "books": [
+      {
+        "author": "Charles Henderson",
+        "title": "You Can Do It with Self-Hypnosis"
+      },
+      {
+        "author": "Jack Canfield",
+        "title": "The Success Principles"
+      },
+      {
+        "author": "Kim Scott",
+        "title": "Radical Candor"
+      },
+      {
+        "author": "Malcolm Gladwell",
+        "title": "Outliers"
+      },
+      {
+        "author": "Napoleon Hill",
+        "title": "Outwitting the Devil"
+      },
+      {
+        "author": "Robert Cialdini",
+        "title": "The Psychology of Persuasion"
+      },
+      {
+        "author": "Üstün Dökmen",
+        "title": "Küçük Şeyler"
+      }
+    ]
+  },
+  {
+    "category": "Software",
+    "books": [
+      {
+        "author": "Charles Petzold",
+        "title": "Code"
+      },
+      {
+        "author": "Derek Runberg",
+        "title": "The SparkFun Guide to Processing"
+      },
+      {
+        "author": "Paul Graham",
+        "title": "Hackers and Painters"
+      },
+      {
+        "author": "Robert Martin",
+        "title": "Clean Architecture"
+      },
+      {
+        "author": "Robert Martin",
+        "title": "Clean Code"
+      },
+      {
+        "author": "Robert Martin",
+        "title": "The Clean Coder"
+      }
+    ]
+  },
+  {
+    "category": "VR",
+    "books": [
+      {
+        "author": "Jason Jerald",
+        "title": "The VR Book"
+      },
+      {
+        "author": "Steven LaValle",
+        "title": "Virtual Reality"
+      },
+      {
+        "author": "Tony Parisi",
+        "title": "Learning Virtual Reality"
+      },
+      {
+        "author": "William Sherman",
+        "title": "Understanding Virtual Reality"
+      }
+    ]
+  }
+]

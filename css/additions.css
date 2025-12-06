@@ -1,6 +1,8 @@
 :root {
   --color_background: #fafafa;
   --color_border: #ddd;
+
+  --color_hover: #f0f0f0;
   --color_link: #007bff;
   --color_text: #111;
 

@@ -1,12 +1,11 @@
 /* ================= HOME BUTTON ================= */
-.home-btn {
+.button_home {
   background: var(--color_background);
   border: 1px solid var(--color_border);
   border-radius: 6px;
   color: var(--color_text);
   display: inline-block;
   font-size: 14px;
-  font-weight: bold;
   padding: 6px;
   position: relative;
   text-align: center;
@@ -15,10 +14,8 @@
   width: 100%;
   z-index: 1;
 }
-.home-btn:hover,
-.home-btn:focus {
-  background: var(--color_btn_background);
-  color: var(--color_link);
+.button_home:hover {
+  background-color: var(--color_hover);
 }
 
 /* ================= LAYOUT ================= */
@@ -47,24 +44,20 @@
   display: flex;
   align-items: flex-start;
 }
-
 #contents ul li a span:nth-child(1) {
   display: inline-block;
   width: 20px;
   text-align: right;
   margin-right: 2px;
 }
-
 #contents ul li a span:nth-child(2) {
   width: 10px;
   text-align: left;
 }
-
 #contents ul li a span:nth-child(3) {
   flex: 1;
   white-space: normal;
 }
-
 #contents li + li {
   border-top: 1px solid var(--color_border);
   margin-top: 8px;
@@ -77,11 +70,9 @@
   margin-bottom: 6px;
   text-decoration: none;
 }
-
 #contents a:hover {
   color: var(--color_link);
 }
-
 #contents a.active {
   color: var(--color_link);
   font-weight: bold;

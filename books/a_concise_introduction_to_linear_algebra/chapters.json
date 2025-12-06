@@ -1,0 +1,57 @@
+[
+  {
+    "order": 1,
+    "title": "Analytic Geometry of Euclidean Spaces",
+    "abstract": "abstract/1_chapter.md",
+    "exercise": [
+      {
+        "question": "exercise/1.2.1_question.md",
+        "response": "exercise/1.2.1_response.md"
+      },
+      {
+        "question": "exercise/1.2.2_question.md",
+        "response": "exercise/1.2.2_response.md"
+      }
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Systems of Linear Equations, Matrices"
+  },
+  {
+    "order": 3,
+    "title": "Vector Spaces and Subspaces",
+    "abstract": "",
+    "exercise": []
+  },
+  {
+    "order": 4,
+    "title": "Linear Transformations",
+    "abstract": "",
+    "exercise": []
+  },
+  {
+    "order": 5,
+    "title": "Orthogonal Projections and Bases",
+    "abstract": "",
+    "exercise": []
+  },
+  {
+    "order": 6,
+    "title": "Determinants",
+    "abstract": "",
+    "exercise": []
+  },
+  {
+    "order": 7,
+    "title": "Eigenvalues and Eigenvectors",
+    "abstract": "",
+    "exercise": []
+  },
+  {
+    "order": 8,
+    "title": "Numerical Methods",
+    "abstract": "",
+    "exercise": []
+  }
+]

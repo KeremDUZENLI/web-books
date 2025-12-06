@@ -1,3 +1,7 @@
+# Chapter 1: Introduction
+
+---
+
 ## Main Idea
 
 - This chapter defines **computer graphics** as the use of computers to create and manipulate images.
@@ -63,7 +67,3 @@
 **Rendering Pipeline**
 
 - The process of displaying objects in the correct back-to-front order is nearly always solved using the **z-buffer** (depth buffer).
-
----
-
-## Questions

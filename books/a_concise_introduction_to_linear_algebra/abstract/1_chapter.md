@@ -1,3 +1,7 @@
+# Chapter X:
+
+---
+
 ## Main Idea
 
 - State what the chapter teaches in 1–2 short sentences.
@@ -61,9 +65,3 @@ _(Include only formulas the chapter actually depends on.)_
 **Name**
 
 - Concise, simple explanation.
-
----
-
-## Questions
-
-- Question the chapter naturally raises (if any).

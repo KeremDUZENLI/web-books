@@ -138,14 +138,18 @@ function renderBooks(data, container, query, currentCategory) {
 // ===================== FETCH =====================
 function fetchBooks(url, callback) {
   fetch(url)
-    .then(function (res) {
-      return res.json();
+    .then(function (response) {
+      return response.json(); // get JSON data from response
     })
     .then(function (data) {
-      callback(data);
-    })
-    .catch(function (err) {
-      console.error("Failed to load books.json:", err);
+      var booksByCategory = {}; // create an empty object to store results
+
+      for (var i = 0; i < data.length; i++) {
+        var item = data[i];
+        booksByCategory[item.category] = item.books;
+      }
+
+      callback(booksByCategory); // return the mapped object
     });
 }
 

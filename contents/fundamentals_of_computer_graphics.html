@@ -11,13 +11,7 @@
   <body>
     <div id="container">
       <nav id="contents">
-        <a
-          href="../index.html"
-          class="home-btn"
-          aria-label="Return to library"
-          title="Home"
-          >← Home</a
-        >
+        <a href="../index.html" class="button_home">← Home</a>
         <h2 id="book-title"></h2>
         <ul id="chapter-list"></ul>
       </nav>
@@ -31,9 +25,7 @@
 
     <script src="../js/contents.js"></script>
     <script>
-      loadAbstract(
-        "../books/fundamentals_of_computer_graphics/0_chapters.json"
-      );
+      loadAbstract("../books/fundamentals_of_computer_graphics/chapters.json");
     </script>
   </body>
 </html>

@@ -7,81 +7,67 @@ marked.setOptions({
 });
 
 // ===================== CHAPTER ELEMENTS =====================
-
-// Create clickable link for a chapter
 function createLink(ch) {
   const a = document.createElement("a");
-  a.href = "#chapter" + ch.number;
+  a.href = "#chapter" + ch.order;
 
   const numberSpan = document.createElement("span");
-  numberSpan.textContent = ch.number;
+  numberSpan.textContent = ch.order;
 
   const colonSpan = document.createElement("span");
   colonSpan.textContent = ":";
 
   const titleSpan = document.createElement("span");
-  titleSpan.textContent = ch.name;
+  titleSpan.textContent = ch.title;
 
   a.append(numberSpan, colonSpan, titleSpan);
   return a;
 }
 
-// Create slider and return references to all its elements
 function createSlider() {
-  const slider = document.createElement("div");
+  var slider = document.createElement("div");
   slider.className = "question-slider";
   slider.style.display = "none";
 
-  // Exercise title
-  const exerciseTitle = document.createElement("div");
-  exerciseTitle.className = "exercise-title";
-
   // Question content
-  const questionContent = document.createElement("div");
+  var questionContent = document.createElement("div");
   questionContent.className = "question-content";
 
   // Page indicator
-  const pageIndicator = document.createElement("div");
+  var pageIndicator = document.createElement("div");
   pageIndicator.className = "page-indicator";
 
   // Buttons container
-  const buttonsContainer = document.createElement("div");
+  var buttonsContainer = document.createElement("div");
   buttonsContainer.className = "question-buttons";
 
-  const prevBtn = document.createElement("button");
+  var prevBtn = document.createElement("button");
   prevBtn.textContent = "Previous";
   prevBtn.className = "prev-btn";
 
-  const nextBtn = document.createElement("button");
+  var nextBtn = document.createElement("button");
   nextBtn.textContent = "Next";
   nextBtn.className = "next-btn";
 
   buttonsContainer.append(prevBtn, nextBtn);
-  slider.append(
-    exerciseTitle,
-    questionContent,
-    pageIndicator,
-    buttonsContainer
-  );
+  slider.append(questionContent, pageIndicator, buttonsContainer);
 
   return {
-    slider,
-    exerciseTitle,
-    questionContent,
-    pageIndicator,
-    prevBtn,
-    nextBtn,
+    slider: slider,
+    questionContent: questionContent,
+    pageIndicator: pageIndicator,
+    prevBtn: prevBtn,
+    nextBtn: nextBtn,
   };
 }
 
-// Create section for a chapter and attach slider references
 function createSection(ch) {
   const section = document.createElement("section");
-  section.id = "chapter" + ch.number;
+  section.id = "chapter" + ch.order;
   section.style.display = "none";
 
   const title = document.createElement("h2");
-  title.textContent = `Chapter ${ch.number}: ${ch.name}`;
+  title.textContent = `Chapter ${ch.order}: ${ch.title}`;
 
   const content = document.createElement("div");
   content.className = "chapter-content";
@@ -89,13 +75,10 @@ function createSection(ch) {
   const sliderElements = createSlider();
   section.append(title, content, sliderElements.slider);
 
-  // Store slider elements for easy access later
   section.sliderElements = sliderElements;
-
   return section;
 }
 
-// Package chapter elements together
 function createChapterElements(ch) {
   return {
     chapter: ch,
@@ -122,13 +105,14 @@ function typesetSection(section) {
 }
 
 function loadChapterContent(section, chapter, baseFolder) {
-  if (chapter.abstract && !chapter.loaded) {
+  const contentDiv = section.querySelector(".chapter-content");
+
+  if (chapter.abstract) {
     fetch(baseFolder + chapter.abstract)
       .then((res) => res.text())
       .then((md) => {
-        const contentDiv = getContentDiv(section);
+        const contentDiv = section.querySelector(".chapter-content");
         contentDiv.innerHTML = marked.parse(md);
-        chapter.loaded = true;
         typesetSection(section);
       });
   } else {
@@ -153,12 +137,9 @@ function renderMath(contentDiv) {
 }
 
 function showQuestion(sliderElements, questions, index) {
-  const { slider, exerciseTitle, questionContent, pageIndicator } =
-    sliderElements;
+  const { slider, questionContent, pageIndicator } = sliderElements;
 
-  exerciseTitle.textContent = questions[index].name;
-
-  questionContent.innerHTML = marked.parse(questions[index].question || "");
+  questionContent.innerHTML = marked.parse(questions[index].question);
   pageIndicator.textContent = `Page: ${index + 1} / ${questions.length}`;
 
   slider.style.display = "flex";
@@ -167,10 +148,20 @@ function showQuestion(sliderElements, questions, index) {
 }
 
 function fetchQuestions(baseFolder, chapter) {
-  if (!chapter.questions) return Promise.resolve([]);
-  return fetch(baseFolder + chapter.questions)
-    .then((res) => res.json())
-    .then((data) => data.questions || []);
+  if (!chapter.exercise || chapter.exercise.length === 0)
+    return Promise.resolve([]);
+
+  var promises = chapter.exercise.map((e) =>
+    fetch(baseFolder + e.question)
+      .then((res) => res.text())
+      .then((qText) =>
+        fetch(baseFolder + e.response)
+          .then((res) => res.text())
+          .then((rText) => ({ question: qText, response: rText }))
+      )
+  );
+
+  return Promise.all(promises);
 }
 
 function initSlider(sliderElements, questions) {
@@ -180,7 +171,6 @@ function initSlider(sliderElements, questions) {
   }
 
   let index = 0;
-
   const { prevBtn, nextBtn } = sliderElements;
 
   prevBtn.onclick = () => {
@@ -198,21 +188,26 @@ function initSlider(sliderElements, questions) {
 
 function loadQuestions(section, chapter, baseFolder) {
   fetchQuestions(baseFolder, chapter).then((questions) => {
-    initSlider(section.sliderElements, questions);
+    if (questions.length) {
+      initSlider(section.sliderElements, questions);
+    }
   });
 }
 
 // ===================== CHAPTER DISPLAY =====================
 function showChapter(index, chaptersArr, baseFolder) {
-  chaptersArr.forEach((c) => {
-    c.section.style.display = "none";
-    c.link.classList.remove("active");
-  });
+  // hide all chapters and deactivate links
+  for (var i = 0; i < chaptersArr.length; i++) {
+    chaptersArr[i].section.style.display = "none";
+    chaptersArr[i].link.classList.remove("active");
+  }
 
-  const current = chaptersArr[index];
+  // show the selected chapter and activate its link
+  var current = chaptersArr[index];
   current.section.style.display = "block";
   current.link.classList.add("active");
 
+  // load chapter content and questions
   loadChapterContent(current.section, current.chapter, baseFolder);
   loadQuestions(current.section, current.chapter, baseFolder);
 }
@@ -220,33 +215,43 @@ function showChapter(index, chaptersArr, baseFolder) {
 // ===================== LOAD ABSTRACT JSON =====================
 function fetchAbstract(jsonPath) {
   return fetch(jsonPath)
-    .then((res) => res.json())
-    .then((data) => {
-      const baseFolder = jsonPath.substring(0, jsonPath.lastIndexOf("/") + 1);
-      return { data, baseFolder };
+    .then(function (res) {
+      return res.json();
+    })
+    .then(function (data) {
+      var baseFolder = jsonPath.substring(0, jsonPath.lastIndexOf("/") + 1);
+      return { data: data, baseFolder: baseFolder };
     });
 }
 
 function renderAbstract(data, baseFolder) {
-  const list = document.getElementById("chapter-list");
-  const out = document.getElementById("summaries");
+  var list = document.getElementById("chapter-list");
+  var out = document.getElementById("summaries");
   list.innerHTML = "";
   out.innerHTML = "";
 
-  const chaptersArr = [];
+  var chaptersArr = [];
 
-  data.chapters.forEach((ch, i) => {
-    const elems = createChapterElements(ch);
+  // data is an array, not object
+  for (var i = 0; i < data.length; i++) {
+    var ch = data[i];
+    var elems = createChapterElements(ch);
 
-    list.appendChild(document.createElement("li")).appendChild(elems.link);
+    var li = document.createElement("li");
+    li.appendChild(elems.link);
+    list.appendChild(li);
+
     out.appendChild(elems.section);
+
     chaptersArr.push(elems);
 
-    elems.link.addEventListener("click", (e) => {
-      e.preventDefault();
-      showChapter(i, chaptersArr, baseFolder);
-    });
-  });
+    (function (iCopy) {
+      elems.link.addEventListener("click", function (e) {
+        e.preventDefault();
+        showChapter(iCopy, chaptersArr, baseFolder);
+      });
+    })(i);
+  }
 
   showChapter(0, chaptersArr, baseFolder);
 }
