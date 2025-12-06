@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>web-books</title>
-    <link rel="stylesheet" href="css/additions.css" />
-    <link rel="stylesheet" href="css/books.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <div id="app">
+    <div id="app_index">
       <input id="search" type="text" placeholder="Search author or title" />
 
       <nav id="categories"></nav>
@@ -17,10 +17,20 @@
 
       <section id="books"></section>
     </div>
+
     <footer>
       <p>&copy; 2025 Kerem Düzenli</p>
     </footer>
 
-    <script src="js/books.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      fetchJson("books/books.json", function (listCategories) {
+        renderCategories(listCategories);
+        var listBooks = createListBooks(listCategories);
+
+        renderBooks(listBooks);
+        renderSearchInput(listBooks);
+      });
+    </script>
   </body>
 </html>

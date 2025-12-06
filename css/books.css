@@ -1,84 +1,97 @@
-:root {
-  --color_card: #fff;
-  --color_muted: #555;
-}
-
-#app {
+#app_books {
+  display: flex;
   flex: 1;
-  margin: 20px auto;
-  max-width: 800px;
+  flex-direction: row;
+}
+
+#bar_left {
+  background: var(--color_background);
+  border-right: 1px solid var(--color_border);
+  overflow: visible;
   padding: 16px;
+  width: 300px;
+  position: relative;
 }
-#search {
-  border: 1px solid var(--color_border);
-  border-radius: 6px;
-  font-size: 14px;
-  margin-bottom: 12px;
-  padding: 8px;
-  width: 100%;
+
+#bar_left ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
-#categories {
+#bar_left ul li a {
+  align-items: flex-start;
   display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 12px;
 }
-#count {
+#bar_left ul li a span:nth-child(1) {
+  display: inline-block;
+  margin-right: 2px;
+  text-align: right;
+  width: 20px;
+}
+#bar_left ul li a span:nth-child(2) {
+  text-align: left;
+  width: 10px;
+}
+#bar_left ul li a span:nth-child(3) {
+  flex: 1;
+  white-space: normal;
+}
+#bar_left li + li {
+  border-top: 1px solid var(--color_border);
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
+#bar_left a {
   color: var(--color_muted);
-  font-size: 14px;
-  margin-bottom: 12px;
-}
-#books {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.cat {
-  background-color: var(--color_card);
-  border: 1px solid var(--color_border);
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-  padding: 6px 12px;
-}
-.cat:hover {
-  background-color: var(--color_hover);
-  color: var(--color_link);
-}
-.cat[aria-pressed="true"] {
-  background: var(--color_btn_background);
-  color: var(--color_link);
-  font-weight: bold;
-}
-
-.book {
-  background-color: var(--color_card);
-  border: 1px solid var(--color_border);
-  cursor: pointer;
-  font-size: 14px;
-  padding: 8px;
-}
-.book:hover {
-  background-color: var(--color_hover);
-}
-.book a {
-  color: var(--color_text);
   display: block;
   text-decoration: none;
 }
-.book a:hover {
+#bar_left a:hover {
+  color: var(--color_text);
+}
+#bar_left a.active {
   color: var(--color_link);
 }
 
+#abstract {
+  flex: 1;
+  overflow: visible;
+  padding: 10px 50px 10px 50px;
+}
+
+.button_home {
+  background: var(--color_background);
+  border: 1px solid var(--color_border);
+  color: var(--color_text);
+  display: inline-block;
+  font-size: 14px;
+  padding: 6px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 16px;
+  width: 100%;
+  z-index: 1;
+}
+.button_home:hover {
+  background-color: var(--color_hover);
+}
+
 @media (max-width: 640px) {
-  #app {
-    margin: 12px;
-    padding: 12px;
+  #app_books {
+    flex-direction: column;
   }
 
-  .cat {
-    font-size: 13px;
-    padding: 6px 10px;
+  #bar_left {
+    border-right: none;
+    height: auto;
+    padding-top: 16px;
+    width: 100%;
+  }
+
+  #abstract {
+    height: auto;
+    padding: 10px 20px 10px 20px;
   }
 }

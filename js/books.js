@@ -1,198 +1,102 @@
-// ===================== UTILITY FUNCTIONS =====================
-function compareText(a, b) {
-  return a.toLowerCase().localeCompare(b.toLowerCase());
+function firstPageChapter() {
+  document.getElementById("container_abstract").innerHTML =
+    "<h1>" + document.title + "</h1>";
 }
 
-function highlight(text, query) {
-  if (!query) return text;
-  var safe = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  var re = new RegExp("(" + safe + ")", "gi");
-  return text.replace(re, "<mark>$1</mark>");
+function createLinkChapter(chapter) {
+  var link = document.createElement("a");
+  link.href = "#chapter" + chapter.order;
+  link.className = "chapter_link";
+
+  var number = document.createElement("span");
+  number.textContent = chapter.order;
+
+  var colon = document.createElement("span");
+  colon.textContent = ":";
+
+  var title = document.createElement("span");
+  title.textContent = chapter.title;
+
+  link.append(number, colon, title);
+  return link;
 }
 
-// ===================== BUTTON HELPERS =====================
-function createButton(text, onClick) {
-  var btn = document.createElement("button");
-  btn.textContent = text;
-  btn.className = "cat";
-  btn.onclick = onClick;
-  return btn;
-}
+function renderChapters(listChapters) {
+  var containerChapters = document.getElementById("chapters");
+  containerChapters.innerHTML = "";
 
-// Creates a button for a specific category with closure
-function createCategoryButton(category, currentCategory, onSelect) {
-  var btn = createButton(category, function () {
-    onSelect(category);
-  });
-  if (category === currentCategory) {
-    btn.setAttribute("aria-pressed", "true");
-  }
-  return btn;
-}
+  for (let i = 0; i < listChapters.length; i++) {
+    let chapter = listChapters[i];
 
-// ===================== CATEGORY DISPLAY =====================
-function renderCategories(data, container, onSelect, currentCategory) {
-  container.innerHTML = "";
+    var liChapter = document.createElement("li");
+    var linkChapter = createLinkChapter(chapter);
 
-  // Special buttons
-  var allBtn = createButton("ALL", function () {
-    onSelect(null);
-  });
-  var activeBtn = createButton("ACTIVE", function () {
-    onSelect("ACTIVE");
-  });
+    linkChapter.onclick = function (e) {
+      e.preventDefault();
+      var isActive = toggleButton(this, containerChapters, "chapter_link");
 
-  if (!currentCategory) allBtn.setAttribute("aria-pressed", "true");
-  if (currentCategory === "ACTIVE")
-    activeBtn.setAttribute("aria-pressed", "true");
-
-  container.appendChild(allBtn);
-  container.appendChild(activeBtn);
-
-  // Category buttons
-  var keys = Object.keys(data);
-  for (var i = 0; i < keys.length; i++) {
-    var cat = keys[i];
-    var btn = createCategoryButton(cat, currentCategory, onSelect);
-    container.appendChild(btn);
-  }
-}
-
-// ===================== BOOK FILTER & SORT =====================
-function filterBooks(data, query, currentCategory) {
-  var q = (query || "").toLowerCase();
-  var result = [];
-
-  var categories = Object.keys(data);
-  for (var i = 0; i < categories.length; i++) {
-    var cat = categories[i];
-    if (
-      currentCategory &&
-      currentCategory !== "ACTIVE" &&
-      cat !== currentCategory
-    )
-      continue;
-
-    var books = data[cat];
-    for (var j = 0; j < books.length; j++) {
-      var book = books[j];
-      if (currentCategory === "ACTIVE" && !book.url) continue;
-
-      var author = book.author.toLowerCase();
-      var title = book.title.toLowerCase();
-      if (q && author.indexOf(q) === -1 && title.indexOf(q) === -1) continue;
-
-      result.push(book);
-    }
-  }
-
-  return result;
-}
-
-function sortBooks(books) {
-  books.sort(function (a, b) {
-    var cmp = compareText(a.author, b.author);
-    if (cmp !== 0) return cmp;
-    return compareText(a.title, b.title);
-  });
-}
-
-// ===================== BOOK DISPLAY =====================
-function displayBooks(books, container, query) {
-  container.innerHTML = "";
-
-  for (var i = 0; i < books.length; i++) {
-    var book = books[i];
-    var div = document.createElement("div");
-    div.className = "book";
-
-    var content =
-      highlight(book.author, query) + " - " + highlight(book.title, query);
-
-    if (book.url) {
-      var a = document.createElement("a");
-      a.href = book.url;
-      a.innerHTML = content;
-      div.appendChild(a);
-    } else {
-      div.innerHTML = content;
-    }
-
-    container.appendChild(div);
-  }
-
-  return books.length;
-}
-
-// ===================== RENDER BOOKS =====================
-function renderBooks(data, container, query, currentCategory) {
-  var books = filterBooks(data, query, currentCategory);
-
-  if (!currentCategory || currentCategory === "ACTIVE") {
-    sortBooks(books);
-  }
-
-  return displayBooks(books, container, query);
-}
-
-// ===================== FETCH =====================
-function fetchBooks(url, callback) {
-  fetch(url)
-    .then(function (response) {
-      return response.json(); // get JSON data from response
-    })
-    .then(function (data) {
-      var booksByCategory = {}; // create an empty object to store results
-
-      for (var i = 0; i < data.length; i++) {
-        var item = data[i];
-        booksByCategory[item.category] = item.books;
+      if (isActive) {
+        renderAbstract(chapter);
+      } else {
+        firstPageChapter();
       }
+    };
 
-      callback(booksByCategory); // return the mapped object
+    liChapter.appendChild(linkChapter);
+    containerChapters.appendChild(liChapter);
+  }
+}
+
+function renderAbstract(chapter) {
+  var containerAbstract = document.getElementById("container_abstract");
+
+  if (!chapter.abstract) {
+    containerAbstract.innerHTML = "<h2>Not Available Yet</h2>";
+    return;
+  }
+
+  fetchText(chapter.abstract, function (text) {
+    containerAbstract.innerHTML = marked(text);
+  });
+  renderExercises(chapter.exercises);
+}
+
+function renderExercises(exercises) {
+  var containerExercises = document.getElementById("container_exercises");
+  var panelQuestions = document.getElementById("panel_questions");
+  var panelResponses = document.getElementById("panel_responses");
+
+  containerExercises.innerHTML = "";
+  panelQuestions.innerHTML = "";
+  panelResponses.innerHTML = "";
+
+  if (!exercises) {
+    containerExercises.innerHTML = "";
+    return;
+  }
+
+  var titleExercises = document.createElement("h2");
+  titleExercises.textContent = "Exercises";
+  containerExercises.appendChild(titleExercises);
+  containerExercises.appendChild(panelQuestions);
+  containerExercises.appendChild(panelResponses);
+
+  for (var i = 0; i < exercises.length; i++) {
+    fetchText(exercises[i].question, function (text) {
+      var divQuestion = document.createElement("div");
+      divQuestion.innerHTML = marked(text);
+      panelQuestions.appendChild(divQuestion);
     });
+    fetchText(exercises[i].response, function (text) {
+      var divResponse = document.createElement("div");
+      divResponse.innerHTML = marked(text);
+      panelResponses.appendChild(divResponse);
+    });
+  }
 }
 
-// ===================== HANDLERS =====================
-function updateBooks(data, booksEl, searchEl, currentCategory, countEl) {
-  var total = renderBooks(data, booksEl, searchEl.value, currentCategory);
-  countEl.textContent = total + (total === 1 ? " book" : " books");
+function fetchText(path, callback) {
+  fetch(path)
+    .then((response) => response.text())
+    .then((data) => callback(data));
 }
-
-function handleCategorySelection(category) {
-  currentCategory = category;
-  renderCategories(
-    libraryData,
-    categoriesEl,
-    handleCategorySelection,
-    currentCategory
-  );
-  updateBooks(libraryData, booksEl, searchEl, currentCategory, countEl);
-}
-
-// ===================== MAIN =====================
-var currentCategory = null;
-var libraryData = {};
-var searchEl, categoriesEl, booksEl, countEl;
-
-document.addEventListener("DOMContentLoaded", function () {
-  searchEl = document.getElementById("search");
-  categoriesEl = document.getElementById("categories");
-  booksEl = document.getElementById("books");
-  countEl = document.getElementById("count");
-
-  fetchBooks("books.json", function (data) {
-    libraryData = data;
-    renderCategories(
-      libraryData,
-      categoriesEl,
-      handleCategorySelection,
-      currentCategory
-    );
-    updateBooks(libraryData, booksEl, searchEl, currentCategory, countEl);
-  });
-
-  searchEl.addEventListener("input", function () {
-    updateBooks(libraryData, booksEl, searchEl, currentCategory, countEl);
-  });
-});

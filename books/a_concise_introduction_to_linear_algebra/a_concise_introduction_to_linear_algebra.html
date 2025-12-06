@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Geza Schay - A Concise Introduction to Linear Algebra</title>
+    <link rel="stylesheet" href="../../css/all.css" />
+    <link rel="stylesheet" href="../../css/books.css" />
+  </head>
+  <body>
+    <div id="app_books">
+      <nav id="bar_left">
+        <a href="../../index.html" class="button_home">← Home</a>
+        <ul id="chapters"></ul>
+      </nav>
+
+      <main id="abstract">
+        <div id="container_abstract"></div>
+
+        <div id="container_exercises">
+          <div id="panel_questions"></div>
+          <div id="panel_responses"></div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Kerem Düzenli</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js"></script>
+    <script src="../../js/index.js"></script>
+    <script src="../../js/books.js"></script>
+    <script>
+      fetchJson("chapters.json", function (listChapters) {
+        firstPageChapter();
+        renderChapters(listChapters);
+      });
+    </script>
+  </body>
+</html>

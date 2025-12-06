@@ -1,0 +1,76 @@
+:root {
+  --color_button_background: #f0f0f0;
+
+  --color_highlight: #ff0;
+}
+
+#app_index {
+  flex: 1;
+  margin: 20px auto;
+  padding: 16px;
+}
+#search {
+  border: 1px solid var(--color_border);
+  font-size: 14px;
+  margin-bottom: 12px;
+  padding: 8px;
+  width: 100%;
+}
+#categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+#count {
+  color: var(--color_muted);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+#books {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.button_category {
+  background: var(--color_background);
+  border: 1px solid var(--color_border);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+.button_category:hover {
+  background-color: var(--color_hover);
+}
+.button_category.active {
+  background: var(--color_button_background);
+  color: var(--color_link);
+}
+
+.button_book {
+  background: var(--color_background);
+  border: 1px solid var(--color_border);
+  cursor: pointer;
+  font-size: 14px;
+  padding: 6px 12px;
+}
+.button_book:hover {
+  background-color: var(--color_hover);
+}
+
+.link {
+  color: var(--color_text);
+  text-decoration: none;
+}
+
+.highlight {
+  background-color: var(--color_highlight);
+}
+
+@media (max-width: 640px) {
+  #app_index {
+    margin: 12px;
+    padding: 12px;
+  }
+}

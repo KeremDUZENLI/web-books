@@ -1,15 +1,14 @@
 :root {
   --color_background: #fafafa;
   --color_border: #ddd;
+  --color_muted: #555;
+  --color_text: #111;
 
   --color_hover: #f0f0f0;
   --color_link: #007bff;
-  --color_text: #111;
 
-  --color_btn_background: #f0f0f0;
-
-  --color_footer: #555;
   --color_footer_background: #eee;
+  --color_footer: #555;
 }
 
 * {
@@ -28,7 +27,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
 }
 
 footer {
