@@ -20,6 +20,15 @@
         <div id="container_exercises">
           <div id="panel_questions"></div>
           <div id="panel_responses"></div>
+
+          <div id="exercise_slider">
+            <div id="question_area">Question will appear here</div>
+            <div id="answer_area">Answer will appear here</div>
+            <div id="slider_controls">
+              <button id="prev_btn">Previous</button>
+              <button id="next_btn">Next</button>
+            </div>
+          </div>
         </div>
       </main>
     </div>
@@ -33,7 +42,7 @@
     <script src="../../js/books.js"></script>
     <script>
       fetchJson("chapters.json", function (listChapters) {
-        resetPage();
+        resetPage(document.title);
         renderChapters(listChapters);
       });
     </script>

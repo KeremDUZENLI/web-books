@@ -1,4 +1,4 @@
-function resetPage() {
+function resetPage(title) {
   var containerAbstract = document.getElementById("container_abstract");
   var containerExercises = document.getElementById("container_exercises");
   containerExercises.innerHTML = `
@@ -6,7 +6,10 @@ function resetPage() {
     <div id="panel_responses"></div>
   `;
 
-  containerAbstract.innerHTML = "<h1>" + document.title + "</h1>";
+  containerAbstract.innerHTML = "";
+  if (title) {
+    createEl("h1", title, containerAbstract);
+  }
 }
 
 function createLinkChapter(chapter) {
@@ -27,10 +30,14 @@ function createLinkChapter(chapter) {
   return link;
 }
 
-function createElement(text, type, container, insertBefore) {
+function createEl(type, text, container, insertBefore) {
   var header = document.createElement(type);
   header.textContent = text;
-  container.insertBefore(header, insertBefore);
+  if (insertBefore) {
+    container.insertBefore(header, insertBefore);
+  } else {
+    container.appendChild(header);
+  }
 }
 
 function renderAbstract(abstract, containerAbstract) {
@@ -53,32 +60,21 @@ function renderExercise(exercise, panelQuestions, panelResponses) {
 }
 
 function renderChapter(chapter) {
-  var mainAbstract = document.getElementById("abstract");
-  mainAbstract.innerHTML = `
-  <div id="container_abstract"></div>
-  
-  <div id="container_exercises">
-  <div id="panel_questions"></div>
-  <div id="panel_responses"></div>
-  </div>
-  `;
+  resetPage();
 
   var containerAbstract = document.getElementById("container_abstract");
   var containerExercises = document.getElementById("container_exercises");
   var panelQuestions = document.getElementById("panel_questions");
   var panelResponses = document.getElementById("panel_responses");
 
-  if (!chapter.abstract) {
-    return;
-  } else {
+  if (chapter.abstract) {
     renderAbstract(chapter.abstract, containerAbstract);
-  }
-
-  if (!chapter.exercises) {
-    return;
   } else {
-    createElement("", "hr", containerExercises, panelQuestions);
-    createElement("Exercises", "h2", containerExercises, panelQuestions);
+    createEl("h1", "Not Available Yet", containerAbstract);
+  }
+  if (chapter.exercises && chapter.exercises.length > 0) {
+    createEl("hr", "", containerExercises, panelQuestions);
+    createEl("h2", "Exercises", containerExercises, panelQuestions);
     for (let i = 0; i < chapter.exercises.length; i++) {
       renderExercise(chapter.exercises[i], panelQuestions, panelResponses);
     }
@@ -100,7 +96,7 @@ function renderChapters(listChapters) {
       if (isActive) {
         renderChapter(listChapters[i]);
       } else {
-        resetPage();
+        resetPage("Choose a Chapter");
       }
     };
 
