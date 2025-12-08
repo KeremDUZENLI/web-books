@@ -17,19 +17,17 @@
       <main id="abstract">
         <div id="container_abstract"></div>
 
-        <div id="container_exercises">
-          <div id="panel_questions"></div>
-          <div id="panel_responses"></div>
-
-          <div id="exercise_slider">
-            <div id="question_area">Question will appear here</div>
-            <div id="answer_area">Answer will appear here</div>
+        <div id="container_exercises"></div>
+        <template id="container_template">
+          <div id="slider_exercises">
+            <div id="area_question"></div>
+            <div id="area_response"></div>
             <div id="slider_controls">
-              <button id="prev_btn">Previous</button>
-              <button id="next_btn">Next</button>
+              <button id="button_prev">Previous</button>
+              <button id="button_next">Next</button>
             </div>
           </div>
-        </div>
+        </template>
       </main>
     </div>
 
@@ -43,7 +41,7 @@
     <script>
       fetchJson("chapters.json", function (listChapters) {
         resetPage(document.title);
-        renderChapters(listChapters);
+        runChapters(listChapters);
       });
     </script>
   </body>

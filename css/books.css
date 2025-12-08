@@ -78,6 +78,13 @@
   background-color: var(--color_hover);
 }
 
+#slider_controls {
+  display: none;
+}
+#slider_controls.visible {
+  display: block;
+}
+
 @media (max-width: 640px) {
   #app_books {
     flex-direction: column;
