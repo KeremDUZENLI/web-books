@@ -1,19 +1,29 @@
+var containerChapters = document.getElementById("container_chapters");
+var containerAbstract = document.getElementById("container_abstract");
+
+var titleExercises = document.getElementById("title_exercises");
+var areaQuestion = document.getElementById("area_question");
+var areaResponse = document.getElementById("area_response");
+var slider_controls = document.getElementById("slider_controls");
+var buttonPrev = document.getElementById("button_prev");
+var buttonNext = document.getElementById("button_next");
+
+var currentIndex = 0;
+
+function resetPage(title) {
+  containerAbstract.innerHTML = "";
+  createItem(containerAbstract, "h1", title);
+
+  titleExercises.innerHTML = "";
+  areaQuestion.innerHTML = "";
+  areaResponse.innerHTML = "";
+  slider_controls.classList.remove("visible");
+}
+
 function createItem(container, type, text) {
   var item = document.createElement(type);
   item.textContent = text;
   container.insertBefore(item, container.firstChild);
-}
-
-function resetPage(title) {
-  var containerAbstract = document.getElementById("container_abstract");
-  var containerExercises = document.getElementById("container_exercises");
-  var containerTemplate = document.getElementById("container_template");
-
-  containerAbstract.innerHTML = "";
-  createItem(containerAbstract, "h1", title);
-
-  containerExercises.innerHTML = "";
-  containerExercises.appendChild(containerTemplate.content.cloneNode(true));
 }
 
 function createLinkChapter(chapter) {
@@ -35,38 +45,18 @@ function createLinkChapter(chapter) {
 }
 
 function renderAbstract(abstract) {
-  var containerAbstract = document.getElementById("container_abstract");
-
   fetchText(abstract, function (text) {
     containerAbstract.innerHTML = marked(text);
   });
 }
 
 function renderExercise(exercise) {
-  var areaQuestion = document.getElementById("area_question");
-  var areaResponse = document.getElementById("area_response");
-
   fetchText(exercise.question, function (text) {
     areaQuestion.innerHTML = marked(text);
   });
   fetchText(exercise.response, function (text) {
     areaResponse.innerHTML = marked(text);
   });
-}
-
-function runExercises(listExercises) {
-  currentIndex = 0;
-  var buttonPrev = document.getElementById("button_prev");
-  var buttonNext = document.getElementById("button_next");
-
-  buttonPrev.onclick = function () {
-    goPrev(listExercises);
-  };
-  buttonNext.onclick = function () {
-    goNext(listExercises);
-  };
-
-  renderExercise(listExercises[currentIndex]);
 }
 
 function goPrev(listExercises) {
@@ -82,31 +72,35 @@ function goNext(listExercises) {
   }
 }
 
-function renderChapter(chapter) {
-  resetPage();
+function runExercises(listExercises) {
+  currentIndex = 0;
 
-  var containerAbstract = document.getElementById("container_abstract");
-  var containerExercises = document.getElementById("container_exercises");
-  var slider_controls = document.getElementById("slider_controls");
+  buttonPrev.onclick = function () {
+    goPrev(listExercises);
+  };
+  buttonNext.onclick = function () {
+    goNext(listExercises);
+  };
+
+  renderExercise(listExercises[currentIndex]);
+}
+
+function renderChapter(chapter) {
+  resetPage("Abstract not available yet");
 
   if (chapter.abstract) {
     renderAbstract(chapter.abstract);
-  } else {
-    createItem(containerAbstract, "h1", "Not Available Yet");
   }
 
   if (chapter.exercises && chapter.exercises.length) {
-    createItem(containerExercises, "hr");
-    createItem(containerExercises, "h2", "Exercises");
+    createItem(titleExercises, "hr");
+    createItem(titleExercises, "h2", "Exercises");
     runExercises(chapter.exercises);
     slider_controls.classList.add("visible");
-  } else {
-    slider_controls.classList.remove("visible");
   }
 }
 
 function runChapters(listChapters) {
-  var containerChapters = document.getElementById("chapters");
   containerChapters.innerHTML = "";
 
   for (let i = 0; i < listChapters.length; i++) {

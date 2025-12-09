@@ -1,3 +1,8 @@
+var containerSearch = document.getElementById("search");
+var containerCategories = document.getElementById("categories");
+var containerCount = document.getElementById("count");
+var containerBooks = document.getElementById("books");
+
 function sortBooks(listBooks) {
   return listBooks.slice().sort(function (a, b) {
     return (a.author + a.title).localeCompare(b.author + b.title);
@@ -77,7 +82,6 @@ function filterListBooksByQuery(listBooks, query) {
 }
 
 function renderCategories(listCategories) {
-  var containerCategories = document.getElementById("categories");
   containerCategories.innerHTML = "";
 
   for (var i = 0; i < listCategories.length; i++) {
@@ -96,7 +100,7 @@ function renderCategories(listCategories) {
       }
 
       renderBooks(listBooks);
-      document.getElementById("search").value = "";
+      containerSearch.value = "";
     };
 
     containerCategories.appendChild(buttonCategory);
@@ -104,11 +108,10 @@ function renderCategories(listCategories) {
 }
 
 function renderCount(listBooks) {
-  document.getElementById("count").textContent = listBooks.length + " books";
+  containerCount.textContent = listBooks.length + " books";
 }
 
 function renderBooks(listBooks, query) {
-  var containerBooks = document.getElementById("books");
   containerBooks.innerHTML = "";
 
   for (var i = 0; i < listBooks.length; i++) {
@@ -131,10 +134,7 @@ function renderBooks(listBooks, query) {
 }
 
 function renderSearchInput(listBooks) {
-  var containerSearch = document.getElementById("search");
-
   containerSearch.addEventListener("input", function () {
-    var containerCategories = document.getElementById("categories");
     deactivateAllButtons(containerCategories, "button_category");
 
     var listBooksFiltered = filterListBooksByQuery(listBooks, this.value);
