@@ -21,10 +21,11 @@ function loadMarked() {
   scriptMarked.src = "https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js";
   scriptMarked.onload = function () {
     marked.setOptions({
-      breaks: true, // optional — keep if you want single-line breaks
+      breaks: true, // optional - keep if you want single-line breaks
       gfm: true, // enable GitHub Flavored Markdown (useful)
       headerIds: false, // keep false if you don't want auto ids
       mangle: false, // keep to avoid transformations that can affect backslashes
+      sanitize: false, // keep false to allow HTML tags
       smartypants: false, // optional: avoid automatic typographic replacements
     });
   };
@@ -34,7 +35,10 @@ function loadMarked() {
 function loadMathJax() {
   window.MathJax = {
     tex: {
-      inlineMath: [["$", "$"]],
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"],
+      ],
       displayMath: [["$$", "$$"]],
     },
     options: {

@@ -100,7 +100,7 @@ function runExercises(listExercises) {
 }
 
 function renderChapter(chapter) {
-  resetPage("Abstract not available yet");
+  resetPage();
 
   if (chapter.abstract) {
     renderAbstract(chapter.abstract);

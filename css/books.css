@@ -60,6 +60,13 @@
   padding: 10px 50px 10px 50px;
 }
 
+#container_abstract img {
+  display: block;
+  height: auto;
+  margin: 1em auto;
+  max-width: 50%;
+}
+
 .button_home {
   background: var(--color_background);
   border: 1px solid var(--color_border);
@@ -135,5 +142,15 @@
   #abstract {
     height: auto;
     padding: 10px 20px 10px 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  #container_abstract img {
+    max-width: 80%;
+  }
+
+  #container_abstract img.override {
+    max-width: 80% !important;
   }
 }

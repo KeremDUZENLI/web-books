@@ -1,0 +1,175 @@
+[
+  {
+    "chapter": 1,
+    "title": "Introduction",
+    "abstract": "abstracts/1_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/1.1_question.md",
+        "response": "exercises/1.1_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 2,
+    "title": "Miscellaneous Math",
+    "abstract": "abstracts/2_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 3,
+    "title": "Raster Images",
+    "abstract": "abstracts/3_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 4,
+    "title": "Ray Tracing",
+    "abstract": "abstracts/4_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 5,
+    "title": "Linear Algebra",
+    "abstract": "abstracts/5_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 6,
+    "title": "Transformation Matrices",
+    "abstract": "abstracts/6_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 7,
+    "title": "Viewing",
+    "abstract": "abstracts/7_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 8,
+    "title": "The Graphics Pipeline",
+    "abstract": "abstracts/8_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 9,
+    "title": "Signal Processing",
+    "abstract": "abstracts/9_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 10,
+    "title": "Surface Shading",
+    "abstract": "abstracts/10_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 11,
+    "title": "Texture Mapping",
+    "abstract": "abstracts/11_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 12,
+    "title": "Data Structures for Graphics",
+    "abstract": "abstracts/12_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 13,
+    "title": "More Ray Tracing",
+    "abstract": "abstracts/13_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 14,
+    "title": "Sampling",
+    "abstract": "abstracts/14_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 15,
+    "title": "Curves",
+    "abstract": "abstracts/15_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 16,
+    "title": "Implicit Modeling",
+    "abstract": "abstracts/16_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 17,
+    "title": "Computer Animation",
+    "abstract": "abstracts/17_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 18,
+    "title": "Using Graphics Hardware",
+    "abstract": "abstracts/18_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 19,
+    "title": "Building Interactive Graphics Applications",
+    "abstract": "abstracts/19_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 20,
+    "title": "Light",
+    "abstract": "abstracts/20_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 21,
+    "title": "Color",
+    "abstract": "abstracts/21_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 22,
+    "title": "Visual Perception",
+    "abstract": "abstracts/22_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 23,
+    "title": "Tone Reproduction",
+    "abstract": "abstracts/23_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 24,
+    "title": "Global Illumination",
+    "abstract": "abstracts/24_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 25,
+    "title": "Reflection Models",
+    "abstract": "abstracts/25_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 26,
+    "title": "Computer Graphics in Games",
+    "abstract": "abstracts/26_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 27,
+    "title": "Visualization",
+    "abstract": "abstracts/27_chapter.md",
+    "exercises": []
+  },
+  {
+    "chapter": 28,
+    "title": "Spatial-Field Visualization",
+    "abstract": "abstracts/28_chapter.md",
+    "exercises": []
+  }
+]
