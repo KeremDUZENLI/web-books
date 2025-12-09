@@ -9,25 +9,25 @@
   margin: 20px auto;
   padding: 16px;
 }
-#search {
+#container_search {
   border: 1px solid var(--color_border);
   font-size: 14px;
   margin-bottom: 12px;
   padding: 8px;
   width: 100%;
 }
-#categories {
+#container_categories {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 12px;
 }
-#count {
+#container_count {
   color: var(--color_muted);
   font-size: 14px;
   margin-bottom: 12px;
 }
-#books {
+#container_books {
   display: flex;
   flex-direction: column;
   gap: 8px;

@@ -17,17 +17,15 @@
       <main id="abstract">
         <div id="container_abstract"></div>
 
-        <div id="container_exercises"></div>
-          <div id="title_exercises"></div>
-          <div id="slider_exercises">
-            <div id="area_question"></div>
-            <div id="area_response"></div>
-            <div id="slider_controls">
-              <button id="button_prev">Previous</button>
-              <button id="button_next">Next</button>
-            </div>
+        <div id="title_exercises"></div>
+        <div id="slider_exercises">
+          <div id="slider_question"></div>
+          <div id="slider_response"></div>
+          <div id="slider_controls">
+            <button id="button_prev">Previous</button>
+            <button id="button_next">Next</button>
           </div>
-        </template>
+        </div>
       </main>
     </div>
 
@@ -35,10 +33,11 @@
       <p>&copy; 2025 Kerem Düzenli</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked@2.0.0/marked.min.js"></script>
-    <script src="../../js/index.js"></script>
+    <script src="../../js/all.js"></script>
     <script src="../../js/books.js"></script>
     <script>
+      loadMarked();
+      loadMathJax();
       fetchJson("chapters.json", function (listChapters) {
         resetPage(document.title);
         runChapters(listChapters);

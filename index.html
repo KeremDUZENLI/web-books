@@ -9,19 +9,24 @@
   </head>
   <body>
     <div id="app_index">
-      <input id="search" type="text" placeholder="Search author or title" />
+      <input
+        id="container_search"
+        type="text"
+        placeholder="Search author or title"
+      />
 
-      <nav id="categories"></nav>
+      <nav id="container_categories"></nav>
 
-      <div id="count">0 books</div>
+      <div id="container_count">0 books</div>
 
-      <section id="books"></section>
+      <section id="container_books"></section>
     </div>
 
     <footer>
       <p>&copy; 2025 Kerem Düzenli</p>
     </footer>
 
+    <script src="js/all.js"></script>
     <script src="js/index.js"></script>
     <script>
       fetchJson("books/books.json", function (listCategories) {

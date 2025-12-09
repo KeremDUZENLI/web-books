@@ -1,7 +1,7 @@
-var containerSearch = document.getElementById("search");
-var containerCategories = document.getElementById("categories");
-var containerCount = document.getElementById("count");
-var containerBooks = document.getElementById("books");
+var containerSearch = document.getElementById("container_search");
+var containerCategories = document.getElementById("container_categories");
+var containerCount = document.getElementById("container_count");
+var containerBooks = document.getElementById("container_books");
 
 function sortBooks(listBooks) {
   return listBooks.slice().sort(function (a, b) {
@@ -16,24 +16,6 @@ function highlight(text, query) {
     "gi"
   );
   return text.replace(regex, "<span class='highlight'>$1</span>");
-}
-
-function deactivateAllButtons(container, className) {
-  var buttons = container.getElementsByClassName(className);
-  for (var i = 0; i < buttons.length; i++) {
-    buttons[i].classList.remove("active");
-  }
-}
-
-function toggleButton(item, container, className) {
-  if (item.classList.contains("active")) {
-    item.classList.remove("active");
-    return false;
-  } else {
-    deactivateAllButtons(container, className);
-    item.classList.add("active");
-    return true;
-  }
 }
 
 function createListBooks(listCategories, categoryName) {
@@ -140,10 +122,4 @@ function renderSearchInput(listBooks) {
     var listBooksFiltered = filterListBooksByQuery(listBooks, this.value);
     renderBooks(listBooksFiltered, this.value);
   });
-}
-
-function fetchJson(path, callback) {
-  fetch(path)
-    .then((response) => response.json())
-    .then((data) => callback(data));
 }

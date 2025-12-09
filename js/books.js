@@ -2,9 +2,9 @@ var containerChapters = document.getElementById("container_chapters");
 var containerAbstract = document.getElementById("container_abstract");
 
 var titleExercises = document.getElementById("title_exercises");
-var areaQuestion = document.getElementById("area_question");
-var areaResponse = document.getElementById("area_response");
-var slider_controls = document.getElementById("slider_controls");
+var sliderExercises = document.getElementById("slider_exercises");
+var sliderQuestion = document.getElementById("slider_question");
+var sliderResponse = document.getElementById("slider_response");
 var buttonPrev = document.getElementById("button_prev");
 var buttonNext = document.getElementById("button_next");
 
@@ -15,9 +15,9 @@ function resetPage(title) {
   createItem(containerAbstract, "h1", title);
 
   titleExercises.innerHTML = "";
-  areaQuestion.innerHTML = "";
-  areaResponse.innerHTML = "";
-  slider_controls.classList.remove("visible");
+  sliderQuestion.innerHTML = "";
+  sliderResponse.innerHTML = "";
+  sliderExercises.classList.remove("visible");
 }
 
 function createItem(container, type, text) {
@@ -44,31 +44,44 @@ function createLinkChapter(chapter) {
   return link;
 }
 
+function renderMarkdown(container, text) {
+  container.innerHTML = marked(text);
+  if (window.MathJax) {
+    MathJax.typesetPromise([container]);
+  }
+}
+
 function renderAbstract(abstract) {
   fetchText(abstract, function (text) {
-    containerAbstract.innerHTML = marked(text);
+    renderMarkdown(containerAbstract, text);
   });
 }
 
 function renderExercise(exercise) {
   fetchText(exercise.question, function (text) {
-    areaQuestion.innerHTML = marked(text);
+    renderMarkdown(sliderQuestion, text);
   });
   fetchText(exercise.response, function (text) {
-    areaResponse.innerHTML = marked(text);
+    renderMarkdown(sliderResponse, text);
   });
 }
 
+function updateButtons(listExercises) {
+  buttonPrev.disabled = currentIndex === 0;
+  buttonNext.disabled = currentIndex === listExercises.length - 1;
+}
 function goPrev(listExercises) {
   if (currentIndex > 0) {
     currentIndex--;
     renderExercise(listExercises[currentIndex]);
+    updateButtons(listExercises);
   }
 }
 function goNext(listExercises) {
   if (currentIndex < listExercises.length - 1) {
     currentIndex++;
     renderExercise(listExercises[currentIndex]);
+    updateButtons(listExercises);
   }
 }
 
@@ -83,6 +96,7 @@ function runExercises(listExercises) {
   };
 
   renderExercise(listExercises[currentIndex]);
+  updateButtons(listExercises);
 }
 
 function renderChapter(chapter) {
@@ -96,7 +110,7 @@ function renderChapter(chapter) {
     createItem(titleExercises, "hr");
     createItem(titleExercises, "h2", "Exercises");
     runExercises(chapter.exercises);
-    slider_controls.classList.add("visible");
+    sliderExercises.classList.add("visible");
   }
 }
 
@@ -121,10 +135,4 @@ function runChapters(listChapters) {
     liChapter.appendChild(linkChapter);
     containerChapters.appendChild(liChapter);
   }
-}
-
-function fetchText(path, callback) {
-  fetch(path)
-    .then((response) => response.text())
-    .then((data) => callback(data));
 }
