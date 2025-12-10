@@ -136,7 +136,8 @@
   max-width: 50%;
 }
 
-#container_abstract img {
+#container_abstract img,
+#slider_exercises img {
   display: block;
   margin: 1.5em auto;
 
@@ -149,7 +150,8 @@
 }
 
 @media (max-width: 1024px) {
-  #container_abstract img {
+  #container_abstract img,
+  #slider_exercises img {
     max-width: 80%;
   }
 }
@@ -171,7 +173,8 @@
     padding: 10px 20px 10px 20px;
   }
 
-  #container_abstract img {
+  #container_abstract img,
+  #slider_exercises img {
     max-width: 100%;
   }
 }

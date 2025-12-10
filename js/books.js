@@ -46,7 +46,20 @@ function createLinkChapter(chapter) {
 }
 
 function renderMarkdown(container, text) {
-  container.innerHTML = marked(text);
+  var cleanText = text
+    // 1. Fix New Lines (\\ -> \\\\)
+    .replace(/\\\\/g, "\\\\\\\\")
+
+    // 2. Fix Subscripts (_ -> \_)
+    .replace(/_/g, "\\_")
+
+    // 3. Fix Vertical Bars (| -> \|)
+    .replace(/\|/g, "\\|")
+
+    // 4. THE NEW FIX: Fix "Bullet Point" Dashes in Matrices
+    .replace(/- (&)/g, "\\- $1");
+
+  container.innerHTML = marked(cleanText);
   if (window.MathJax) {
     MathJax.typesetPromise([container]);
   }
@@ -59,6 +72,9 @@ function renderAbstract(abstract) {
 }
 
 function renderExercise(exercise) {
+  sliderQuestion.innerHTML = "";
+  sliderResponse.innerHTML = "";
+
   if (exercise.question) {
     fetchText(exercise.question, function (text) {
       renderMarkdown(sliderQuestion, text);

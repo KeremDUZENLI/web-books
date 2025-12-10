@@ -29,7 +29,7 @@
     <script src="js/all.js"></script>
     <script src="js/index.js"></script>
     <script>
-      fetchJson("books/books.json", function (listCategories) {
+      fetchJson("books.json", function (listCategories) {
         renderCategories(listCategories);
         var listBooks = createListBooks(listCategories);
 
