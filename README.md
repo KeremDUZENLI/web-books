@@ -1,5 +1,3 @@
-# web-books
-
-Summary of Books
+# Summary of Books
 
 https://keremduzenli.github.io/web-books/
