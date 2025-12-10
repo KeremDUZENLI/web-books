@@ -8,8 +8,7 @@
 
 - It emphasizes that the goal of graphics is **perceptual effectiveness** (looking right) rather than physical correctness, and that understanding visual limitations can optimize rendering (e.g., hiding artifacts).
 
-<img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTJTDIzxCvGF71fyUdDMGPClcGuBBJ7FFfFdMRCBWQLiHc6IHQn_p0mW5rwQXUfug_dihafb5DT992CwaIWR27ltw4ci7QXAHm-M1CpZMFY6cxKXBQ"
-class="override" style="max-width: 80%">
+<img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTJTDIzxCvGF71fyUdDMGPClcGuBBJ7FFfFdMRCBWQLiHc6IHQn_p0mW5rwQXUfug_dihafb5DT992CwaIWR27ltw4ci7QXAHm-M1CpZMFY6cxKXBQ" style="max-width: 80%">
 
 ---
 
@@ -45,7 +44,7 @@ class="override" style="max-width: 80%">
 
 **Weber's Law**
 
-- **Formula:** $\frac{\Delta I}{I} = k$
+- **Formula:** $\displaystyle \frac{\Delta I}{I} = k$
 
 - **Meaning:** The just noticeable difference ($\Delta I$) is a constant proportion of the stimulus magnitude ($I$).
 
@@ -61,7 +60,7 @@ class="override" style="max-width: 80%">
 
 **Vergence Depth**
 
-- **Formula:** $z = \frac{\text{ipd}/2}{\tan \theta}$
+- **Formula:** $\displaystyle z = \frac{\text{ipd}/2}{\tan \theta}$
 
 - **Meaning:** Calculates depth $z$ based on the interpupillary distance (ipd) and the convergence angle $\theta$ of the eyes.
 

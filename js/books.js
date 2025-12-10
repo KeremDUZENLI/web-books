@@ -7,6 +7,7 @@ var sliderQuestion = document.getElementById("slider_question");
 var sliderResponse = document.getElementById("slider_response");
 var buttonPrev = document.getElementById("button_prev");
 var buttonNext = document.getElementById("button_next");
+var indicatorExercises = document.getElementById("indicator_exercises");
 
 var currentIndex = 0;
 
@@ -58,14 +59,22 @@ function renderAbstract(abstract) {
 }
 
 function renderExercise(exercise) {
-  fetchText(exercise.question, function (text) {
-    renderMarkdown(sliderQuestion, text);
-  });
-  fetchText(exercise.response, function (text) {
-    renderMarkdown(sliderResponse, text);
-  });
+  if (exercise.question) {
+    fetchText(exercise.question, function (text) {
+      renderMarkdown(sliderQuestion, text);
+    });
+  }
+  if (exercise.response) {
+    fetchText(exercise.response, function (text) {
+      renderMarkdown(sliderResponse, text);
+    });
+  }
 }
 
+function updateIndicator(listExercises) {
+  indicatorExercises.textContent =
+    currentIndex + 1 + " / " + listExercises.length;
+}
 function updateButtons(listExercises) {
   buttonPrev.disabled = currentIndex === 0;
   buttonNext.disabled = currentIndex === listExercises.length - 1;
@@ -75,6 +84,7 @@ function goPrev(listExercises) {
     currentIndex--;
     renderExercise(listExercises[currentIndex]);
     updateButtons(listExercises);
+    updateIndicator(listExercises);
   }
 }
 function goNext(listExercises) {
@@ -82,6 +92,7 @@ function goNext(listExercises) {
     currentIndex++;
     renderExercise(listExercises[currentIndex]);
     updateButtons(listExercises);
+    updateIndicator(listExercises);
   }
 }
 
@@ -97,6 +108,7 @@ function runExercises(listExercises) {
 
   renderExercise(listExercises[currentIndex]);
   updateButtons(listExercises);
+  updateIndicator(listExercises);
 }
 
 function renderChapter(chapter) {
@@ -106,7 +118,7 @@ function renderChapter(chapter) {
     renderAbstract(chapter.abstract);
   }
 
-  if (chapter.exercises && chapter.exercises.length) {
+  if (chapter.exercises) {
     createItem(titleExercises, "hr");
     createItem(titleExercises, "h2", "Exercises");
     runExercises(chapter.exercises);

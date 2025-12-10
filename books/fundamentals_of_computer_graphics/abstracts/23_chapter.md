@@ -37,8 +37,7 @@
 
 **Geometric Average Log-Luminance**
 
-- **Formula:** $\bar{L}_v = \exp \left(\frac{1}{N} \sum_{x,y} \log(\delta + L_v(x, y))\right)$
-- \(\bar{L}_v = \exp\!\left(\frac{1}{N}\sum_{x,y}\log(\delta + L_v(x,y))\right)\)
+- **Formula:** $\bar{L}\_v = \exp \left(\frac{1}{N} \sum\_{x,y} \log(\delta + L\_v(x, y))\right)$
 
 - **Meaning:** Computes the log-average luminance of the scene to establish a "key" value for the image.
 
@@ -46,7 +45,7 @@
 
 **Sigmoidal Compression**
 
-- **Formula:** $L_d(x, y) = \frac{L_v(x, y)}{L_v(x, y) + f(x, y)^n}$
+- **Formula:** $\displaystyle L_d(x, y) = \frac{L_v(x, y)}{L_v(x, y) + f(x, y)^n}$
 
 - **Meaning:** Compresses input luminance $L_v$ into a displayable range $[0, 1]$ using an S-shaped curve defined by semi-saturation constant $f$.
 

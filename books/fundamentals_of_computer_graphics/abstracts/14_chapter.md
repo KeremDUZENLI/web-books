@@ -38,7 +38,7 @@
 
 **Monte Carlo Estimator**
 
-- **Formula:** $\int g(x) d\mu \approx \frac{1}{N} \sum_{i=1}^N \frac{g(x_i)}{p(x_i)}$
+- **Formula:** $\displaystyle \int g(x) d\mu \approx \frac{1}{N} \sum_{i=1}^N \frac{g(x_i)}{p(x_i)}$
 
 - **Meaning:** Approximates an integral by averaging $N$ samples $g(x_i)$, weighted by the inverse of their probability $p(x_i)$.
 

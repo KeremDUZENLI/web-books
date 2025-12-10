@@ -34,7 +34,7 @@
 
 **Quadratic Formula**
 
-- **Formula:** $x = \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}$
+- **Formula:** $\displaystyle x = \frac{-B \pm \sqrt{B^2 - 4AC}}{2A}$
 
 - **Meaning:** Finds the roots (zero crossings) of a polynomial $Ax^2 + Bx + C = 0$.
 

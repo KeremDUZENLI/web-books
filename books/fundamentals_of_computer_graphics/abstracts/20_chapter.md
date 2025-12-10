@@ -40,7 +40,7 @@
 
 **Photon Energy**
 
-- **Formula:** $q = hf = \frac{hc}{\lambda}$
+- **Formula:** $\displaystyle q = hf = \frac{hc}{\lambda}$
 
 - **Meaning:** Relates a photon's energy $q$ to its frequency $f$ or wavelength $\lambda$ (where $h$ is Planck's constant).
 
@@ -48,7 +48,7 @@
 
 **Irradiance ($H$ or $E$)**
 
-- **Formula:** $H = \frac{d\Phi}{dA}$
+- **Formula:** $\displaystyle H = \frac{d\Phi}{dA}$
 
 - **Meaning:** The power per unit area arriving at a surface.
 
@@ -56,7 +56,7 @@
 
 **The Rendering Equation (Transport Equation)**
 
-- **Formula:** $L_s(\mathbf{k}_o) = \int_{\text{all } \mathbf{k}_i} \rho(\mathbf{k}_i, \mathbf{k}_o) L_f(\mathbf{k}_i) \cos \theta_i d\sigma_i$
+- **Formula:** $\displaystyle L\_s(\mathbf{k}\_o) = \int\_{\text{all } \mathbf{k}\_i} \rho(\mathbf{k}\_i, \mathbf{k}\_o) L\_f(\mathbf{k}\_i) \cos \theta\_i d\sigma\_i$
 
 - **Meaning:** The outgoing radiance $L_s$ is the sum (integral) of all incoming light $L_f$ reflected by the surface $\rho$ over the hemisphere.
 

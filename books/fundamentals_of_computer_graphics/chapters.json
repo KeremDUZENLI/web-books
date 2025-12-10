@@ -2,174 +2,528 @@
   {
     "chapter": 1,
     "title": "Introduction",
-    "abstract": "abstracts/1_chapter.md",
-    "exercises": [
-      {
-        "question": "exercises/1.1_question.md",
-        "response": "exercises/1.1_response.md"
-      }
-    ]
+    "abstract": "abstracts/1_chapter.md"
   },
   {
     "chapter": 2,
     "title": "Miscellaneous Math",
     "abstract": "abstracts/2_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/2.1_question.md"
+      },
+      {
+        "question": "exercises/2.2_question.md"
+      },
+      {
+        "question": "exercises/2.3_question.md"
+      },
+      {
+        "question": "exercises/2.4_question.md"
+      },
+      {
+        "question": "exercises/2.5_question.md"
+      },
+      {
+        "question": "exercises/2.6_question.md"
+      },
+      {
+        "question": "exercises/2.7_question.md"
+      },
+      {
+        "question": "exercises/2.8_question.md"
+      },
+      {
+        "question": "exercises/2.9_question.md"
+      },
+      {
+        "question": "exercises/2.10_question.md"
+      },
+      {
+        "question": "exercises/2.11_question.md"
+      },
+      {
+        "question": "exercises/2.12_question.md"
+      },
+      {
+        "question": "exercises/2.13_question.md"
+      },
+      {
+        "question": "exercises/2.14_question.md"
+      }
+    ]
   },
   {
     "chapter": 3,
     "title": "Raster Images",
     "abstract": "abstracts/3_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/3.1_question.md"
+      }
+    ]
   },
   {
     "chapter": 4,
     "title": "Ray Tracing",
     "abstract": "abstracts/4_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/4.1_question.md"
+      },
+      {
+        "question": "exercises/4.2_question.md"
+      },
+      {
+        "question": "exercises/4.3_question.md"
+      }
+    ]
   },
   {
     "chapter": 5,
     "title": "Linear Algebra",
     "abstract": "abstracts/5_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/5.1_question.md"
+      },
+      {
+        "question": "exercises/5.2_question.md"
+      },
+      {
+        "question": "exercises/5.3_question.md"
+      },
+      {
+        "question": "exercises/5.4_question.md"
+      },
+      {
+        "question": "exercises/5.5_question.md"
+      },
+      {
+        "question": "exercises/5.6_question.md"
+      },
+      {
+        "question": "exercises/5.7_question.md"
+      },
+      {
+        "question": "exercises/5.8_question.md"
+      },
+      {
+        "question": "exercises/5.9_question.md"
+      },
+      {
+        "question": "exercises/5.10_question.md"
+      },
+      {
+        "question": "exercises/5.11_question.md"
+      }
+    ]
   },
   {
     "chapter": 6,
     "title": "Transformation Matrices",
     "abstract": "abstracts/6_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/6.1_question.md"
+      },
+      {
+        "question": "exercises/6.2_question.md"
+      },
+      {
+        "question": "exercises/6.3_question.md"
+      },
+      {
+        "question": "exercises/6.4_question.md"
+      },
+      {
+        "question": "exercises/6.5_question.md"
+      },
+      {
+        "question": "exercises/6.6_question.md"
+      },
+      {
+        "question": "exercises/6.7_question.md"
+      },
+      {
+        "question": "exercises/6.8_question.md"
+      },
+      {
+        "question": "exercises/6.9_question.md"
+      },
+      {
+        "question": "exercises/6.10_question.md"
+      },
+      {
+        "question": "exercises/6.11_question.md"
+      }
+    ]
   },
   {
     "chapter": 7,
     "title": "Viewing",
     "abstract": "abstracts/7_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/7.1_question.md"
+      },
+      {
+        "question": "exercises/7.2_question.md"
+      },
+      {
+        "question": "exercises/7.3_question.md"
+      },
+      {
+        "question": "exercises/7.4_question.md"
+      },
+      {
+        "question": "exercises/7.5_question.md"
+      },
+      {
+        "question": "exercises/7.6_question.md"
+      },
+      {
+        "question": "exercises/7.7_question.md"
+      },
+      {
+        "question": "exercises/7.8_question.md"
+      },
+      {
+        "question": "exercises/7.9_question.md"
+      },
+      {
+        "question": "exercises/7.10_question.md"
+      },
+      {
+        "question": "exercises/7.11_question.md"
+      }
+    ]
   },
   {
     "chapter": 8,
     "title": "The Graphics Pipeline",
     "abstract": "abstracts/8_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/8.1_question.md"
+      },
+      {
+        "question": "exercises/8.2_question.md"
+      },
+      {
+        "question": "exercises/8.3_question.md"
+      },
+      {
+        "question": "exercises/8.4_question.md"
+      },
+      {
+        "question": "exercises/8.5_question.md"
+      }
+    ]
   },
   {
     "chapter": 9,
     "title": "Signal Processing",
     "abstract": "abstracts/9_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/9.1_question.md"
+      },
+      {
+        "question": "exercises/9.2_question.md"
+      },
+      {
+        "question": "exercises/9.3_question.md"
+      },
+      {
+        "question": "exercises/9.4_question.md"
+      },
+      {
+        "question": "exercises/9.5_question.md"
+      }
+    ]
   },
   {
     "chapter": 10,
     "title": "Surface Shading",
     "abstract": "abstracts/10_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/10.1_question.md"
+      },
+      {
+        "question": "exercises/10.2_question.md"
+      },
+      {
+        "question": "exercises/10.3_question.md"
+      }
+    ]
   },
   {
     "chapter": 11,
     "title": "Texture Mapping",
     "abstract": "abstracts/11_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/11.1_question.md"
+      },
+      {
+        "question": "exercises/11.2_question.md"
+      },
+      {
+        "question": "exercises/11.3_question.md"
+      }
+    ]
   },
   {
     "chapter": 12,
     "title": "Data Structures for Graphics",
     "abstract": "abstracts/12_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/12.1_question.md"
+      },
+      {
+        "question": "exercises/12.2_question.md"
+      },
+      {
+        "question": "exercises/12.3_question.md"
+      },
+      {
+        "question": "exercises/12.4_question.md"
+      }
+    ]
   },
   {
     "chapter": 13,
     "title": "More Ray Tracing",
-    "abstract": "abstracts/13_chapter.md",
-    "exercises": []
+    "abstract": "abstracts/13_chapter.md"
   },
   {
     "chapter": 14,
     "title": "Sampling",
     "abstract": "abstracts/14_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/14.1_question.md"
+      },
+      {
+        "question": "exercises/14.2_question.md"
+      },
+      {
+        "question": "exercises/14.3_question.md"
+      },
+      {
+        "question": "exercises/14.4_question.md"
+      },
+      {
+        "question": "exercises/14.5_question.md"
+      },
+      {
+        "question": "exercises/14.6_question.md"
+      }
+    ]
   },
   {
     "chapter": 15,
     "title": "Curves",
     "abstract": "abstracts/15_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/15.1_question.md"
+      },
+      {
+        "question": "exercises/15.2_question.md"
+      },
+      {
+        "question": "exercises/15.3_question.md"
+      },
+      {
+        "question": "exercises/15.4_question.md"
+      },
+      {
+        "question": "exercises/15.5_question.md"
+      },
+      {
+        "question": "exercises/15.6_question.md"
+      },
+      {
+        "question": "exercises/15.7_question.md"
+      },
+      {
+        "question": "exercises/15.8_question.md"
+      },
+      {
+        "question": "exercises/15.9_question.md"
+      }
+    ]
   },
   {
     "chapter": 16,
     "title": "Implicit Modeling",
     "abstract": "abstracts/16_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/16.1_question.md"
+      },
+      {
+        "question": "exercises/16.2_question.md"
+      },
+      {
+        "question": "exercises/16.3_question.md"
+      },
+      {
+        "question": "exercises/16.4_question.md"
+      }
+    ]
   },
   {
     "chapter": 17,
     "title": "Computer Animation",
-    "abstract": "abstracts/17_chapter.md",
-    "exercises": []
+    "abstract": "abstracts/17_chapter.md"
   },
   {
     "chapter": 18,
     "title": "Using Graphics Hardware",
     "abstract": "abstracts/18_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/18.1_question.md"
+      },
+      {
+        "question": "exercises/18.2_question.md"
+      }
+    ]
   },
   {
     "chapter": 19,
     "title": "Building Interactive Graphics Applications",
     "abstract": "abstracts/19_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/19.1_question.md"
+      },
+      {
+        "question": "exercises/19.2_question.md"
+      },
+      {
+        "question": "exercises/19.3_question.md"
+      },
+      {
+        "question": "exercises/19.4_question.md"
+      },
+      {
+        "question": "exercises/19.5_question.md"
+      },
+      {
+        "question": "exercises/19.6_question.md"
+      },
+      {
+        "question": "exercises/19.7_question.md"
+      }
+    ]
   },
   {
     "chapter": 20,
     "title": "Light",
     "abstract": "abstracts/20_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/20.1_question.md"
+      },
+      {
+        "question": "exercises/20.2_question.md"
+      },
+      {
+        "question": "exercises/20.3_question.md"
+      }
+    ]
   },
   {
     "chapter": 21,
     "title": "Color",
-    "abstract": "abstracts/21_chapter.md",
-    "exercises": []
+    "abstract": "abstracts/21_chapter.md"
   },
   {
     "chapter": 22,
     "title": "Visual Perception",
-    "abstract": "abstracts/22_chapter.md",
-    "exercises": []
+    "abstract": "abstracts/22_chapter.md"
   },
   {
     "chapter": 23,
     "title": "Tone Reproduction",
-    "abstract": "abstracts/23_chapter.md",
-    "exercises": []
+    "abstract": "abstracts/23_chapter.md"
   },
   {
     "chapter": 24,
     "title": "Global Illumination",
     "abstract": "abstracts/24_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/24.1_question.md"
+      },
+      {
+        "question": "exercises/24.2_question.md"
+      },
+      {
+        "question": "exercises/24.3_question.md"
+      },
+      {
+        "question": "exercises/24.4_question.md"
+      },
+      {
+        "question": "exercises/24.5_question.md"
+      },
+      {
+        "question": "exercises/24.6_question.md"
+      }
+    ]
   },
   {
     "chapter": 25,
     "title": "Reflection Models",
     "abstract": "abstracts/25_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/25.1_question.md"
+      },
+      {
+        "question": "exercises/25.2_question.md"
+      },
+      {
+        "question": "exercises/25.3_question.md"
+      }
+    ]
   },
   {
     "chapter": 26,
     "title": "Computer Graphics in Games",
     "abstract": "abstracts/26_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/26.1_question.md"
+      }
+    ]
   },
   {
     "chapter": 27,
     "title": "Visualization",
-    "abstract": "abstracts/27_chapter.md",
-    "exercises": []
+    "abstract": "abstracts/27_chapter.md"
   },
   {
     "chapter": 28,
     "title": "Spatial-Field Visualization",
     "abstract": "abstracts/28_chapter.md",
-    "exercises": []
+    "exercises": [
+      {
+        "question": "exercises/28.1_question.md"
+      },
+      {
+        "question": "exercises/28.2_question.md"
+      },
+      {
+        "question": "exercises/28.3_question.md"
+      }
+    ]
   }
 ]

@@ -50,7 +50,7 @@
 
 **Chromaticity Coordinates**
 
-- **Formula:** $x = \frac{X}{X + Y + Z}, \quad y = \frac{Y}{X + Y + Z}$
+- **Formula:** $\displaystyle x = \frac{X}{X + Y + Z}, \quad y = \frac{Y}{X + Y + Z}$
 
 - **Meaning:** Normalizes the tristimulus values to separate **color** ($x, y$) from **brightness** ($Y$).
 
@@ -58,7 +58,7 @@
 
 **Color Difference ($\Delta E$)**
 
-- **Formula:** $\Delta E_{ab}^* = \sqrt{(\Delta L^*)^2 + (\Delta a^*)^2 + (\Delta b^*)^2}$
+- **Formula:** $\displaystyle \Delta E_{ab}^* = \sqrt{(\Delta L^*)^2 + (\Delta a^*)^2 + (\Delta b^*)^2}$
 
 - **Meaning:** Calculates the "distance" between two colors in Lab space.
 

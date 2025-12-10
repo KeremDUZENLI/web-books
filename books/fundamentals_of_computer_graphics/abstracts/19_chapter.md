@@ -40,7 +40,7 @@
 
 **Simulation Update (Euler Integration)**
 
-- **Formula:** $\mathbf{p}_{new} = \mathbf{p}_{old} + \mathbf{v} \Delta t$
+- **Formula:** $\mathbf{p}\_{new} = \mathbf{p}\_{old} + \mathbf{v} \Delta t$
 
 - **Meaning:** Updates the position $\mathbf{p}$ of an object based on its velocity $\mathbf{v}$ and the elapsed time $\Delta t$.
 

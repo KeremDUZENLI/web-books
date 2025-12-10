@@ -33,7 +33,7 @@
 
 **Lambertian Radiance**
 
-- **Formula:** $L = \frac{\Phi}{\pi A}$
+- **Formula:** $\displaystyle L = \frac{\Phi}{\pi A}$
 
 - **Meaning:** The radiance $L$ of a diffuse surface is directly proportional to the incident power $\Phi$ divided by the surface area $A$.
 
@@ -41,7 +41,7 @@
 
 **Direct Lighting Estimator**
 
-- **Formula:** $L_s \approx \frac{L_e \rho \cos \theta_i \cos \theta' A}{d^2}$
+- **Formula:** $\displaystyle L_s \approx \frac{L_e \rho \cos \theta_i \cos \theta' A}{d^2}$
 
 - **Meaning:** Estimates the light reflected from a surface by picking a random point on an area light source (Monte Carlo integration).
 

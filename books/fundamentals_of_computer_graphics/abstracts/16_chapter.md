@@ -40,7 +40,7 @@
 
 **Implicit Sphere**
 
-- **Formula:** $f(\mathbf{p}) = \|\mathbf{p} - \mathbf{c}\|^2 - r^2 = 0$
+- **Formula:** $\displaystyle f(\mathbf{p}) = \|\mathbf{p} - \mathbf{c}\|^2 - r^2 = 0$
 
 - **Meaning:** Defines a sphere of radius $r$ at center $\mathbf{c}$ by checking distance.
 
@@ -48,7 +48,7 @@
 
 **Summation Blending**
 
-- **Formula:** $f_{total}(\mathbf{p}) = \sum_{i} f_i(\mathbf{p})$
+- **Formula:** $\displaystyle f_{total}(\mathbf{p}) = \sum_{i} f_i(\mathbf{p})$
 
 - **Meaning:** The fields of individual primitives are added together.
 
@@ -56,7 +56,7 @@
 
 **Gradient (Normal Vector)**
 
-- **Formula:** $\mathbf{n} = \nabla f(\mathbf{p}) = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z})$
+- **Formula:** $\displaystyle \mathbf{n} = \nabla f(\mathbf{p}) = (\frac{\partial f}{\partial x}, \frac{\partial f}{\partial y}, \frac{\partial f}{\partial z})$
 
 - **Meaning:** The vector pointing in the direction of the fastest field increase.
 

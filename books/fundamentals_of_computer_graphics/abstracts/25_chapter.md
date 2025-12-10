@@ -43,7 +43,7 @@
 
 **Coupled Diffuse Term**
 
-- **Formula:** $k = \frac{21}{20\pi(1 - R_0)}$
+- **Formula:** $\displaystyle k = \frac{21}{20\pi(1 - R_0)}$
 
 - **Meaning:** A scaling factor for the diffuse component ensuring that energy is conserved when adding a specular layer.
 

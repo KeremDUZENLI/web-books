@@ -60,13 +60,6 @@
   padding: 10px 50px 10px 50px;
 }
 
-#container_abstract img {
-  display: block;
-  height: auto;
-  margin: 1em auto;
-  max-width: 50%;
-}
-
 .button_home {
   background: var(--color_background);
   border: 1px solid var(--color_border);
@@ -111,7 +104,7 @@
 #slider_controls button {
   background: var(--color_background);
   border: 1px solid var(--color_border);
-  color: var(--color_text);
+  color: var(--color_muted);
   cursor: pointer;
   font-size: 14px;
   padding: 8px 16px;
@@ -125,6 +118,40 @@
   color: var(--color_muted);
   cursor: default;
   opacity: 0.5;
+}
+
+#indicator_exercises {
+  align-self: center;
+  color: var(--color_muted);
+  font-size: 14px;
+  margin: 0 12px;
+  min-width: 50px;
+  text-align: center;
+}
+
+#container_abstract img {
+  display: block;
+  height: auto;
+  margin: 1em auto;
+  max-width: 50%;
+}
+
+#container_abstract img {
+  display: block;
+  margin: 1.5em auto;
+
+  width: auto;
+  height: auto;
+  max-width: 50%;
+  max-height: 80vh;
+
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  #container_abstract img {
+    max-width: 80%;
+  }
 }
 
 @media (max-width: 640px) {
@@ -143,14 +170,8 @@
     height: auto;
     padding: 10px 20px 10px 20px;
   }
-}
 
-@media (max-width: 1024px) {
   #container_abstract img {
-    max-width: 80%;
-  }
-
-  #container_abstract img.override {
-    max-width: 80% !important;
+    max-width: 100%;
   }
 }

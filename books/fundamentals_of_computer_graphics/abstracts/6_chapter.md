@@ -50,7 +50,7 @@
 
 **Normal Vector Transformation**
 
-- **Formula:** $\mathbf{n}_{new} = (\mathbf{M}^{-1})^T \mathbf{n}_{old}$
+- **Formula:** $\displaystyle \mathbf{n}\_{new} = (\mathbf{M}^{-1})^T \mathbf{n}\_{old}$
 
 - **Meaning:** Surface normals must be transformed by the **inverse transpose** of the object's transformation matrix to remain perpendicular to the surface.
 
