@@ -5,8 +5,10 @@
 }
 
 #app_index {
+  display: flex;
   flex: 1;
-  margin: 20px auto;
+  flex-direction: column;
+  margin: 20px auto 0px auto;
   padding: 16px;
 }
 #container_search {
@@ -31,6 +33,30 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  margin-bottom: 40px;
+}
+
+#container_support {
+  border: 1px solid var(--color_border);
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+}
+#container_support h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+#container_support p {
+  color: var(--color_muted);
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0 auto 20px auto;
+  max-width: 500px;
+}
+#container_support img {
+  max-width: 100%;
 }
 
 .button_category {

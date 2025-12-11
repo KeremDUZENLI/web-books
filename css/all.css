@@ -33,7 +33,6 @@ footer {
   background-color: var(--color_footer_background);
   color: var(--color_footer);
   font-size: 0.75em;
-  padding: 1px;
   text-align: center;
 }
 
