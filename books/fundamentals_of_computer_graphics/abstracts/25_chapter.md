@@ -5,6 +5,7 @@
 ## Main Idea
 
 - This chapter focuses on mathematical models (BRDFs) that capture the visual properties of real-world materials, distinguishing between **metals, dielectrics, and layered surfaces**.
+
 - It introduces sophisticated empirical models that enforce physical laws like **energy conservation and reciprocity** to create realistic glossy and anisotropic finishes.
 
 <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQwR98nyK6sM8g2brNnlH5iEjLS7HiXxbkxE4BkPSpuglpV1UG0jctbN7BiZHjJMGKivZ8W8_gULBENEjYNPwe7DZHT4TOC1w0NVJCGuI1B7Xtzomw">
@@ -43,7 +44,7 @@
 
 **Coupled Diffuse Term**
 
-- **Formula:** $\displaystyle k = \frac{21}{20\pi(1 - R_0)}$
+- **Formula:** $\ k = \frac{21}{20\pi(1 - R_0)}$
 
 - **Meaning:** A scaling factor for the diffuse component ensuring that energy is conserved when adding a specular layer.
 

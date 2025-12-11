@@ -5,6 +5,7 @@
 ## Main Idea
 
 - This chapter addresses the problem of **tone reproduction**, which maps high dynamic range (HDR) images matched to the human visual system to the limited capabilities of standard displays.
+
 - It explores various algorithms classified as **global or local**-that compress luminance while preserving essential visual details like contrast and brightness.
 
 ---
@@ -45,7 +46,7 @@
 
 **Sigmoidal Compression**
 
-- **Formula:** $\displaystyle L_d(x, y) = \frac{L_v(x, y)}{L_v(x, y) + f(x, y)^n}$
+- **Formula:** $\ L_d(x, y) = \frac{L_v(x, y)}{L_v(x, y) + f(x, y)^n}$
 
 - **Meaning:** Compresses input luminance $L_v$ into a displayable range $[0, 1]$ using an S-shaped curve defined by semi-saturation constant $f$.
 

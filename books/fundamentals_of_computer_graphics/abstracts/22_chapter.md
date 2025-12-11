@@ -44,7 +44,7 @@
 
 **Weber's Law**
 
-- **Formula:** $\displaystyle \frac{\Delta I}{I} = k$
+- **Formula:** $\ \frac{\Delta I}{I} = k$
 
 - **Meaning:** The just noticeable difference ($\Delta I$) is a constant proportion of the stimulus magnitude ($I$).
 
@@ -60,7 +60,7 @@
 
 **Vergence Depth**
 
-- **Formula:** $\displaystyle z = \frac{\text{ipd}/2}{\tan \theta}$
+- **Formula:** $\ z = \frac{\text{ipd}/2}{\tan \theta}$
 
 - **Meaning:** Calculates depth $z$ based on the interpupillary distance (ipd) and the convergence angle $\theta$ of the eyes.
 

@@ -5,6 +5,7 @@
 ## Main Idea
 
 - This chapter introduces **global illumination**, algorithms that simulate how light bounces between surfaces (indirect lighting), rather than just travelling directly from light sources to objects.
+
 - It details two primary stochastic methods: **particle tracing** (shooting light from sources) and **path tracing** (gathering light from the eye), which are used to generate realistic images with soft shadows and color bleeding.
 
 ---
@@ -33,7 +34,7 @@
 
 **Lambertian Radiance**
 
-- **Formula:** $\displaystyle L = \frac{\Phi}{\pi A}$
+- **Formula:** $\ L = \frac{\Phi}{\pi A}$
 
 - **Meaning:** The radiance $L$ of a diffuse surface is directly proportional to the incident power $\Phi$ divided by the surface area $A$.
 
@@ -41,7 +42,7 @@
 
 **Direct Lighting Estimator**
 
-- **Formula:** $\displaystyle L_s \approx \frac{L_e \rho \cos \theta_i \cos \theta' A}{d^2}$
+- **Formula:** $\ L_s \approx \frac{L_e \rho \cos \theta_i \cos \theta' A}{d^2}$
 
 - **Meaning:** Estimates the light reflected from a surface by picking a random point on an area light source (Monte Carlo integration).
 

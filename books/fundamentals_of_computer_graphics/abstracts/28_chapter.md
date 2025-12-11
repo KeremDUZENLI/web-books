@@ -5,9 +5,8 @@
 ## Main Idea
 
 - This chapter focuses on visualizing **scalar fields**, which are datasets defined as a function of space (like density in a medical scan) rather than explicit geometric boundaries.
-- It compares techniques for 2D and 3D data, specifically **isosurfacing** (extracting surfaces) and **direct volume rendering** (accumulating density along rays), to reveal internal structures.
 
-<img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcQPy-Zb3R9dAJRfzWQrrtb8Zevq6ayU9-qXDMdYppz4JTcNB04Z9zf_BF5UWTGr98qU2a5U-3NgD-oO8diox63xPimiRvgHJivxMYUOfBLWQt5jdow">
+- It compares techniques for 2D and 3D data, specifically **isosurfacing** (extracting surfaces) and **direct volume rendering** (accumulating density along rays), to reveal internal structures.
 
 ---
 
@@ -41,7 +40,7 @@
 
 **Trilinear Interpolation**
 
-- **Formula:** $\displaystyle \rho(u, v, w) = \sum_{i,j,k \in \{0,1\}} u_i v_j w_k \rho_{ijk}$
+- **Formula:** $\ \rho(u, v, w) = \sum_{i,j,k \in \{0,1\}} u_i v_j w_k \rho_{ijk}$
 
 - **Meaning:** Estimates the scalar value at any point within a voxel based on the values at the eight corner vertices.
 
@@ -49,7 +48,7 @@
 
 **Volume Rendering Equation (Discrete)**
 
-- **Formula:** $\displaystyle L_{out} = (1 - \alpha_i)L_{in} + \alpha_i c_i$
+- **Formula:** $\ L_{out} = (1 - \alpha_i)L_{in} + \alpha_i c_i$
 
 - **Meaning:** Composites color $c$ and opacity $\alpha$ step-by-step along a ray (back-to-front or front-to-back) to calculate the final pixel color.
 
@@ -57,7 +56,7 @@
 
 **Isosurface Intersection**
 
-- **Formula:** $\displaystyle \rho(\mathbf{a} + t\mathbf{b}) - \rho_{iso} = 0$
+- **Formula:** $\ \rho(\mathbf{a} + t\mathbf{b}) - \rho_{iso} = 0$
 
 - **Meaning:** Finds the exact distance $t$ along a ray where the interpolated field value equals the target isovalue.
 

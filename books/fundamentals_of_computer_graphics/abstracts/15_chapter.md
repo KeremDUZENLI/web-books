@@ -42,7 +42,7 @@
 
 **Matrix Form of a Curve**
 
-- **Formula:** $\displaystyle \mathbf{f}(u) = \mathbf{u} \cdot \mathbf{B} \cdot \mathbf{p}$
+- **Formula:** $\ \mathbf{f}(u) = \mathbf{u} \cdot \mathbf{B} \cdot \mathbf{p}$
 
 - **Meaning:** Computes a point on the curve by multiplying the parameter vector $\mathbf{u}$ (powers of $u$), the Basis matrix $\mathbf{B}$ (the math definition), and the Geometry vector $\mathbf{p}$ (control points).
 
@@ -50,7 +50,7 @@
 
 **Bernstein Basis Polynomials**
 
-- **Formula:** $\displaystyle b_{k,n}(u) = \binom{n}{k} u^k (1-u)^{n-k}$
+- **Formula:** $\ b_{k,n}(u) = \binom{n}{k} u^k (1-u)^{n-k}$
 
 - **Meaning:** The weighting functions used for **Bézier curves**; they sum to 1, ensuring the curve stays within the convex hull of control points.
 
@@ -58,7 +58,7 @@
 
 **Lagrange Interpolation**
 
-- **Formula:** $\displaystyle L(x) = \sum y_j \prod_{i \neq j} \frac{x - x_i}{x_j - x_i}$
+- **Formula:** $\ L(x) = \sum y_j \prod_{i \neq j} \frac{x - x_i}{x_j - x_i}$
 
 - **Meaning:** A polynomial that exactly passes through (interpolates) a given set of data points.
 

@@ -42,7 +42,7 @@
 
 **Sinc Function (Ideal Filter)**
 
-- **Formula:** $\displaystyle \text{sinc}(x) = \frac{\sin \pi x}{\pi x}$
+- **Formula:** $\ \text{sinc}(x) = \frac{\sin \pi x}{\pi x}$
 
 - **Meaning:** The Fourier transform of a box function (perfect low-pass filter).
 

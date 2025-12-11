@@ -56,7 +56,7 @@
 
 **Field-of-View ($\theta$)**
 
-- **Formula:** $\displaystyle \tan(\frac{\theta}{2}) = \frac{t}{|n|}$
+- **Formula:** $\ \tan(\frac{\theta}{2}) = \frac{t}{|n|}$
 
 - **Meaning:** Relates the vertical angle of view $\theta$ to the top screen coordinate $t$ and near plane distance $n$.
 

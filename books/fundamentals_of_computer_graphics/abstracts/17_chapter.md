@@ -46,7 +46,7 @@
 
 **Arc-Length Parameterization**
 
-- **Formula:** $\displaystyle s(t) = \int_0^t \|\mathbf{v}(\tau)\| d\tau$
+- **Formula:** $\ s(t) = \int_0^t \|\mathbf{v}(\tau)\| d\tau$
 
 - **Meaning:** Maps time to actual distance traveled along a curve.
 
@@ -62,7 +62,7 @@
 
 **Euler Integration (Physics)**
 
-- **Formula:** $\displaystyle \mathbf{v}\_{new} = \mathbf{v}\_{old} + \frac{\mathbf{F}}{m} \Delta t$
+- **Formula:** $\ \mathbf{v}\_{new} = \mathbf{v}\_{old} + \frac{\mathbf{F}}{m} \Delta t$
 
 - **Meaning:** Updates velocity based on force, mass, and time step.
 
