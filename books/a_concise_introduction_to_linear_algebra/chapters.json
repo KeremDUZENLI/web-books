@@ -30,28 +30,128 @@
     "title": "Systems of Linear Equations, Matrices",
     "abstract": "",
     "exercises": [],
-    "subchapters": []
+    "subchapters": [
+      {
+        "chapter": 2.1,
+        "title": "Gaussian Elimination",
+        "abstract": "abstracts/2.1_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 2.2,
+        "title": "The Theory of Gaussian Elimination",
+        "abstract": "abstracts/2.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 2.3,
+        "title": "Homogeneous and Inhomogeneous Systems, Gauss-Jordan Elimination",
+        "abstract": "abstracts/2.3_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 2.4,
+        "title": "The Algebra of Matrices",
+        "abstract": "abstracts/2.4_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 2.5,
+        "title": "The Inverse and the Transpose of a Matrix",
+        "abstract": "abstracts/2.5_chapter.md",
+        "exercises": []
+      }
+    ]
   },
   {
     "chapter": 3,
     "title": "Vector Spaces and Subspaces",
     "abstract": "",
     "exercises": [],
-    "subchapters": []
+    "subchapters": [
+      {
+        "chapter": 3.1,
+        "title": "General Vector Spaces",
+        "abstract": "abstracts/3.1_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 3.2,
+        "title": "Subspaces",
+        "abstract": "abstracts/3.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 3.3,
+        "title": "Span and Independence of Vectors",
+        "abstract": "abstracts/3.3_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 3.4,
+        "title": "Bases",
+        "abstract": "abstracts/3.4_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 3.5,
+        "title": "Dimension, Orthogonal Complements",
+        "abstract": "abstracts/3.5_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 3.6,
+        "title": "Change of Basis",
+        "abstract": "abstracts/3.6_chapter.md",
+        "exercises": []
+      }
+    ]
   },
   {
     "chapter": 4,
     "title": "Linear Transformations",
     "abstract": "",
     "exercises": [],
-    "subchapters": []
+    "subchapters": [
+      {
+        "chapter": 4.1,
+        "title": "Representation of Linear Transformations by Matrices",
+        "abstract": "abstracts/4.1_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 4.2,
+        "title": "Properties of Linear Transformationsn",
+        "abstract": "abstracts/4.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 4.3,
+        "title": "Applications of Linear Transformations in Computer Graphics",
+        "abstract": "abstracts/4.3_chapter.md",
+        "exercises": []
+      }
+    ]
   },
   {
     "chapter": 5,
     "title": "Orthogonal Projections and Bases",
     "abstract": "",
     "exercises": [],
-    "subchapters": []
+    "subchapters": [
+      {
+        "chapter": 5.1,
+        "title": "Orthogonal Projections and Least-Squares Approximations",
+        "abstract": "abstracts/5.1_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 5.2,
+        "title": "Orthogonal Bases",
+        "abstract": "abstracts/5.2_chapter.md",
+        "exercises": []
+      }
+    ]
   },
   {
     "chapter": 6,
@@ -84,13 +184,57 @@
     "title": "Eigenvalues and Eigenvectors",
     "abstract": "",
     "exercises": [],
-    "subchapters": []
+    "subchapters": [
+      {
+        "chapter": 7.1,
+        "title": "Eigenvalues and Eigenvectors, Basic Properties",
+        "abstract": "abstracts/7.1_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 7.2,
+        "title": "Diagonalization of Matrices",
+        "abstract": "abstracts/7.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 7.3,
+        "title": "Principal Axes",
+        "abstract": "abstracts/7.3_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 7.4,
+        "title": "Complex Matrices",
+        "abstract": "abstracts/7.4_chapter.md",
+        "exercises": []
+      }
+    ]
   },
   {
     "chapter": 8,
     "title": "Numerical Methods",
     "abstract": "",
     "exercises": [],
-    "subchapters": []
+    "subchapters": [
+      {
+        "chapter": 8.1,
+        "title": "LU Factorization",
+        "abstract": "abstracts/8.1_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 8.2,
+        "title": "Scaled Partial Pivoting",
+        "abstract": "abstracts/8.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 8.3,
+        "title": "The Computation of Eigenvalues and Eigenvectors",
+        "abstract": "abstracts/8.3_chapter.md",
+        "exercises": []
+      }
+    ]
   }
 ]

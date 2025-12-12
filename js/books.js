@@ -140,9 +140,7 @@ function renderChapter(chapter) {
 
   if (chapter.abstract) {
     renderAbstract(chapter.abstract);
-  }
-
-  if (chapter.subchapters && chapter.subchapters.length > 0) {
+  } else if (chapter.subchapters && chapter.subchapters.length > 0) {
     createItem(containerAbstract, "h2", chapter.chapter + ": " + chapter.title);
 
     var containerListChapters = document.createElement("ul");
@@ -154,6 +152,8 @@ function renderChapter(chapter) {
       createItem(containerListChapters, "li", sub.chapter + ": " + sub.title);
     }
     containerAbstract.appendChild(containerListChapters);
+  } else {
+    createItem(containerAbstract, "h2", chapter.chapter + ": " + chapter.title);
   }
 
   if (chapter.exercises && chapter.exercises.length > 0) {
