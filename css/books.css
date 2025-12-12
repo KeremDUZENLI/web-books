@@ -15,9 +15,17 @@
 
 #bar_left ul {
   list-style: none;
-  margin: 0;
   padding-left: 0;
 }
+#bar_left ul ul {
+  padding-left: 20px;
+}
+#bar_left ul ul li:first-child {
+  border-top: 1px solid var(--color_border);
+  margin-top: 8px;
+  padding-top: 8px;
+}
+
 #bar_left ul li a {
   align-items: flex-start;
   display: flex;
@@ -76,6 +84,17 @@
 }
 .button_home:hover {
   background-color: var(--color_hover);
+}
+
+.list_subchapters {
+  margin-top: 16px;
+  padding-left: 20px;
+}
+.list_subchapters li {
+  color: var(--color_muted);
+  font-size: 16px;
+  list-style: none;
+  margin: 12px 0;
 }
 
 #slider_exercises {

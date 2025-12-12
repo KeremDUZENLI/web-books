@@ -2,61 +2,95 @@
   {
     "chapter": 1,
     "title": "Analytic Geometry of Euclidean Spaces",
-    "abstract": "abstracts/1_chapter.md",
-    "exercises": [
+    "abstract": "",
+    "exercises": [],
+    "subchapters": [
       {
-        "question": "exercises/1.2.1_question.md",
-        "response": "exercises/1.2.1_response.md"
+        "chapter": 1.1,
+        "title": "Vectors",
+        "abstract": "abstracts/1.1_chapter.md",
+        "exercises": []
       },
       {
-        "question": "exercises/1.2.2_question.md",
-        "response": "exercises/1.2.2_response.md"
+        "chapter": 1.2,
+        "title": "Length and Dot Product of Vectors in Rn",
+        "abstract": "abstracts/1.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 1.3,
+        "title": "Lines and Planes",
+        "abstract": "abstracts/1.3_chapter.md",
+        "exercises": []
       }
     ]
   },
   {
     "chapter": 2,
     "title": "Systems of Linear Equations, Matrices",
-    "abstract": ""
+    "abstract": "",
+    "exercises": [],
+    "subchapters": []
   },
   {
     "chapter": 3,
     "title": "Vector Spaces and Subspaces",
-    "abstract": ""
+    "abstract": "",
+    "exercises": [],
+    "subchapters": []
   },
   {
     "chapter": 4,
     "title": "Linear Transformations",
-    "abstract": ""
+    "abstract": "",
+    "exercises": [],
+    "subchapters": []
   },
   {
     "chapter": 5,
     "title": "Orthogonal Projections and Bases",
-    "abstract": ""
+    "abstract": "",
+    "exercises": [],
+    "subchapters": []
   },
   {
     "chapter": 6,
     "title": "Determinants",
     "abstract": "",
-    "exercises": [
+    "exercises": [],
+    "subchapters": [
       {
-        "question": "exercises/6.3.1_question.md",
-        "response": "exercises/6.3.1_response.md"
+        "chapter": 6.1,
+        "title": "Determinants: Definition and Basic Properties",
+        "abstract": "abstracts/6.1_chapter.md",
+        "exercises": []
       },
       {
-        "question": "exercises/6.3.2_question.md",
-        "response": "exercises/6.3.2_response.md"
+        "chapter": 6.2,
+        "title": "Further Properties of Determinants",
+        "abstract": "abstracts/6.2_chapter.md",
+        "exercises": []
+      },
+      {
+        "chapter": 6.3,
+        "title": "The Cross Product of Vectors in R3",
+        "abstract": "abstracts/6.3_chapter.md",
+        "exercises": []
       }
     ]
   },
   {
     "chapter": 7,
     "title": "Eigenvalues and Eigenvectors",
-    "abstract": ""
+    "abstract": "",
+    "exercises": [],
+    "subchapters": []
   },
   {
     "chapter": 8,
     "title": "Numerical Methods",
-    "abstract": ""
+    "abstract": "",
+    "exercises": [],
+    "subchapters": []
   }
 ]

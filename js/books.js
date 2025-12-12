@@ -24,7 +24,7 @@ function resetPage(title) {
 function createItem(container, type, text) {
   var item = document.createElement(type);
   item.textContent = text;
-  container.insertBefore(item, container.firstChild);
+  container.appendChild(item);
 }
 
 function createLinkChapter(chapter) {
@@ -44,27 +44,6 @@ function createLinkChapter(chapter) {
   link.append(number, colon, title);
   return link;
 }
-
-// function renderMarkdown(container, text) {
-//   var correctText = text
-//     // 1. Fix Remove indentation before $$
-//     .replace(/^[\t ]+(\$\$)/gm, " $1")
-//     // 2. Fix New Lines (\\ -> \\\\)
-//     .replace(/\\\\/g, "\\\\\\\\")
-//     // 3. Fix Subscripts (_ -> \_)
-//     .replace(/_/g, "\\_")
-//     // 4. Fix Vertical Bars (| -> \|)
-//     .replace(/\|/g, "\\|")
-//     // 5. Fix "Bullet Point" Dashes in Matrices
-//     .replace(/- (&)/g, "\\- $1")
-//     // 6. Replace standard \frac with large \dfrac globally
-//     .replace(/\\frac/g, "\\dfrac");
-
-//   container.innerHTML = marked(correctText);
-//   if (window.MathJax) {
-//     MathJax.typesetPromise([container]);
-//   }
-// }
 
 function renderMarkdown(container, text) {
   var correctText = text
@@ -163,7 +142,21 @@ function renderChapter(chapter) {
     renderAbstract(chapter.abstract);
   }
 
-  if (chapter.exercises) {
+  if (chapter.subchapters && chapter.subchapters.length > 0) {
+    createItem(containerAbstract, "h2", chapter.chapter + ": " + chapter.title);
+
+    var containerListChapters = document.createElement("ul");
+    containerListChapters.className = "list_subchapters";
+
+    for (var i = 0; i < chapter.subchapters.length; i++) {
+      var sub = chapter.subchapters[i];
+
+      createItem(containerListChapters, "li", sub.chapter + ": " + sub.title);
+    }
+    containerAbstract.appendChild(containerListChapters);
+  }
+
+  if (chapter.exercises && chapter.exercises.length > 0) {
     createItem(titleExercises, "hr");
     createItem(titleExercises, "h2", "Exercises");
     runExercises(chapter.exercises);
@@ -171,9 +164,7 @@ function renderChapter(chapter) {
   }
 }
 
-function runChapters(listChapters) {
-  containerChapters.innerHTML = "";
-
+function runChapters(listChapters, containerParent) {
   for (let i = 0; i < listChapters.length; i++) {
     var liChapter = document.createElement("li");
     var linkChapter = createLinkChapter(listChapters[i]);
@@ -190,6 +181,18 @@ function runChapters(listChapters) {
     };
 
     liChapter.appendChild(linkChapter);
-    containerChapters.appendChild(liChapter);
+
+    if (listChapters[i].subchapters && listChapters[i].subchapters.length > 0) {
+      var containerChaptersSub = document.createElement("ul");
+      runChapters(listChapters[i].subchapters, containerChaptersSub);
+      liChapter.appendChild(containerChaptersSub);
+    }
+
+    containerParent.appendChild(liChapter);
   }
+}
+
+function runAllChapters(listChapters) {
+  containerChapters.innerHTML = "";
+  runChapters(listChapters, containerChapters);
 }
