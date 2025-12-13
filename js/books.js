@@ -143,15 +143,15 @@ function renderChapter(chapter) {
   } else if (chapter.subchapters && chapter.subchapters.length > 0) {
     createItem(containerAbstract, "h2", chapter.chapter + ": " + chapter.title);
 
-    var containerListChapters = document.createElement("ul");
-    containerListChapters.className = "list_subchapters";
+    var listSubchapters = document.createElement("ul");
+    listSubchapters.className = "list_subchapters";
 
     for (var i = 0; i < chapter.subchapters.length; i++) {
       var sub = chapter.subchapters[i];
 
-      createItem(containerListChapters, "li", sub.chapter + ": " + sub.title);
+      createItem(listSubchapters, "li", sub.chapter + ": " + sub.title);
     }
-    containerAbstract.appendChild(containerListChapters);
+    containerAbstract.appendChild(listSubchapters);
   } else {
     createItem(containerAbstract, "h2", chapter.chapter + ": " + chapter.title);
   }
@@ -164,10 +164,38 @@ function renderChapter(chapter) {
   }
 }
 
+function createButtonShowHide(liChapter, linkChapter, containerChaptersSub) {
+  let chapterRow = document.createElement("div");
+  chapterRow.className = "chapter_row";
+
+  let toggleButton = document.createElement("span");
+
+  if (containerChaptersSub) {
+    toggleButton.className = "toggle_button";
+    toggleButton.textContent = "▶";
+
+    toggleButton.onclick = function () {
+      let isOpen = containerChaptersSub.classList.toggle("open");
+
+      if (isOpen) {
+        this.textContent = "▼";
+      } else {
+        this.textContent = "▶";
+      }
+    };
+  } else {
+    toggleButton.className = "toggle_placeholder";
+  }
+
+  chapterRow.appendChild(toggleButton);
+  chapterRow.appendChild(linkChapter);
+  liChapter.appendChild(chapterRow);
+}
+
 function runChapters(listChapters, containerParent) {
   for (let i = 0; i < listChapters.length; i++) {
-    var liChapter = document.createElement("li");
-    var linkChapter = createLinkChapter(listChapters[i]);
+    let liChapter = document.createElement("li");
+    let linkChapter = createLinkChapter(listChapters[i]);
 
     linkChapter.onclick = function (e) {
       e.preventDefault();
@@ -180,12 +208,16 @@ function runChapters(listChapters, containerParent) {
       }
     };
 
-    liChapter.appendChild(linkChapter);
-
     if (listChapters[i].subchapters && listChapters[i].subchapters.length > 0) {
-      var containerChaptersSub = document.createElement("ul");
+      let containerChaptersSub = document.createElement("ul");
+      containerChaptersSub.className = "container_subchapters";
+
+      createButtonShowHide(liChapter, linkChapter, containerChaptersSub);
+
       runChapters(listChapters[i].subchapters, containerChaptersSub);
       liChapter.appendChild(containerChaptersSub);
+    } else {
+      createButtonShowHide(liChapter, linkChapter);
     }
 
     containerParent.appendChild(liChapter);
