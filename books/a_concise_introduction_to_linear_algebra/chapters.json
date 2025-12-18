@@ -15,7 +15,68 @@
         "chapter": 1.2,
         "title": "Length and Dot Product of Vectors in Rn",
         "abstract": "abstracts/1.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/1.2.1_question.md"
+          },
+          {
+            "question": "exercises/1.2.2_question.md"
+          },
+          {
+            "question": "exercises/1.2.3_question.md"
+          },
+          {
+            "question": "exercises/1.2.4_question.md"
+          },
+          {
+            "question": "exercises/1.2.5_question.md"
+          },
+          {
+            "question": "exercises/1.2.6_question.md"
+          },
+          {
+            "question": "exercises/1.2.7_question.md"
+          },
+          {
+            "question": "exercises/1.2.8_question.md"
+          },
+          {
+            "question": "exercises/1.2.9_question.md"
+          },
+          {
+            "question": "exercises/1.2.10_question.md"
+          },
+          {
+            "question": "exercises/1.2.11_question.md"
+          },
+          {
+            "question": "exercises/1.2.12_question.md"
+          },
+          {
+            "question": "exercises/1.2.13_question.md"
+          },
+          {
+            "question": "exercises/1.2.14_question.md"
+          },
+          {
+            "question": "exercises/1.2.15_question.md"
+          },
+          {
+            "question": "exercises/1.2.16_question.md"
+          },
+          {
+            "question": "exercises/1.2.17_question.md"
+          },
+          {
+            "question": "exercises/1.2.18_question.md"
+          },
+          {
+            "question": "exercises/1.2.19_question.md"
+          },
+          {
+            "question": "exercises/1.2.20_question.md"
+          }
+        ]
       },
       {
         "chapter": 1.3,
@@ -175,7 +236,38 @@
         "chapter": 6.3,
         "title": "The Cross Product of Vectors in R3",
         "abstract": "abstracts/6.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/6.3.1_question.md"
+          },
+          {
+            "question": "exercises/6.3.2_question.md"
+          },
+          {
+            "question": "exercises/6.3.3_question.md"
+          },
+          {
+            "question": "exercises/6.3.4_question.md"
+          },
+          {
+            "question": "exercises/6.3.5_question.md"
+          },
+          {
+            "question": "exercises/6.3.6_question.md"
+          },
+          {
+            "question": "exercises/6.3.7_question.md"
+          },
+          {
+            "question": "exercises/6.3.8_question.md"
+          },
+          {
+            "question": "exercises/6.3.9_question.md"
+          },
+          {
+            "question": "exercises/6.3.10_question.md"
+          }
+        ]
       }
     ]
   },
