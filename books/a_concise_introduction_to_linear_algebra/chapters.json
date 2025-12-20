@@ -9,7 +9,41 @@
         "chapter": 1.1,
         "title": "Vectors",
         "abstract": "abstracts/1.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/1.1/1.1.1_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.2_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.3_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.4_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.5_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.6_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.7_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.8_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.9_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.10_question.md"
+          },
+          {
+            "question": "exercises/1.1/1.1.11_question.md"
+          }
+        ]
       },
       {
         "chapter": 1.2,
@@ -17,143 +51,143 @@
         "abstract": "abstracts/1.2_chapter.md",
         "exercises": [
           {
-            "question": "exercises/1.2.1_question.md",
+            "question": "exercises/1.2/1.2.1_question.md",
             "response": [
-              "exercises/1.2.1_response1.pdf",
-              "exercises/1.2.1_response2.pdf"
+              "exercises/1.2/1.2.1_response1.pdf",
+              "exercises/1.2/1.2.1_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.2_question.md",
+            "question": "exercises/1.2/1.2.2_question.md",
             "response": [
-              "exercises/1.2.2_response1.pdf",
-              "exercises/1.2.2_response2.pdf"
+              "exercises/1.2/1.2.2_response1.pdf",
+              "exercises/1.2/1.2.2_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.3_question.md",
+            "question": "exercises/1.2/1.2.3_question.md",
             "response": [
-              "exercises/1.2.3_response1.pdf",
-              "exercises/1.2.3_response2.pdf"
+              "exercises/1.2/1.2.3_response1.pdf",
+              "exercises/1.2/1.2.3_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.4_question.md",
+            "question": "exercises/1.2/1.2.4_question.md",
             "response": [
-              "exercises/1.2.4_response1.pdf",
-              "exercises/1.2.4_response2.pdf"
+              "exercises/1.2/1.2.4_response1.pdf",
+              "exercises/1.2/1.2.4_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.5_question.md",
+            "question": "exercises/1.2/1.2.5_question.md",
             "response": [
-              "exercises/1.2.5_response1.pdf",
-              "exercises/1.2.5_response2.pdf"
+              "exercises/1.2/1.2.5_response1.pdf",
+              "exercises/1.2/1.2.5_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.6_question.md",
+            "question": "exercises/1.2/1.2.6_question.md",
             "response": [
-              "exercises/1.2.6_response1.pdf",
-              "exercises/1.2.6_response2.pdf"
+              "exercises/1.2/1.2.6_response1.pdf",
+              "exercises/1.2/1.2.6_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.7_question.md",
+            "question": "exercises/1.2/1.2.7_question.md",
             "response": [
-              "exercises/1.2.7_response1.pdf",
-              "exercises/1.2.7_response2.pdf"
+              "exercises/1.2/1.2.7_response1.pdf",
+              "exercises/1.2/1.2.7_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.8_question.md",
+            "question": "exercises/1.2/1.2.8_question.md",
             "response": [
-              "exercises/1.2.8_response1.pdf",
-              "exercises/1.2.8_response2.pdf"
+              "exercises/1.2/1.2.8_response1.pdf",
+              "exercises/1.2/1.2.8_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.9_question.md",
+            "question": "exercises/1.2/1.2.9_question.md",
             "response": [
-              "exercises/1.2.9_response1.pdf",
-              "exercises/1.2.9_response2.pdf"
+              "exercises/1.2/1.2.9_response1.pdf",
+              "exercises/1.2/1.2.9_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.10_question.md",
+            "question": "exercises/1.2/1.2.10_question.md",
             "response": [
-              "exercises/1.2.10_response1.pdf",
-              "exercises/1.2.10_response2.pdf"
+              "exercises/1.2/1.2.10_response1.pdf",
+              "exercises/1.2/1.2.10_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.11_question.md",
+            "question": "exercises/1.2/1.2.11_question.md",
             "response": [
-              "exercises/1.2.11_response1.pdf",
-              "exercises/1.2.11_response2.pdf"
+              "exercises/1.2/1.2.11_response1.pdf",
+              "exercises/1.2/1.2.11_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.12_question.md",
+            "question": "exercises/1.2/1.2.12_question.md",
             "response": [
-              "exercises/1.2.12_response1.pdf",
-              "exercises/1.2.12_response2.pdf"
+              "exercises/1.2/1.2.12_response1.pdf",
+              "exercises/1.2/1.2.12_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.13_question.md",
+            "question": "exercises/1.2/1.2.13_question.md",
             "response": [
-              "exercises/1.2.13_response1.pdf",
-              "exercises/1.2.13_response2.pdf"
+              "exercises/1.2/1.2.13_response1.pdf",
+              "exercises/1.2/1.2.13_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.14_question.md",
+            "question": "exercises/1.2/1.2.14_question.md",
             "response": [
-              "exercises/1.2.14_response1.pdf",
-              "exercises/1.2.14_response2.pdf"
+              "exercises/1.2/1.2.14_response1.pdf",
+              "exercises/1.2/1.2.14_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.15_question.md",
+            "question": "exercises/1.2/1.2.15_question.md",
             "response": [
-              "exercises/1.2.15_response1.pdf",
-              "exercises/1.2.15_response2.pdf"
+              "exercises/1.2/1.2.15_response1.pdf",
+              "exercises/1.2/1.2.15_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.16_question.md",
+            "question": "exercises/1.2/1.2.16_question.md",
             "response": [
-              "exercises/1.2.16_response1.pdf",
-              "exercises/1.2.16_response2.pdf"
+              "exercises/1.2/1.2.16_response1.pdf",
+              "exercises/1.2/1.2.16_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.17_question.md",
+            "question": "exercises/1.2/1.2.17_question.md",
             "response": [
-              "exercises/1.2.17_response1.pdf",
-              "exercises/1.2.17_response2.pdf"
+              "exercises/1.2/1.2.17_response1.pdf",
+              "exercises/1.2/1.2.17_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.18_question.md",
+            "question": "exercises/1.2/1.2.18_question.md",
             "response": [
-              "exercises/1.2.18_response1.pdf",
-              "exercises/1.2.18_response2.pdf"
+              "exercises/1.2/1.2.18_response1.pdf",
+              "exercises/1.2/1.2.18_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.19_question.md",
+            "question": "exercises/1.2/1.2.19_question.md",
             "response": [
-              "exercises/1.2.19_response1.pdf",
-              "exercises/1.2.19_response2.pdf"
+              "exercises/1.2/1.2.19_response1.pdf",
+              "exercises/1.2/1.2.19_response2.pdf"
             ]
           },
           {
-            "question": "exercises/1.2.20_question.md",
+            "question": "exercises/1.2/1.2.20_question.md",
             "response": [
-              "exercises/1.2.20_response1.pdf",
-              "exercises/1.2.20_response2.pdf"
+              "exercises/1.2/1.2.20_response1.pdf",
+              "exercises/1.2/1.2.20_response2.pdf"
             ]
           }
         ]
@@ -162,7 +196,119 @@
         "chapter": 1.3,
         "title": "Lines and Planes",
         "abstract": "abstracts/1.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/1.3/1.3.1_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.2_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.3_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.4_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.5_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.6_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.7_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.8_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.9_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.10_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.11_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.12_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.13_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.14_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.15_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.16_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.17_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.18_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.19_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.20_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.21_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.22_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.23_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.24_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.25_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.26_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.27_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.28_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.29_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.30_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.31_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.32_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.33_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.34_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.35_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.36_question.md"
+          },
+          {
+            "question": "exercises/1.3/1.3.37_question.md"
+          }
+        ]
       }
     ]
   },
@@ -176,31 +322,264 @@
         "chapter": 2.1,
         "title": "Gaussian Elimination",
         "abstract": "abstracts/2.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/2.1/2.1.1_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.2_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.3_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.4_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.5_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.6_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.7_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.8_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.9_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.10_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.11_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.12_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.13_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.14_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.15_question.md"
+          },
+          {
+            "question": "exercises/2.1/2.1.16_question.md"
+          }
+        ]
       },
       {
         "chapter": 2.2,
         "title": "The Theory of Gaussian Elimination",
         "abstract": "abstracts/2.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/2.2/2.2.1_question.md"
+          },
+          {
+            "question": "exercises/2.2/2.2.2_question.md"
+          },
+          {
+            "question": "exercises/2.2/2.2.3_question.md"
+          },
+          {
+            "question": "exercises/2.2/2.2.4_question.md"
+          },
+          {
+            "question": "exercises/2.2/2.2.5_question.md"
+          },
+          {
+            "question": "exercises/2.2/2.2.6_question.md"
+          },
+          {
+            "question": "exercises/2.2/2.2.7_question.md"
+          }
+        ]
       },
       {
         "chapter": 2.3,
         "title": "Homogeneous and Inhomogeneous Systems, Gauss-Jordan Elimination",
         "abstract": "abstracts/2.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/2.3/2.3.1_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.2_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.3_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.4_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.5_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.6_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.7_question.md"
+          },
+          {
+            "question": "exercises/2.3/2.3.8_question.md"
+          }
+        ]
       },
       {
         "chapter": 2.4,
         "title": "The Algebra of Matrices",
         "abstract": "abstracts/2.4_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/2.4/2.4.1_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.2_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.3_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.4_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.5_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.6_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.7_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.8_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.9_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.10_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.11_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.12_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.13_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.14_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.15_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.16_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.17_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.18_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.19_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.20_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.21_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.22_question.md"
+          },
+          {
+            "question": "exercises/2.4/2.4.23_question.md"
+          }
+        ]
       },
       {
         "chapter": 2.5,
         "title": "The Inverse and the Transpose of a Matrix",
         "abstract": "abstracts/2.5_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/2.5/2.5.1_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.2_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.3_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.4_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.5_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.6_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.7_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.8_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.9_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.10_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.11_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.12_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.13_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.14_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.15_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.16_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.17_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.18_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.19_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.20_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.21_question.md"
+          },
+          {
+            "question": "exercises/2.5/2.5.22_question.md"
+          }
+        ]
       }
     ]
   },
@@ -318,73 +697,73 @@
         "abstract": "abstracts/6.3_chapter.md",
         "exercises": [
           {
-            "question": "exercises/6.3.1_question.md",
+            "question": "exercises/6.3/6.3.1_question.md",
             "response": [
-              "exercises/6.3.1_response1.pdf",
-              "exercises/6.3.1_response2.pdf"
+              "exercises/6.3/6.3.1_response1.pdf",
+              "exercises/6.3/6.3.1_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.2_question.md",
+            "question": "exercises/6.3/6.3.2_question.md",
             "response": [
-              "exercises/6.3.2_response1.pdf",
-              "exercises/6.3.2_response2.pdf"
+              "exercises/6.3/6.3.2_response1.pdf",
+              "exercises/6.3/6.3.2_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.3_question.md",
+            "question": "exercises/6.3/6.3.3_question.md",
             "response": [
-              "exercises/6.3.3_response1.pdf",
-              "exercises/6.3.3_response2.pdf"
+              "exercises/6.3/6.3.3_response1.pdf",
+              "exercises/6.3/6.3.3_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.4_question.md",
+            "question": "exercises/6.3/6.3.4_question.md",
             "response": [
-              "exercises/6.3.4_response1.pdf",
-              "exercises/6.3.4_response2.pdf"
+              "exercises/6.3/6.3.4_response1.pdf",
+              "exercises/6.3/6.3.4_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.5_question.md",
+            "question": "exercises/6.3/6.3.5_question.md",
             "response": [
-              "exercises/6.3.5_response1.pdf",
-              "exercises/6.3.5_response2.pdf"
+              "exercises/6.3/6.3.5_response1.pdf",
+              "exercises/6.3/6.3.5_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.6_question.md",
+            "question": "exercises/6.3/6.3.6_question.md",
             "response": [
-              "exercises/6.3.6_response1.pdf",
-              "exercises/6.3.6_response2.pdf"
+              "exercises/6.3/6.3.6_response1.pdf",
+              "exercises/6.3/6.3.6_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.7_question.md",
+            "question": "exercises/6.3/6.3.7_question.md",
             "response": [
-              "exercises/6.3.7_response1.pdf",
-              "exercises/6.3.7_response2.pdf"
+              "exercises/6.3/6.3.7_response1.pdf",
+              "exercises/6.3/6.3.7_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.8_question.md",
+            "question": "exercises/6.3/6.3.8_question.md",
             "response": [
-              "exercises/6.3.8_response1.pdf",
-              "exercises/6.3.8_response2.pdf"
+              "exercises/6.3/6.3.8_response1.pdf",
+              "exercises/6.3/6.3.8_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.9_question.md",
+            "question": "exercises/6.3/6.3.9_question.md",
             "response": [
-              "exercises/6.3.9_response1.pdf",
-              "exercises/6.3.9_response2.pdf"
+              "exercises/6.3/6.3.9_response1.pdf",
+              "exercises/6.3/6.3.9_response2.pdf"
             ]
           },
           {
-            "question": "exercises/6.3.10_question.md",
+            "question": "exercises/6.3/6.3.10_question.md",
             "response": [
-              "exercises/6.3.10_response1.pdf",
-              "exercises/6.3.10_response2.pdf"
+              "exercises/6.3/6.3.10_response1.pdf",
+              "exercises/6.3/6.3.10_response2.pdf"
             ]
           }
         ]

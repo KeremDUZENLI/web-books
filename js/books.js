@@ -47,27 +47,25 @@ function createLinkChapter(chapter) {
 
 function renderMarkdown(container, text) {
   var correctText = text
-    // 1. Fix Indentation (Your working "1 space" trick)
-    .replace(/^[\t ]+(\$\$)/gm, " $1")
+    // 1. INDENTATION FIX (The Magic 3-Space Trick)
+    .replace(/^[\t ]+\$\$/gm, "   $$")
 
-    // 2. Fix New Lines
-    .replace(/\\\\/g, "\\\\\\\\")
-
-    // 3. This Regex finds Math blocks ($$...$$) OR ($...$)
+    // 2. MATH PROTECTION (Fixes the \mathcal and \{ issues)
     .replace(/(\$\$[\s\S]+?\$\$)|(\$[^$\n]+?\$)/gm, function (match) {
       return match
-        .replace(/_/g, "\\_") // Fix Subscript
-        .replace(/\|/g, "\\|"); // Fix Vertical Bar
+        .replace(/\\/g, "\\\\") // CRITICAL: Double-escape backslashes.
+
+        .replace(/_/g, "\\_") // Protect underscores
+        .replace(/\|/g, "\\|"); // Protect vertical bars
     })
 
-    // 4. Fix "Bullet Point" Dashes in Matrices
+    // 3. Fix "Bullet Point" Dashes in Matrices
     .replace(/- (&)/g, "\\- $1")
 
-    // 5. Fix Fractions
+    // 4. Fix Fractions
     .replace(/\\frac/g, "\\dfrac");
 
   container.innerHTML = marked(correctText);
-
   if (window.MathJax) {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, container]);
   }
