@@ -69,7 +69,7 @@ function renderMarkdown(container, text) {
   container.innerHTML = marked(correctText);
 
   if (window.MathJax) {
-    MathJax.typesetPromise([container]);
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, container]);
   }
 }
 

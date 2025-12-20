@@ -33,22 +33,25 @@ function loadMarked() {
 }
 
 function loadMathJax() {
-  window.MathJax = {
-    tex: {
-      inlineMath: [
-        ["$", "$"],
-        ["\\(", "\\)"],
-      ],
-      displayMath: [["$$", "$$"]],
-    },
-    options: {
-      skipHtmlTags: ["script", "noscript", "style", "textarea", "pre"],
-    },
-  };
+  var scriptConfig = document.createElement("script");
+  scriptConfig.type = "text/x-mathjax-config";
+  scriptConfig.innerHTML = `
+    MathJax.Hub.Config({
+      extensions: ["tex2jax.js"],
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\\\(","\\\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\\\[","\\\\]"] ],
+        processEscapes: true
+      },
+      "HTML-CSS": { availableFonts: ["TeX"] }
+    });
+  `;
+  document.head.appendChild(scriptConfig);
 
   var scriptMathJax = document.createElement("script");
   scriptMathJax.src =
-    "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js";
+    "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-MML-AM_CHTML";
   document.head.appendChild(scriptMathJax);
 }
 
