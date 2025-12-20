@@ -9,6 +9,10 @@
 
   --color_footer_background: #eee;
   --color_footer: #555;
+
+  --color_button_background: #f0f0f0;
+
+  --color_highlight: #ff0;
 }
 
 * {

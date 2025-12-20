@@ -17,10 +17,18 @@
         "abstract": "abstracts/1.2_chapter.md",
         "exercises": [
           {
-            "question": "exercises/1.2.1_question.md"
+            "question": "exercises/1.2.1_question.md",
+            "response": [
+              "exercises/1.2.1_response1.pdf",
+              "exercises/1.2.1_response2.pdf"
+            ]
           },
           {
-            "question": "exercises/1.2.2_question.md"
+            "question": "exercises/1.2.2_question.md",
+            "response": [
+              "exercises/1.2.2_response1.pdf",
+              "exercises/1.2.2_response2.pdf"
+            ]
           },
           {
             "question": "exercises/1.2.3_question.md"

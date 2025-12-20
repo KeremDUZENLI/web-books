@@ -1,9 +1,3 @@
-:root {
-  --color_button_background: #f0f0f0;
-
-  --color_highlight: #ff0;
-}
-
 #app_index {
   display: flex;
   flex: 1;

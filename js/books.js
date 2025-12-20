@@ -79,19 +79,59 @@ function renderAbstract(abstract) {
   });
 }
 
+function renderExerciseFiles(container, exerciseFile) {
+  container.innerHTML = "";
+
+  if (exerciseFile.endsWith(".pdf")) {
+    var pdfViewer = document.createElement("embed");
+    pdfViewer.src = exerciseFile + "#toolbar=0&view=Fit";
+    pdfViewer.type = "application/pdf";
+    pdfViewer.className = "response_pdf";
+    container.appendChild(pdfViewer);
+  } else {
+    fetchText(exerciseFile, function (text) {
+      renderMarkdown(container, text);
+    });
+  }
+}
+
 function renderExercise(exercise) {
   sliderQuestion.innerHTML = "";
   sliderResponse.innerHTML = "";
 
   if (exercise.question) {
-    fetchText(exercise.question, function (text) {
-      renderMarkdown(sliderQuestion, text);
-    });
+    renderExerciseFiles(sliderQuestion, exercise.question);
   }
+
   if (exercise.response) {
-    fetchText(exercise.response, function (text) {
-      renderMarkdown(sliderResponse, text);
-    });
+    if (Array.isArray(exercise.response)) {
+      var controls = document.createElement("div");
+      controls.className = "response_controls";
+      sliderResponse.appendChild(controls);
+
+      var sliderResponseMulti = document.createElement("div");
+      sliderResponse.appendChild(sliderResponseMulti);
+
+      for (let i = 0; i < exercise.response.length; i++) {
+        let btn = document.createElement("button");
+        btn.textContent = "Version " + (i + 1);
+        btn.className = "response_button";
+
+        btn.onclick = function () {
+          deactivateAllButtons(controls, "response_button");
+          this.classList.add("active");
+
+          renderExerciseFiles(sliderResponseMulti, exercise.response[i]);
+        };
+        controls.appendChild(btn);
+
+        if (i === 0) {
+          btn.click();
+        }
+      }
+    } else {
+      renderExerciseFiles(sliderResponse, exercise.response);
+    }
   }
 }
 
@@ -165,31 +205,30 @@ function renderChapter(chapter) {
 }
 
 function createButtonShowHide(liChapter, linkChapter, containerChaptersSub) {
-  let chapterRow = document.createElement("div");
-  chapterRow.className = "chapter_row";
-
   let toggleButton = document.createElement("span");
 
   if (containerChaptersSub) {
     toggleButton.className = "toggle_button";
     toggleButton.textContent = "▶";
 
-    toggleButton.onclick = function () {
-      let isOpen = containerChaptersSub.classList.toggle("open");
+    let originalOnClick = linkChapter.onclick;
 
-      if (isOpen) {
-        this.textContent = "▼";
+    linkChapter.onclick = function (e) {
+      if (originalOnClick) originalOnClick.call(this, e);
+      if (this.classList.contains("active")) {
+        containerChaptersSub.classList.add("open");
+        toggleButton.textContent = "▼";
       } else {
-        this.textContent = "▶";
+        containerChaptersSub.classList.remove("open");
+        toggleButton.textContent = "▶";
       }
     };
   } else {
     toggleButton.className = "toggle_placeholder";
   }
 
-  chapterRow.appendChild(toggleButton);
-  chapterRow.appendChild(linkChapter);
-  liChapter.appendChild(chapterRow);
+  linkChapter.prepend(toggleButton);
+  liChapter.appendChild(linkChapter);
 }
 
 function runChapters(listChapters, containerParent) {
