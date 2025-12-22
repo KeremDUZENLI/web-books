@@ -593,37 +593,448 @@
         "chapter": 3.1,
         "title": "General Vector Spaces",
         "abstract": "abstracts/3.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/3.1/3.1.1_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.2_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.3_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.4_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.5_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.6_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.7_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.8_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.9_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.10_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.11_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.12_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.13_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.14_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.15_question.md"
+          },
+          {
+            "question": "exercises/3.1/3.1.16_question.md"
+          }
+        ]
       },
       {
         "chapter": 3.2,
         "title": "Subspaces",
         "abstract": "abstracts/3.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/3.2/3.2.1_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.2_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.3_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.4_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.5_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.6_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.7_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.8_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.9_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.10_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.11_question.md"
+          },
+          {
+            "question": "exercises/3.2/3.2.12_question.md"
+          }
+        ]
       },
       {
         "chapter": 3.3,
         "title": "Span and Independence of Vectors",
         "abstract": "abstracts/3.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/3.3/3.3.1_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.2_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.3_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.4_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.5_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.6_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.7_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.8_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.9_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.10_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.11_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.12_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.13_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.14_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.15_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.16_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.17_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.18_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.19_question.md"
+          },
+          {
+            "question": "exercises/3.3/3.3.20_question.md"
+          }
+        ]
       },
       {
         "chapter": 3.4,
         "title": "Bases",
         "abstract": "abstracts/3.4_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/3.4/3.4.1_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.2_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.3_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.4_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.5_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.6_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.7_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.8_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.9_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.10_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.11_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.12_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.13_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.14_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.15_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.16_question.md"
+          },
+          {
+            "question": "exercises/3.4/3.4.17_question.md"
+          }
+        ]
       },
       {
         "chapter": 3.5,
         "title": "Dimension, Orthogonal Complements",
         "abstract": "abstracts/3.5_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/3.5/3.5.1_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.2_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.3_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.4_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.5_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.6_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.7_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.8_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.9_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.10_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.11_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.12_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.13_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.14_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.15_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.16_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.17_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.18_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.19_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.20_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.21_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.22_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.23_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.24_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.25_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.26_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.27_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.28_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.29_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.30_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.31_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.32_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.33_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.34_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.35_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.36_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.37_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.38_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.39_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.40_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.41_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.42_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.43_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.44_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.45_question.md"
+          },
+          {
+            "question": "exercises/3.5/3.5.46_question.md"
+          }
+        ]
       },
       {
         "chapter": 3.6,
         "title": "Change of Basis",
         "abstract": "abstracts/3.6_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/3.6/3.6.1_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.2_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.3_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.4_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.5_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.6_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.7_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.8_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.9_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.10_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.11_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.12_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.13_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.14_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.15_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.16_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.17_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.18_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.19_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.20_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.21_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.22_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.23_question.md"
+          },
+          {
+            "question": "exercises/3.6/3.6.24_question.md"
+          }
+        ]
       }
     ]
   },
@@ -637,19 +1048,163 @@
         "chapter": 4.1,
         "title": "Representation of Linear Transformations by Matrices",
         "abstract": "abstracts/4.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/4.1/4.1.1_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.2_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.3_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.4_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.5_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.6_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.7_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.8_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.9_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.10_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.11_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.12_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.13_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.14_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.15_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.16_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.17_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.18_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.19_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.20_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.21_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.22_question.md"
+          },
+          {
+            "question": "exercises/4.1/4.1.23_question.md"
+          }
+        ]
       },
       {
         "chapter": 4.2,
         "title": "Properties of Linear Transformationsn",
         "abstract": "abstracts/4.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/4.2/4.2.1_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.2_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.3_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.4_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.5_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.6_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.7_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.8_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.9_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.10_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.11_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.12_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.13_question.md"
+          },
+          {
+            "question": "exercises/4.2/4.2.14_question.md"
+          }
+        ]
       },
       {
         "chapter": 4.3,
         "title": "Applications of Linear Transformations in Computer Graphics",
         "abstract": "abstracts/4.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/4.3/4.3.1_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.2_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.3_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.4_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.5_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.6_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.7_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.8_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.9_question.md"
+          },
+          {
+            "question": "exercises/4.3/4.3.10_question.md"
+          }
+        ]
       }
     ]
   },
@@ -663,13 +1218,129 @@
         "chapter": 5.1,
         "title": "Orthogonal Projections and Least-Squares Approximations",
         "abstract": "abstracts/5.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/5.1/5.1.1_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.2_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.3_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.4_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.5_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.6_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.7_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.8_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.9_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.10_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.11_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.12_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.13_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.14_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.15_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.16_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.17_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.18_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.19_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.20_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.21_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.22_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.23_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.24_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.25_question.md"
+          },
+          {
+            "question": "exercises/5.1/5.1.26_question.md"
+          }
+        ]
       },
       {
         "chapter": 5.2,
         "title": "Orthogonal Bases",
         "abstract": "abstracts/5.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/5.2/5.2.1_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.2_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.3_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.4_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.5_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.6_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.7_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.8_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.9_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.10_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.11_question.md"
+          },
+          {
+            "question": "exercises/5.2/5.2.12_question.md"
+          }
+        ]
       }
     ]
   },
@@ -683,13 +1354,132 @@
         "chapter": 6.1,
         "title": "Determinants: Definition and Basic Properties",
         "abstract": "abstracts/6.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/6.1/6.1.1_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.2_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.3_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.4_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.5_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.6_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.7_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.8_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.9_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.10_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.11_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.12_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.13_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.14_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.15_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.16_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.17_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.18_question.md"
+          },
+          {
+            "question": "exercises/6.1/6.1.19_question.md"
+          }
+        ]
       },
       {
         "chapter": 6.2,
         "title": "Further Properties of Determinants",
         "abstract": "abstracts/6.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/6.2/6.2.1_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.2_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.3_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.4_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.5_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.6_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.7_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.8_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.9_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.10_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.11_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.12_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.13_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.14_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.15_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.16_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.17_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.18_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.19_question.md"
+          },
+          {
+            "question": "exercises/6.2/6.2.20_question.md"
+          }
+        ]
       },
       {
         "chapter": 6.3,
@@ -780,25 +1570,242 @@
         "chapter": 7.1,
         "title": "Eigenvalues and Eigenvectors, Basic Properties",
         "abstract": "abstracts/7.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/7.1/7.1.1_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.2_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.3_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.4_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.5_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.6_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.7_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.8_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.9_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.10_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.11_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.12_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.13_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.14_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.15_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.16_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.17_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.18_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.19_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.20_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.21_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.22_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.23_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.24_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.25_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.26_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.27_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.28_question.md"
+          },
+          {
+            "question": "exercises/7.1/7.1.29_question.md"
+          }
+        ]
       },
       {
         "chapter": 7.2,
         "title": "Diagonalization of Matrices",
         "abstract": "abstracts/7.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/7.2/7.2.1_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.2_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.3_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.4_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.5_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.6_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.7_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.8_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.9_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.10_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.11_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.12_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.13_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.14_question.md"
+          },
+          {
+            "question": "exercises/7.2/7.2.15_question.md"
+          }
+        ]
       },
       {
         "chapter": 7.3,
         "title": "Principal Axes",
         "abstract": "abstracts/7.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/7.3/7.3.1_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.2_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.3_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.4_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.5_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.6_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.7_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.8_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.9_question.md"
+          },
+          {
+            "question": "exercises/7.3/7.3.10_question.md"
+          }
+        ]
       },
       {
         "chapter": 7.4,
         "title": "Complex Matrices",
         "abstract": "abstracts/7.4_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/7.4/7.4.1_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.2_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.3_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.4_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.5_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.6_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.7_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.8_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.9_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.10_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.11_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.12_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.13_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.14_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.15_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.16_question.md"
+          },
+          {
+            "question": "exercises/7.4/7.4.17_question.md"
+          }
+        ]
       }
     ]
   },
@@ -812,19 +1819,94 @@
         "chapter": 8.1,
         "title": "LU Factorization",
         "abstract": "abstracts/8.1_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/8.1/8.1.1_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.2_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.3_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.4_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.5_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.6_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.7_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.8_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.9_question.md"
+          },
+          {
+            "question": "exercises/8.1/8.1.10_question.md"
+          }
+        ]
       },
       {
         "chapter": 8.2,
         "title": "Scaled Partial Pivoting",
         "abstract": "abstracts/8.2_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/8.2/8.2.1_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.2_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.3_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.4_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.5_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.6_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.7_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.8_question.md"
+          },
+          {
+            "question": "exercises/8.2/8.2.9_question.md"
+          }
+        ]
       },
       {
         "chapter": 8.3,
         "title": "The Computation of Eigenvalues and Eigenvectors",
         "abstract": "abstracts/8.3_chapter.md",
-        "exercises": []
+        "exercises": [
+          {
+            "question": "exercises/8.3/8.3.1_question.md"
+          },
+          {
+            "question": "exercises/8.3/8.3.2_question.md"
+          },
+          {
+            "question": "exercises/8.3/8.3.3_question.md"
+          },
+          {
+            "question": "exercises/8.3/8.3.4_question.md"
+          },
+          {
+            "question": "exercises/8.3/8.3.5_question.md"
+          }
+        ]
       }
     ]
   }
