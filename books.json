@@ -11,14 +11,29 @@
     "category": "Computer Graphics",
     "books": [
       {
+        "author": "Eric Lengyel",
+        "title": "Mathematics for 3D Game Programming and Computer Graphics",
+        "url": "books/Eric Lengyel - Mathematics for 3D Game Programming and Computer Graphics/page.html"
+      },
+      {
         "author": "Geza Schay",
         "title": "A Concise Introduction to Linear Algebra",
-        "url": "books/a_concise_introduction_to_linear_algebra/a_concise_introduction_to_linear_algebra.html"
+        "url": "books/Geza Schay - A Concise Introduction to Linear Algebra/page.html"
+      },
+      {
+        "author": "John Hughes",
+        "title": "Computer Graphics: Principles and Practice",
+        "url": "books/John Hughes - Computer Graphics Principles and Practice/page.html"
+      },
+      {
+        "author": "North Holland",
+        "title": "Handbook of Computer Aided Geometric Design",
+        "url": "books/North Holland - Handbook of Computer Aided Geometric Design/page.html"
       },
       {
         "author": "Peter Shirley",
         "title": "Fundamentals of Computer Graphics",
-        "url": "books/fundamentals_of_computer_graphics/fundamentals_of_computer_graphics.html"
+        "url": "books/Peter Shirley - Fundamentals of Computer Graphics/page.html"
       }
     ]
   },

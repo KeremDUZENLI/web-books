@@ -46,6 +46,13 @@ function createLinkChapter(chapter) {
 }
 
 function renderMarkdown(container, text) {
+  if (typeof marked === "undefined") {
+    setTimeout(function () {
+      renderMarkdown(container, text);
+    }, 50);
+    return;
+  }
+
   var correctText = text
     // MATH PROTECTION
     .replace(/(\$\$[\s\S]+?\$\$)|(\$[^$\n]+?\$)/gm, function (match) {

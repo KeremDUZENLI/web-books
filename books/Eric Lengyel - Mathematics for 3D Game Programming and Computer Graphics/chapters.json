@@ -1,0 +1,424 @@
+[
+  {
+    "chapter": 1,
+    "title": "The Rendering Pipeline",
+    "abstract": "abstracts/1_chapter.md"
+  },
+  {
+    "chapter": 2,
+    "title": "Vectors",
+    "abstract": "abstracts/2_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/2/2.1_question.md",
+        "response": "exercises/2/2.1_response.md"
+      },
+      {
+        "question": "exercises/2/2.2_question.md",
+        "response": "exercises/2/2.2_response.md"
+      },
+      {
+        "question": "exercises/2/2.3_question.md",
+        "response": "exercises/2/2.3_response.md"
+      },
+      {
+        "question": "exercises/2/2.4_question.md",
+        "response": "exercises/2/2.4_response.md"
+      },
+      {
+        "question": "exercises/2/2.5_question.md",
+        "response": "exercises/2/2.5_response.md"
+      },
+      {
+        "question": "exercises/2/2.6_question.md",
+        "response": "exercises/2/2.6_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 3,
+    "title": "Matrices",
+    "abstract": "abstracts/3_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/3/3.1_question.md",
+        "response": "exercises/3/3.1_response.md"
+      },
+      {
+        "question": "exercises/3/3.2_question.md",
+        "response": "exercises/3/3.2_response.md"
+      },
+      {
+        "question": "exercises/3/3.3_question.md",
+        "response": "exercises/3/3.3_response.md"
+      },
+      {
+        "question": "exercises/3/3.4_question.md",
+        "response": "exercises/3/3.4_response.md"
+      },
+      {
+        "question": "exercises/3/3.5_question.md",
+        "response": "exercises/3/3.5_response.md"
+      },
+      {
+        "question": "exercises/3/3.6_question.md",
+        "response": "exercises/3/3.6_response.md"
+      },
+      {
+        "question": "exercises/3/3.7_question.md",
+        "response": "exercises/3/3.7_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 4,
+    "title": "Transforms",
+    "abstract": "abstracts/4_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/4/4.1_question.md",
+        "response": "exercises/4/4.1_response.md"
+      },
+      {
+        "question": "exercises/4/4.2_question.md",
+        "response": "exercises/4/4.2_response.md"
+      },
+      {
+        "question": "exercises/4/4.3_question.md",
+        "response": "exercises/4/4.3_response.md"
+      },
+      {
+        "question": "exercises/4/4.4_question.md",
+        "response": "exercises/4/4.4_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 5,
+    "title": "Geometry for 3D Engines",
+    "abstract": "abstracts/5_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/5/5.1_question.md",
+        "response": "exercises/5/5.1_response.md"
+      },
+      {
+        "question": "exercises/5/5.2_question.md",
+        "response": "exercises/5/5.2_response.md"
+      },
+      {
+        "question": "exercises/5/5.3_question.md",
+        "response": "exercises/5/5.3_response.md"
+      },
+      {
+        "question": "exercises/5/5.4_question.md",
+        "response": "exercises/5/5.4_response.md"
+      },
+      {
+        "question": "exercises/5/5.5_question.md",
+        "response": "exercises/5/5.5_response.md"
+      },
+      {
+        "question": "exercises/5/5.6_question.md",
+        "response": "exercises/5/5.6_response.md"
+      },
+      {
+        "question": "exercises/5/5.7_question.md",
+        "response": "exercises/5/5.7_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 6,
+    "title": "Ray Tracing",
+    "abstract": "abstracts/6_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/6/6.1_question.md",
+        "response": "exercises/6/6.1_response.md"
+      },
+      {
+        "question": "exercises/6/6.2_question.md",
+        "response": "exercises/6/6.2_response.md"
+      },
+      {
+        "question": "exercises/6/6.3_question.md",
+        "response": "exercises/6/6.3_response.md"
+      },
+      {
+        "question": "exercises/6/6.4_question.md",
+        "response": "exercises/6/6.4_response.md"
+      },
+      {
+        "question": "exercises/6/6.5_question.md",
+        "response": "exercises/6/6.5_response.md"
+      },
+      {
+        "question": "exercises/6/6.6_question.md",
+        "response": "exercises/6/6.6_response.md"
+      },
+      {
+        "question": "exercises/6/6.7_question.md",
+        "response": "exercises/6/6.7_response.md"
+      },
+      {
+        "question": "exercises/6/6.8_question.md",
+        "response": "exercises/6/6.8_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 7,
+    "title": "Lighting and Shading",
+    "abstract": "abstracts/7_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/7/7.1_question.md",
+        "response": "exercises/7/7.1_response.md"
+      },
+      {
+        "question": "exercises/7/7.2_question.md",
+        "response": "exercises/7/7.2_response.md"
+      },
+      {
+        "question": "exercises/7/7.3_question.md",
+        "response": "exercises/7/7.3_response.md"
+      },
+      {
+        "question": "exercises/7/7.4_question.md",
+        "response": "exercises/7/7.4_response.md"
+      },
+      {
+        "question": "exercises/7/7.5_question.md",
+        "response": "exercises/7/7.5_response.md"
+      },
+      {
+        "question": "exercises/7/7.6_question.md",
+        "response": "exercises/7/7.6_response.md"
+      },
+      {
+        "question": "exercises/7/7.7_question.md",
+        "response": "exercises/7/7.7_response.md"
+      },
+      {
+        "question": "exercises/7/7.8_question.md",
+        "response": "exercises/7/7.8_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 8,
+    "title": "Visibility Determination",
+    "abstract": "abstracts/8_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/8/8.1_question.md",
+        "response": "exercises/8/8.1_response.md"
+      },
+      {
+        "question": "exercises/8/8.2_question.md",
+        "response": "exercises/8/8.2_response.md"
+      },
+      {
+        "question": "exercises/8/8.3_question.md",
+        "response": "exercises/8/8.3_response.md"
+      },
+      {
+        "question": "exercises/8/8.4_question.md",
+        "response": "exercises/8/8.4_response.md"
+      },
+      {
+        "question": "exercises/8/8.5_question.md",
+        "response": "exercises/8/8.5_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 9,
+    "title": "Polygonal Techniques",
+    "abstract": "abstracts/9_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/9/9.1_question.md",
+        "response": "exercises/9/9.1_response.md"
+      },
+      {
+        "question": "exercises/9/9.2_question.md",
+        "response": "exercises/9/9.2_response.md"
+      },
+      {
+        "question": "exercises/9/9.3_question.md",
+        "response": "exercises/9/9.3_response.md"
+      },
+      {
+        "question": "exercises/9/9.4_question.md",
+        "response": "exercises/9/9.4_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 10,
+    "title": "Shadows",
+    "abstract": "abstracts/10_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/10/10.1_question.md",
+        "response": "exercises/10/10.1_response.md"
+      },
+      {
+        "question": "exercises/10/10.2_question.md",
+        "response": "exercises/10/10.2_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 11,
+    "title": "Curves and Surfaces",
+    "abstract": "abstracts/11_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/11/11.1_question.md",
+        "response": "exercises/11/11.1_response.md"
+      },
+      {
+        "question": "exercises/11/11.2_question.md",
+        "response": "exercises/11/11.2_response.md"
+      },
+      {
+        "question": "exercises/11/11.3_question.md",
+        "response": "exercises/11/11.3_response.md"
+      },
+      {
+        "question": "exercises/11/11.4_question.md"
+      },
+      {
+        "question": "exercises/11/11.5_question.md"
+      }
+    ]
+  },
+  {
+    "chapter": 12,
+    "title": "Collision Detection",
+    "abstract": "abstracts/12_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/12/12.1_question.md",
+        "response": "exercises/12/12.1_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 13,
+    "title": "Linear Physics",
+    "abstract": "abstracts/13_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/13/13.1_question.md",
+        "response": "exercises/13/13.1_response.md"
+      },
+      {
+        "question": "exercises/13/13.2_question.md",
+        "response": "exercises/13/13.2_response.md"
+      },
+      {
+        "question": "exercises/13/13.3_question.md",
+        "response": "exercises/13/13.3_response.md"
+      },
+      {
+        "question": "exercises/13/13.4_question.md",
+        "response": "exercises/13/13.4_response.md"
+      },
+      {
+        "question": "exercises/13/13.5_question.md",
+        "response": "exercises/13/13.5_response.md"
+      },
+      {
+        "question": "exercises/13/13.6_question.md",
+        "response": "exercises/13/13.6_response.md"
+      },
+      {
+        "question": "exercises/13/13.7_question.md",
+        "response": "exercises/13/13.7_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 14,
+    "title": "Rotational Physics",
+    "abstract": "abstracts/14_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/14/14.1_question.md",
+        "response": "exercises/14/14.1_response.md"
+      },
+      {
+        "question": "exercises/14/14.2_question.md",
+        "response": "exercises/14/14.2_response.md"
+      },
+      {
+        "question": "exercises/14/14.3_question.md",
+        "response": "exercises/14/14.3_response.md"
+      },
+      {
+        "question": "exercises/14/14.4_question.md",
+        "response": "exercises/14/14.4_response.md"
+      },
+      {
+        "question": "exercises/14/14.5_question.md",
+        "response": "exercises/14/14.5_response.md"
+      },
+      {
+        "question": "exercises/14/14.6_question.md",
+        "response": "exercises/14/14.6_response.md"
+      },
+      {
+        "question": "exercises/14/14.7_question.md",
+        "response": "exercises/14/14.7_response.md"
+      },
+      {
+        "question": "exercises/14/14.8_question.md",
+        "response": "exercises/14/14.8_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 15,
+    "title": "Fluid and Cloth Simulation",
+    "abstract": "abstracts/15_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/15/15.1_question.md",
+        "response": "exercises/15/15.1_response.md"
+      },
+      {
+        "question": "exercises/15/15.2_question.md",
+        "response": "exercises/15/15.2_response.md"
+      }
+    ]
+  },
+  {
+    "chapter": 16,
+    "title": "Numerical Methods",
+    "abstract": "abstracts/16_chapter.md",
+    "exercises": [
+      {
+        "question": "exercises/16/16.1_question.md",
+        "response": "exercises/16/16.1_response.md"
+      },
+      {
+        "question": "exercises/16/16.2_question.md",
+        "response": "exercises/16/16.2_response.md"
+      },
+      {
+        "question": "exercises/16/16.3_question.md",
+        "response": "exercises/16/16.3_response.md"
+      },
+      {
+        "question": "exercises/16/16.4_question.md"
+      },
+      {
+        "question": "exercises/16/16.5_question.md"
+      }
+    ]
+  }
+]
