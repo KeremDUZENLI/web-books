@@ -1,0 +1,157 @@
+[
+  {
+    "chapter": 1,
+    "title": "A History of Curves and Surfaces in CAGD",
+    "abstract": "abstracts/1_chapter.md"
+  },
+  {
+    "chapter": 2,
+    "title": "Geometric Fundamentals",
+    "abstract": "abstracts/2_chapter.md"
+  },
+  {
+    "chapter": 3,
+    "title": "Geometries for CAGD",
+    "abstract": "abstracts/3_chapter.md"
+  },
+  {
+    "chapter": 4,
+    "title": "Bezier Techniques",
+    "abstract": "abstracts/4_chapter.md"
+  },
+  {
+    "chapter": 5,
+    "title": "Rational Techniques",
+    "abstract": "abstracts/5_chapter.md"
+  },
+  {
+    "chapter": 6,
+    "title": "Spline Basics",
+    "abstract": "abstracts/6_chapter.md"
+  },
+  {
+    "chapter": 7,
+    "title": "Curve and Surface Constructions",
+    "abstract": "abstracts/7_chapter.md"
+  },
+  {
+    "chapter": 8,
+    "title": "Geometric Continuity",
+    "abstract": "abstracts/8_chapter.md"
+  },
+  {
+    "chapter": 9,
+    "title": "Splines on Surfaces",
+    "abstract": "abstracts/9_chapter.md"
+  },
+  {
+    "chapter": 10,
+    "title": "Box Splines",
+    "abstract": "abstracts/10_chapter.md"
+  },
+  {
+    "chapter": 11,
+    "title": "Finite Element Approximation with Splines",
+    "abstract": "abstracts/11_chapter.md"
+  },
+  {
+    "chapter": 12,
+    "title": "Subdivision Surfaces",
+    "abstract": "abstracts/12_chapter.md"
+  },
+  {
+    "chapter": 13,
+    "title": "Interrogation of Subdivision Surfaces",
+    "abstract": "abstracts/13_chapter.md"
+  },
+  {
+    "chapter": 14,
+    "title": "Multiresolution Techniques",
+    "abstract": "abstracts/14_chapter.md"
+  },
+  {
+    "chapter": 15,
+    "title": "Algebraic Methods for Computer Aided Geometric Design",
+    "abstract": "abstracts/15_chapter.md"
+  },
+  {
+    "chapter": 16,
+    "title": "Scattered Data Interpolation: Radial Basis and Other Methods",
+    "abstract": "abstracts/16_chapter.md"
+  },
+  {
+    "chapter": 17,
+    "title": "Pythagorean-Hodograph Curves",
+    "abstract": "abstracts/17_chapter.md"
+  },
+  {
+    "chapter": 18,
+    "title": "Voronoi Diagrams",
+    "abstract": "abstracts/18_chapter.md"
+  },
+  {
+    "chapter": 19,
+    "title": "The Medial Axis Transform",
+    "abstract": "abstracts/19_chapter.md"
+  },
+  {
+    "chapter": 20,
+    "title": "Solid Modeling",
+    "abstract": "abstracts/20_chapter.md"
+  },
+  {
+    "chapter": 21,
+    "title": "Parametric Modeling",
+    "abstract": "abstracts/21_chapter.md"
+  },
+  {
+    "chapter": 22,
+    "title": "Sculptured Surface NC Machining",
+    "abstract": "abstracts/22_chapter.md"
+  },
+  {
+    "chapter": 23,
+    "title": "Cyclides",
+    "abstract": "abstracts/23_chapter.md"
+  },
+  {
+    "chapter": 24,
+    "title": "Geometry Processing",
+    "abstract": "abstracts/24_chapter.md"
+  },
+  {
+    "chapter": 25,
+    "title": "Intersection Problems",
+    "abstract": "abstracts/25_chapter.md"
+  },
+  {
+    "chapter": 26,
+    "title": "Reverse Engineering",
+    "abstract": "abstracts/26_chapter.md"
+  },
+  {
+    "chapter": 27,
+    "title": "Vector and Tensor Field Visualization",
+    "abstract": "abstracts/27_chapter.md"
+  },
+  {
+    "chapter": 28,
+    "title": "Splines over Triangulations",
+    "abstract": "abstracts/28_chapter.md"
+  },
+  {
+    "chapter": 29,
+    "title": "Kinematics and Animation",
+    "abstract": "abstracts/29_chapter.md"
+  },
+  {
+    "chapter": 30,
+    "title": "Direct Rendering of Freeform Surfaces",
+    "abstract": "abstracts/30_chapter.md"
+  },
+  {
+    "chapter": 31,
+    "title": "Modeling and Processing with Quadric Surfaces",
+    "abstract": "abstracts/31_chapter.md"
+  }
+]

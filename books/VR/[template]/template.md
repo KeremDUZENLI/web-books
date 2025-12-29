@@ -1,6 +1,6 @@
 # **TEMPLATE**
 
-**Role:** You are an expert technical writer and mathematician specializing in computer graphics and mathematics.
+**Role:** You are an expert technical writer and VR systems engineer specializing in Human-Computer Interaction (HCI), spatial computing, and immersive design.
 
 **Task:** Generate resources for **Chapter [INSERT NUMBER]: [INSERT TITLE]**.
 
@@ -16,32 +16,33 @@ Create a file named `abstracts/[chapter]_chapter.md`. Follow this strict format:
 
 ## Main Idea
 
-- State what the chapter teaches in 1–2 short sentences. Keep it factual and direct.
+- State what the chapter teaches in 1–2 short sentences bullet point. Keep it factual and direct.
+
 - **Do not include citations, page numbers, or bracketed references.**
 
 ---
 
-## Keywords
+## Key Principles & Guidelines
 
-**Term:**
+**Name of Principle/Illusion**
 
-- One-sentence definition, why it is used, and a tiny example.
+- **Definition:** One-sentence explanation of the phenomenon (e.g., Vergence-Accommodation Conflict, Vection).
 
-_(Add only the essential terms.)_
+- **Design Implication:** How this affects VR development or user comfort.
+
+_(Include specific heuristics, perception rules, or hardware constraints.)_
 
 ---
 
-## Formulas
+## Formulas (Optional)
 
 **Name**
 
-- **Formula:** [LaTeX equation]
+- **Formula:** [LaTeX equation if applicable]
 
-- **Meaning:** one short line.
+- **Context:** When this is used in the VR pipeline (e.g., Rendering, Tracking).
 
-- **Use in graphics:** one short line.
-
-_(Include only formulas the chapter actually depends on.)_
+_(Only include if the chapter explicitly defines mathematical models.)_
 
 ---
 
@@ -59,11 +60,11 @@ Write a **single** Python script that generates **both** the Question and Respon
 
 - **Constraint 2 (File Handling):** The script must automatically create the directories `abstracts/` and `exercises/[chapter]/`.
 
-- **Constraint 3 (Concise Math Accuracy):** For _Response_ files, be **concise**. Show the calculation steps clearly but strictly. Avoid conversational filler (e.g., "To solve this, we first..."). Just show the math.
+- **Constraint 3 (Comprehensive Design Reasoning):** For Response files, provide detailed, reasoned explanations. If the question is a design challenge, list pros/cons or step-by-step implementation logic. If it is a discussion question, synthesize the chapter's arguments to support the answer. Do not be overly brief; prioritize clarity and context, be concise and simple.
 
-- **Constraint 4 (Exhaustiveness):** Scan the source text meticulously. You must create a separate file for **EVERY** numbered exercise (e.g., 1.1, 1.2, 1.3). **Do not skip any questions.**
+- **Constraint 4 (Strict Source Adherence):** Scan the source text meticulously. You must create a separate file for **EVERY** numbered exercise (e.g., 1.1, 1.2, 1.3). **Do not skip any questions.**. You are **PROHIBITED** from using outside knowledge to generate exercises. You must **ONLY** extract questions that are explicitly present in the provided source text. Even if you know the book typically has "Review Questions" at the end, if that section is missing from the provided file, you **MUST** leave the questions and responses dictionaries empty.
 
-- **Constraint 5 (Content Fidelity):** If the chapter does _not_ contain specific exercises, leave the dictionaries empty. Do not invent new exercises.
+- **Constraint 5 (Verbatim Extraction):** If you find exercises, the question text in the questions dictionary must be a _verbatim quote_ from the source file. Do not paraphrase. If the chapter does _not_ contain specific exercises, leave the dictionaries empty. Do not invent new exercises.
 
 - **Constraint 6 (No Citations):** The output must be clean text. **Do NOT** include citations (e.g., ``), page references, or bracketed numbers in the Abstract or Responses.
 
