@@ -10,6 +10,14 @@ _(Internal Rule: You will insert this content directly into the Python script va
 
 Create a file named `abstracts/[chapter]_chapter.md`. Follow this strict format:
 
+**Formatting Rules:**
+
+- **Separators:** Use `---` with a blank line before and after to separate major sections.
+
+- **Spacing:** Leave exactly one blank line between headers and their content.
+
+- **Styling:** Use `**Bold**` for terms and principle names.
+
 # Chapter [INSERT NUMBER]: [INSERT TITLE]
 
 ---
@@ -67,6 +75,8 @@ Write a **single** Python script that generates **both** the Question and Respon
 - **Constraint 5 (Verbatim Extraction):** If you find exercises, the question text in the questions dictionary must be a _verbatim quote_ from the source file. Do not paraphrase. If the chapter does _not_ contain specific exercises, leave the dictionaries empty. Do not invent new exercises.
 
 - **Constraint 6 (No Citations):** The output must be clean text. **Do NOT** include citations (e.g., ``), page references, or bracketed numbers in the Abstract or Responses.
+
+- **Constraint 7 (Layout & Spacing):** Inside the Python `r"""..."""` strings, ensure the text is **left-aligned** (no indentation). Verify that there is a **visible blank line** between every header and paragraph to ensuring clear rendering in Markdown viewers.
 
 # **3. Output Format**
 
@@ -131,22 +141,47 @@ responses = {
     # [Final Answer]"""
 }
 
+# Constraint 7: Left-aligned content with clear blank lines
+abstract_content = r"""# Chapter 36: Getting Started
+
+---
+
+## Main Idea
+
+- This concluding chapter serves as a call to action, urging readers to stop planning and start creating.
+
+- It provides a practical roadmap...
+
+---
+
+## Key Principles & Guidelines
+
+**The "Just Do It" Philosophy**
+
+- **Definition:** VR technology moves too fast...
+
+- **Design Implication:** A prototype should have been completed...
+"""
+
+
 if questions or responses:
     os.makedirs(exercises_dir, exist_ok=True)
 
 # Write Question Files
+
 for filename, content in questions.items():
     file_path = os.path.join(exercises_dir, filename)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"[+] Created Question: {filename}")
+        print(f"[+] Created Question: {filename}")
 
 # Write Response Files
+
 for filename, content in responses.items():
     file_path = os.path.join(exercises_dir, filename)
     with open(file_path, "w", encoding="utf-8") as f:
         f.write(content)
-    print(f"[+] Created Response: {filename}")
+        print(f"[+] Created Response: {filename}")
 
 if not questions and not responses:
     print(f"[i] No exercises found for Chapter {chapter_id}. Only Abstract created.")

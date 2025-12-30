@@ -1,0 +1,67 @@
+[
+  {
+    "chapter": 1,
+    "title": "Introduction",
+    "abstract": "abstracts/1_chapter.md"
+  },
+  {
+    "chapter": 2,
+    "title": "Bird's-Eye View",
+    "abstract": "abstracts/2_chapter.md"
+  },
+  {
+    "chapter": 3,
+    "title": "The Geometry of Virtual Worlds",
+    "abstract": "abstracts/3_chapter.md"
+  },
+  {
+    "chapter": 4,
+    "title": "Light and Optics",
+    "abstract": "abstracts/4_chapter.md"
+  },
+  {
+    "chapter": 5,
+    "title": "The Physiology of Human Vision",
+    "abstract": "abstracts/5_chapter.md"
+  },
+  {
+    "chapter": 6,
+    "title": "Visual Perception",
+    "abstract": "abstracts/6_chapter.md"
+  },
+  {
+    "chapter": 7,
+    "title": "Visual Rendering",
+    "abstract": "abstracts/7_chapter.md"
+  },
+  {
+    "chapter": 8,
+    "title": "Motion in Real and Virtual Worlds",
+    "abstract": "abstracts/8_chapter.md"
+  },
+  {
+    "chapter": 9,
+    "title": "Tracking",
+    "abstract": "abstracts/9_chapter.md"
+  },
+  {
+    "chapter": 10,
+    "title": "Interaction",
+    "abstract": "abstracts/10_chapter.md"
+  },
+  {
+    "chapter": 11,
+    "title": "Audio",
+    "abstract": "abstracts/11_chapter.md"
+  },
+  {
+    "chapter": 12,
+    "title": "Evaluating VR Systems and Experiences",
+    "abstract": "abstracts/12_chapter.md"
+  },
+  {
+    "chapter": 13,
+    "title": "Frontiers",
+    "abstract": "abstracts/13_chapter.md"
+  }
+]

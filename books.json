@@ -55,6 +55,17 @@
   },
   {
     "category": "VR",
-    "books": []
+    "books": [
+      {
+        "author": "Jason Jerald",
+        "title": "The VR Book",
+        "url": "books/VR/Jason Jerald - The VR Book/page.html"
+      },
+      {
+        "author": "Steven LaValle",
+        "title": "Virtual Reality",
+        "url": "books/VR/Steven LaValle - Virtual Reality/page.html"
+      }
+    ]
   }
 ]
