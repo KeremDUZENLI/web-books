@@ -123,3 +123,45 @@ function renderSearchInput(listBooks) {
     renderBooks(listBooksFiltered, this.value);
   });
 }
+
+function initDevMenu() {
+  var footerText = document.querySelector("footer p");
+
+  footerText.addEventListener("dblclick", function () {
+    var menuTemplate = document.getElementById("menu_template");
+
+    if (!menuTemplate) {
+      menuTemplate = document.createElement("div");
+      menuTemplate.id = "menu_template";
+
+      var linkTemplates = [
+        {
+          name: "Computer Graphics",
+          url: "books/Computer Graphics/[template]/template.html",
+        },
+        {
+          name: "VR",
+          url: "books/VR/[template]/template.html",
+        },
+      ];
+
+      var html = "";
+      for (var i = 0; i < linkTemplates.length; i++) {
+        html +=
+          '<a href="' +
+          linkTemplates[i].url +
+          '">' +
+          linkTemplates[i].name +
+          "</a>";
+      }
+      menuTemplate.innerHTML = html;
+      document.body.appendChild(menuTemplate);
+    }
+
+    if (menuTemplate.style.display === "block") {
+      menuTemplate.style.display = "none";
+    } else {
+      menuTemplate.style.display = "block";
+    }
+  });
+}

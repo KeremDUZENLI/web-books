@@ -1,0 +1,73 @@
+[
+  {
+    "chapter": "I",
+    "title": "What is Virtual Reality?",
+    "abstract": "",
+    "subchapters": [
+      {
+        "chapter": 1,
+        "title": "Introduction to Virtual Reality",
+        "abstract": "abstracts/1_chapter.md"
+      },
+      {
+        "chapter": 2,
+        "title": "VR: The Medium",
+        "abstract": "abstracts/2_chapter.md"
+      },
+      {
+        "chapter": 3,
+        "title": "The Human in the Loop",
+        "abstract": "abstracts/3_chapter.md"
+      }
+    ]
+  },
+  {
+    "chapter": "II",
+    "title": "The Reality System",
+    "abstract": "",
+    "subchapters": [
+      {
+        "chapter": 4,
+        "title": "Input: Interfacing the Participant(s) With the Virtual World",
+        "abstract": "abstracts/4_chapter.md"
+      },
+      {
+        "chapter": 5,
+        "title": "Output: Interfacing the Virtual World With the Participant(s)",
+        "abstract": "abstracts/5_chapter.md"
+      },
+      {
+        "chapter": 6,
+        "title": "Presenting the Virtual World",
+        "abstract": "abstracts/6_chapter.md"
+      },
+      {
+        "chapter": 7,
+        "title": "Interacting With the Virtual World",
+        "abstract": "abstracts/7_chapter.md"
+      }
+    ]
+  },
+  {
+    "chapter": "III",
+    "title": "The Reality Experience",
+    "abstract": "",
+    "subchapters": [
+      {
+        "chapter": 8,
+        "title": "Bringing the Virtual World to Life",
+        "abstract": "abstracts/8_chapter.md"
+      },
+      {
+        "chapter": 9,
+        "title": "Experience Conception and Design",
+        "abstract": "abstracts/9_chapter.md"
+      },
+      {
+        "chapter": 10,
+        "title": "Virtual Reality: Past, Present, Future",
+        "abstract": "abstracts/10_chapter.md"
+      }
+    ]
+  }
+]

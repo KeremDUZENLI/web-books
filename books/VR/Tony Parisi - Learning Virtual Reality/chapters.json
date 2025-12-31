@@ -1,0 +1,37 @@
+[
+  {
+    "chapter": 1,
+    "title": "Introduction",
+    "abstract": "abstracts/1_chapter.md"
+  },
+  {
+    "chapter": 2,
+    "title": "Virtual Reality Hardware",
+    "abstract": "abstracts/2_chapter.md"
+  },
+  {
+    "chapter": 3,
+    "title": "Going Native: Developing for Oculus Rift on the Desktop",
+    "abstract": "abstracts/3_chapter.md"
+  },
+  {
+    "chapter": 4,
+    "title": "Going Mobile: Developing for Gear VR",
+    "abstract": "abstracts/4_chapter.md"
+  },
+  {
+    "chapter": 5,
+    "title": "WebVR: Browser-Based Virtual Reality in HTML5",
+    "abstract": "abstracts/5_chapter.md"
+  },
+  {
+    "chapter": 6,
+    "title": "Build It Yourself: Stereoscopic 3D Rendering with Android",
+    "abstract": "abstracts/6_chapter.md"
+  },
+  {
+    "chapter": 7,
+    "title": "Virtual Reality Design",
+    "abstract": "abstracts/7_chapter.md"
+  }
+]
