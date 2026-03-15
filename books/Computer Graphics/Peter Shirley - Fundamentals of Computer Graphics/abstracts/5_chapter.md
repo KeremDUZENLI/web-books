@@ -1,79 +1,79 @@
-# Chapter 4: Ray Tracing
+# Chapter 5: Linear Algebra
 
 ---
 
 ## Main Idea
 
-- This chapter introduces **ray tracing**, an image-order rendering algorithm that generates 3D images by casting rays from the eye through pixels into the scene.
-
-- It emphasizes that ray tracing elegantly handles complex global effects-like **shadows and reflections**-that are difficult for standard rasterization pipelines.
-
-<img src="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcTth1tl8qRJJ3RNt_pZ6w3vF1saJ_7o89J_ZgfX_i1unj2pqH1EFsu4b2T96MyYs3iy28Rs-pxq85L0epQc-UmNegtrEfJnFvMZpF2Bcan4y_FoT0s">
+- This chapter introduces the fundamental concepts of linear algebra, focusing on the **geometric interpretation of matrices and determinants**, and their application to vectors. It provides the mathematical foundation necessary for **transforming and manipulating objects** in computer graphics.
 
 ---
 
 ## Keywords
 
-**Viewing Ray**
+**Matrix:**
 
-- A 3D line originating at the camera (eye) and passing through a specific pixel on the image plane. Finding what this ray hits determines the pixel's color.
+- A rectangular array of numbers used to represent transformations or systems of linear equations.
 
-**Object-Order vs. Image-Order**
+**Determinant:**
 
-- **Object-order** (rasterization) loops through objects to find pixels; **Image-order** (ray tracing) loops through pixels to find objects.
+- A scalar value computed from a square matrix that represents the signed area (in 2D) or signed volume (in 3D) spanned by its column or row vectors.
 
-**Shadow Ray**
+**Identity Matrix:**
 
-- A secondary ray cast from a surface intersection point toward a light source to check if the path is blocked (occluded), determining if the point is in shadow.
+- A square matrix with ones on the main diagonal and zeros elsewhere, acting as the multiplicative identity in matrix algebra.
 
-**Camera Frame**
+**Inverse Matrix:**
 
-- An orthonormal coordinate system ($\mathbf{u}, \mathbf{v}, \mathbf{w}$) derived from the eye position, gaze direction, and up vector, used to position the image plane and generate rays.
+- The matrix that, when multiplied by the original matrix, results in the identity matrix.
+
+**Transpose:**
+
+- An operation that flips a matrix over its diagonal, switching its rows and columns.
 
 ---
 
 ## Formulas
 
-**Parametric Ray Equation**
+**2D Determinant**
 
-- **Formula:** $\mathbf{p}(t) = \mathbf{e} + t\mathbf{d}$
+- **Formula:** $|ab| = x_ay_b - y_ax_b$
 
-- **Meaning:** Defines points $\mathbf{p}$ along a line starting at origin $\mathbf{e}$ with direction $\mathbf{d}$ scaled by parameter $t$.
+- **Meaning:** Computes the signed area of the parallelogram defined by vectors $\mathbf{a}$ and $\mathbf{b}$.
 
-- **Use in graphics:** The fundamental tool for generating viewing rays and solving intersection tests.
+- **Use in graphics:** Used in calculating barycentric coordinates and testing if a point is inside a polygon.
 
-**Ray-Sphere Intersection**
+**3D Determinant**
 
-- **Formula:** $(\mathbf{d} \cdot \mathbf{d})t^2 + 2\mathbf{d} \cdot (\mathbf{e} - \mathbf{c})t + (\mathbf{e} - \mathbf{c}) \cdot (\mathbf{e} - \mathbf{c}) - R^2 = 0$
+- **Formula:** $|abc| = x_ay_bz_c - x_az_by_c - y_ax_bz_c + y_az_bx_c + z_ax_by_c - z_ay_bx_c$
 
-- **Meaning:** A quadratic equation solving for $t$ where a ray intersects a sphere of center $\mathbf{c}$ and radius $R$.
+- **Meaning:** Computes the signed volume of the parallelepiped defined by vectors $\mathbf{a}$, $\mathbf{b}$, and $\mathbf{c}$.
 
-- **Use in graphics:** The simplest mathematical primitive intersection, used for basic rendering and bounding volumes.
+- **Use in graphics:** Essential for operations involving 3D spaces, such as solving systems of equations and volume calculations.
 
-**Blinn-Phong Shading**
+**Matrix Multiplication**
 
-- **Formula:** $L = k_d I \max(0, \mathbf{n} \cdot \mathbf{l}) + k_s I \max(0, \mathbf{n} \cdot \mathbf{h})^p$
+- **Formula:** $p_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + \dots + a_{im}b_{mj}$
 
-- **Meaning:** Combines diffuse shading (dot product of normal $\mathbf{n}$ and light $\mathbf{l}$) with a specular highlight based on the halfway vector $\mathbf{h}$.
+- **Meaning:** The element at the $i$-th row and $j$-th column of the product matrix is the dot product of the $i$-th row of the first matrix and the $j$-th column of the second.
 
-- **Use in graphics:** The standard model for rendering shiny surfaces with highlights.
+- **Use in graphics:** Combining multiple transformations (scaling, rotation, translation) into a single matrix.
+
+**Inverse Matrix Property**
+
+- **Formula:** $(AB)^{-1} = B^{-1}A^{-1}$
+
+- **Meaning:** The inverse of a product of matrices is the product of their inverses in reverse order.
+
+- **Use in graphics:** Reversing a sequence of transformations.
 
 ---
 
 ## Practical Use
 
-**Recursion**
+**Matrix Transformations**
 
-- Ray tracing easily handles **specular reflections** (mirrors) by recursively spawning a new reflection ray from the hit point and adding the result to the current pixel color.
+- Matrices are the standard method for applying scaling, rotation, and translation to geometric models.
 
-**Visual Debugging**
+**Solving Systems of Equations**
 
-- A common debugging strategy in ray tracing is visualizing data directly on the image; for example, mapping **surface normals** to RGB colors ($x \to R, y \to G, z \to B$) to verify geometry orientation.
-
-**Epsilon Offsets**
-
-- When casting secondary rays (like shadow rays), a tiny value ($\epsilon$) is added to the starting position to prevent **"shadow acne,"** where a ray incorrectly intersects the surface it just started from due to floating-point precision errors.
-
-**Polymorphism in Code**
-
-- Ray tracers are typically architected using an abstract **Surface class** with a virtual `hit` function. This allows the renderer to treat spheres, triangles, and groups of objects uniformly.
+- Determinants and matrix inverses provide analytical and numerical methods (like Cramer's rule) for finding intersection points, such as ray-triangle intersections.
