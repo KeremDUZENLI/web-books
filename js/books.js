@@ -89,6 +89,10 @@ function renderExerciseFiles(container, exerciseFile) {
     pdfViewer.type = "application/pdf";
     pdfViewer.className = "response_pdf";
     container.appendChild(pdfViewer);
+  } else if (exerciseFile.endsWith(".jpg")) {
+    var imgViewer = document.createElement("img");
+    imgViewer.src = exerciseFile;
+    container.appendChild(imgViewer);
   } else {
     fetchText(exerciseFile, function (text) {
       renderMarkdown(container, text);

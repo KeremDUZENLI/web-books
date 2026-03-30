@@ -11,59 +11,101 @@
     "exercises": [
       {
         "question": "exercises/2/2.1_question.md",
-        "response": "exercises/2/2.1_response.md"
+        "response": [
+          "exercises/2/2.1_response.md",
+          "exercises/2/2.1_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.2_question.md",
-        "response": "exercises/2/2.2_response.md"
+        "response": [
+          "exercises/2/2.2_response.md",
+          "exercises/2/2.2_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.3_question.md",
-        "response": "exercises/2/2.3_response.md"
+        "response": [
+          "exercises/2/2.3_response.md",
+          "exercises/2/2.3_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.4_question.md",
-        "response": "exercises/2/2.4_response.md"
+        "response": [
+          "exercises/2/2.4_response.md",
+          "exercises/2/2.4_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.5_question.md",
-        "response": "exercises/2/2.5_response.md"
+        "response": [
+          "exercises/2/2.5_response.md",
+          "exercises/2/2.5_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.6_question.md",
-        "response": "exercises/2/2.6_response.md"
+        "response": [
+          "exercises/2/2.6_response.md",
+          "exercises/2/2.6_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.7_question.md",
-        "response": "exercises/2/2.7_response.md"
+        "response": [
+          "exercises/2/2.7_response.md",
+          "exercises/2/2.7_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.8_question.md",
-        "response": "exercises/2/2.8_response.md"
+        "response": [
+          "exercises/2/2.8_response.md",
+          "exercises/2/2.8_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.9_question.md",
-        "response": "exercises/2/2.9_response.md"
+        "response": [
+          "exercises/2/2.9_response.md",
+          "exercises/2/2.9_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.10_question.md",
-        "response": "exercises/2/2.10_response.md"
+        "response": [
+          "exercises/2/2.10_response.md",
+          "exercises/2/2.10_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.11_question.md",
-        "response": "exercises/2/2.11_response.md"
+        "response": [
+          "exercises/2/2.11_response.md",
+          "exercises/2/2.11_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.12_question.md",
-        "response": "exercises/2/2.12_response.md"
+        "response": [
+          "exercises/2/2.12_response.md",
+          "exercises/2/2.12_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.13_question.md",
-        "response": "exercises/2/2.13_response.md"
+        "response": [
+          "exercises/2/2.13_response.md",
+          "exercises/2/2.13_response2.jpg"
+        ]
       },
       {
         "question": "exercises/2/2.14_question.md",
-        "response": "exercises/2/2.14_response.md"
+        "response": [
+          "exercises/2/2.14_response.md",
+          "exercises/2/2.14_response2.jpg"
+        ]
       }
     ]
   },
