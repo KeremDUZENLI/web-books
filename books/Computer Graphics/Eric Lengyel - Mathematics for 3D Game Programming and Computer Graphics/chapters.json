@@ -287,6 +287,18 @@
       {
         "question": "exercises/11/11.3_question.md",
         "response": "exercises/11/11.3_response.md"
+      },
+      {
+        "question": "exercises/11/11.4_question.md",
+        "response": "exercises/11/11.4_response.md"
+      },
+      {
+        "question": "exercises/11/11.5_question.md",
+        "response": "exercises/11/11.5_response.md"
+      },
+      {
+        "question": "exercises/11/11.6_question.md",
+        "response": "exercises/11/11.6_response.md"
       }
     ]
   },
@@ -298,6 +310,14 @@
       {
         "question": "exercises/12/12.1_question.md",
         "response": "exercises/12/12.1_response.md"
+      },
+      {
+        "question": "exercises/12/12.2_question.md",
+        "response": "exercises/12/12.2_response.md"
+      },
+      {
+        "question": "exercises/12/12.3_question.md",
+        "response": "exercises/12/12.3_response.md"
       }
     ]
   },
