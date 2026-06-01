@@ -16,11 +16,6 @@
         "url": "books/Computer Graphics/Eric Lengyel - Mathematics for 3D Game Programming and Computer Graphics/page.html"
       },
       {
-        "author": "Geza Schay",
-        "title": "A Concise Introduction to Linear Algebra",
-        "url": "books/Computer Graphics/Geza Schay - A Concise Introduction to Linear Algebra/page.html"
-      },
-      {
         "author": "John Hughes",
         "title": "Computer Graphics: Principles and Practice",
         "url": "books/Computer Graphics/John Hughes - Computer Graphics Principles and Practice/page.html"
@@ -40,6 +35,16 @@
   {
     "category": "Literature",
     "books": []
+  },
+  {
+    "category": "Mathematics",
+    "books": [
+      {
+        "author": "Geza Schay",
+        "title": "A Concise Introduction to Linear Algebra",
+        "url": "books/Mathematics/Geza Schay - A Concise Introduction to Linear Algebra/page.html"
+      }
+    ]
   },
   {
     "category": "Must-Read",

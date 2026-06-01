@@ -3888,5 +3888,30 @@
         ]
       }
     ]
+  },
+  {
+    "chapter": 9,
+    "title": "Learning Outcomes",
+    "abstract": "abstracts/9_chapter.md",
+    "exercises": [
+      {
+        "response": ["exercises/9/learning_outcomes_1.pdf"]
+      },
+      {
+        "response": ["exercises/9/learning_outcomes_2.pdf"]
+      },
+      {
+        "response": ["exercises/9/learning_outcomes_3.pdf"]
+      },
+      {
+        "response": ["exercises/9/learning_outcomes_4.pdf"]
+      },
+      {
+        "response": ["exercises/9/learning_outcomes_5.pdf"]
+      },
+      {
+        "response": ["exercises/9/learning_outcomes_6.pdf"]
+      }
+    ]
   }
 ]
