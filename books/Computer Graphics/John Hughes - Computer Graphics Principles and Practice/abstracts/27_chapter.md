@@ -35,8 +35,6 @@
 
 - The transport of light within a translucent material (like skin or wax) where light enters at one point and exits at another, requiring a BSSRDF for accurate modeling.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Accounts for the masking and shadowing of microfacets by each other.
 
 - **Use in graphics:** Physically based rendering of rough, shiny surfaces.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

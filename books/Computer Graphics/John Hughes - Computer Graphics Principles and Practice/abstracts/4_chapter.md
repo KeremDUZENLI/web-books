@@ -27,15 +27,9 @@
 
 - The mechanism of linking a user interface element (like a slider) to a property of a graphic object (like a rotation angle) so that changes update the scene immediately.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
-
-_(No specific formulas are central to this lab chapter, which focuses on tooling and framework usage.)_
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

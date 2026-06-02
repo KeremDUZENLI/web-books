@@ -43,8 +43,6 @@
 
 - A matrix of coefficients that blends the geometry data with the power basis vectors to define the shape of the curve.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Calculates the tangent at control point $i$ using the vector between its neighbors.
 
 - **Use in graphics:** Generating smooth paths through a set of points without manual tangent specification.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

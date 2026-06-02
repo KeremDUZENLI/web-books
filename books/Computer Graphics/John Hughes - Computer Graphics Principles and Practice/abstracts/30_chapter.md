@@ -35,8 +35,6 @@
 
 - A statistical estimator whose expected value is exactly equal to the true value of the parameter being estimated.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Relates the PDF of a transformed random variable to the original PDF via the Jacobian of the inverse transformation.
 
 - **Use in graphics:** Generating samples on surfaces (like spheres) from uniform random numbers.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

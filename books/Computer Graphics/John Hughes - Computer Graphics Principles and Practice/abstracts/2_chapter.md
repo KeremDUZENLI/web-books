@@ -35,8 +35,6 @@
 
 - A reusable definition of the visual structure and behavior of a control, allowing the separation of logic from appearance.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -56,8 +54,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The scale factor $S$ is the ratio of the desired target size ($D_{target}$) in device units to the object's size in abstract units ($D_{abstract}$).
 
 - **Use in graphics:** Determines the value for a `ScaleTransform` to map an abstract geometric model to a specific on-screen size.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

@@ -35,8 +35,6 @@
 
 - An interface technology capable of detecting and processing multiple simultaneous points of contact, enabling gestures like pinch-to-zoom and two-finger rotation.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -48,8 +46,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The time $T$ to acquire a target increases with distance $D$ and decreases with target width $W$.
 
 - **Use in graphics:** Guiding the sizing and placement of UI elements like menus and handles to maximize efficiency.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

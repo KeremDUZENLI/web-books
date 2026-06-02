@@ -43,8 +43,6 @@
 
 - A list-priority algorithm that renders objects from back to front, allowing later (closer) objects to overwrite earlier (farther) ones, though it fails with cyclic overlaps.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Maps camera-space $z$ coordinates to the range [0, 1] (or [-1, 1]) for the depth buffer, distributing precision non-linearly.
 
 - **Use in graphics:** Z-buffering with higher precision for nearby objects.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

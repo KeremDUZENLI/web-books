@@ -35,8 +35,6 @@
 
 - A term used to distinguish light sources (objects emitting light) from the abstract concept of light itself.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** A pixel value is the weighted integral of incident radiance over the pixel's area and solid angle.
 
 - **Use in graphics:** Simulating camera sensors and anti-aliasing.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

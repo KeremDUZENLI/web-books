@@ -35,8 +35,6 @@
 
 - A standardized curve representing the average human eye's sensitivity to different wavelengths of light.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Perceptually uniform measure of lightness, approximating the human eye's power-law response to luminance.
 
 - **Use in graphics:** Perceptual color spaces like Lab and Luv.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

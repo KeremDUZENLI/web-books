@@ -31,8 +31,6 @@
 
 - The angle defining the extent of the observable scene; usually specified vertically or horizontally.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -60,8 +58,6 @@ _(Add only the essential terms.)_
 - **Meaning:** A non-linear mapping of depth $z$ that preserves order but concentrates precision near the near plane.
 
 - **Use in graphics:** Z-buffering and visibility determination.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

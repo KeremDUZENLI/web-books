@@ -39,8 +39,6 @@
 
 - A query result that guarantees finding all true intersections but may include false positives (e.g., intersecting a bounding box instead of the complex object inside), used to quickly discard irrelevant objects.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -68,8 +66,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Memory usage depends on both the number of primitives $n$ and the number of grid cells $g^k$.
 
 - **Use in graphics:** Determining if a grid fits in memory for a given resolution.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

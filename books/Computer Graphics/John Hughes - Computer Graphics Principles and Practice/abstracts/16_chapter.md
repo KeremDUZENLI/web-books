@@ -35,8 +35,6 @@
 
 - A program written in a specialized language that executes on the GPU to customize the processing of vertices or fragments.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -48,8 +46,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The single matrix in fixed-function OpenGL that transforms geometry from object space directly to eye space.
 
 - **Use in graphics:** Efficiently combining camera positioning and object placement into one operation.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

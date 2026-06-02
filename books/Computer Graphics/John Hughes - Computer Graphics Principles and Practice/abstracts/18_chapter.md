@@ -35,8 +35,6 @@
 
 - The process of removing frequency components above a certain threshold from a signal, typically to prevent aliasing before sampling.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Modeling a sensor's measurement over an infinitesimally small interval.
 
 - **Use in graphics:** Defining the discrete value of a continuous light field at a pixel.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

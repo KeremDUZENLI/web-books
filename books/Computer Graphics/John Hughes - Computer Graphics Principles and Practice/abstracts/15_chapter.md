@@ -35,8 +35,6 @@
 
 - A depth buffer rendered from the perspective of a light source, used to determine visibility and cast shadows during the main camera pass.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Linearly interpolating attributes divided by depth, then normalizing by the interpolated reciprocal depth.
 
 - **Use in graphics:** Correctly mapping textures and normals on surfaces viewed in perspective.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

@@ -35,8 +35,6 @@
 
 - The process of simplifying visual information through simplification (removing detail), factorization (separating generic from specific), and schematization (using symbolic representations).
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The projection of the view vector $v$ onto the tangent plane, used to define the direction for measuring radial curvature.
 
 - **Use in graphics:** Calculating suggestive contours.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

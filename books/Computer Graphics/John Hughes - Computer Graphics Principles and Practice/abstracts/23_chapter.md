@@ -35,8 +35,6 @@
 
 - The number of edges connected to a vertex in a mesh; vertices with a valence other than the "regular" count correspond to extraordinary points in the subdivision surface.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Efficient computation of a surface point using parameter vectors $\mathbf{u}, \mathbf{v}$, basis matrix $M$, and geometry matrix $G$.
 
 - **Use in graphics:** Hardware-accelerated evaluation of surface patches.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

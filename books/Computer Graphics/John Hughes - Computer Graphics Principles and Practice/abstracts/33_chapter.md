@@ -39,8 +39,6 @@
 
 - A non-photorealistic rendering technique that quantizes lighting intensities into discrete bands to mimic the aesthetic of hand-drawn cartoons.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -68,8 +66,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Calculates the direction of a light ray perfectly reflected off a surface with normal $n$.
 
 - **Use in graphics:** Environment mapping and specular highlights.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

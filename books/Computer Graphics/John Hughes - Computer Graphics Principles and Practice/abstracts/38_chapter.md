@@ -35,8 +35,6 @@
 
 - An architecture that divides the screen into small tiles and processes all geometry for a tile locally, minimizing main memory bandwidth and enabling efficient on-chip antialiasing.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The total growth factor $t$ over $y$ years given an annual rate $r$; explains the divergence between GPU and CPU performance trends.
 
 - **Use in graphics:** Hardware trend analysis (Moore's Law).
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

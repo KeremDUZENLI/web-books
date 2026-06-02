@@ -35,8 +35,6 @@
 
 - An integer representing the total number of times a curve travels counterclockwise around a point.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Half the sum of cross products of adjacent vertices.
 
 - **Use in graphics:** Back-face culling and polygon orientation.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

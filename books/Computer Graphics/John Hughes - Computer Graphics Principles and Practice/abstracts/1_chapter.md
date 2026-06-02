@@ -39,8 +39,6 @@
 
 - Mirror-like reflection where light bounces off a surface at a definite angle, creating bright highlights.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -68,8 +66,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The normalized vector exactly halfway between the eye vector ($e$) and the light vector ($l$).
 
 - **Use in graphics:** Used to calculate specular highlights; the highlight is brightest when $h$ aligns with the surface normal.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

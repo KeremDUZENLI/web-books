@@ -39,8 +39,6 @@
 
 - The distance range within a scene that appears acceptably sharp; related to the pupil diameter and lens focus.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -58,8 +56,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The eye perceives brightness differences based on ratios of light intensity rather than absolute linear differences (e.g., a change from 10 to 20 units looks similar to 100 to 200).
 
 - **Use in graphics:** Justifies the use of logarithmic scales for brightness and gamma correction in displays.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

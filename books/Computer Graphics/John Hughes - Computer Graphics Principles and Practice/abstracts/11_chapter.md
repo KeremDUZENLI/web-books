@@ -31,8 +31,6 @@
 
 - A user interface technique that allows users to rotate 3D objects by dragging a mouse, simulating the rotation of a trackball.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -60,8 +58,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Reflects points across a plane defined by the unit normal vector $n$ passing through the origin.
 
 - **Use in graphics:** Rendering reflections in mirrors or water.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

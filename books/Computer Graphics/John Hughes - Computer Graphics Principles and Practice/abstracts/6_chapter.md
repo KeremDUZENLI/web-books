@@ -35,8 +35,6 @@
 
 - The practice of building complex objects from simpler subcomponents (e.g., a robot from limbs) using parent-child transformations to propagate movement.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -56,8 +54,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The final red intensity is the sum of the ambient term, the diffuse contributions from all lights, and the specular contributions from all lights.
 
 - **Use in graphics:** Determines the final color value of a pixel in the fixed-function pipeline.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

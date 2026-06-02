@@ -31,8 +31,6 @@
 
 - An implicit function where the value represents the shortest distance to the surface, with the sign indicating whether the point is inside or outside.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -60,8 +58,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Interpolates a value within a square based on the values at its four corners.
 
 - **Use in graphics:** Estimating function values between grid samples.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

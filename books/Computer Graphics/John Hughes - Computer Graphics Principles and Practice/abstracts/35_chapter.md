@@ -35,8 +35,6 @@
 
 - A technique for calculating the joint parameters needed to place an end-effector (like a hand) at a specific target position.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Instantaneously changes velocity upon collision based on a coefficient of restitution $\epsilon$.
 
 - **Use in graphics:** Bouncing objects off surfaces without interpenetration.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

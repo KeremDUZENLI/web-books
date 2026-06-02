@@ -31,8 +31,6 @@
 
 - A generalization of a triangle to arbitrary dimensions (e.g., a point is a 0-simplex, a line segment is a 1-simplex, a triangle is a 2-simplex).
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -60,8 +58,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The sum of barycentric coordinates for any point relative to a simplex is always unity.
 
 - **Use in graphics:** Validating points and reducing storage requirements.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

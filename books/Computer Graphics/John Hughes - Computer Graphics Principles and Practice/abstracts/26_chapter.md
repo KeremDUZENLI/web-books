@@ -35,8 +35,6 @@
 
 - A set of formulas describing the fraction of light reflected and transmitted at an interface between two media with different refractive indices.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The fraction of light reflected increases as the angle of incidence becomes more grazing (Schlick's approximation).
 
 - **Use in graphics:** Creating realistic material reflections that vary with view angle.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

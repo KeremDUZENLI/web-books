@@ -35,8 +35,6 @@
 
 - The specific matrix ($(\overline{M}^{-1})^T$) required to transform surface normal vectors correctly, ensuring they remain perpendicular to the tangent surface after non-uniform scaling.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -72,8 +70,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Decomposes any matrix into orthogonal matrices $U, V$ and a diagonal matrix $D$ of singular values.
 
 - **Use in graphics:** Matrix compression, rank determination, and solving linear systems.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

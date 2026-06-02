@@ -39,8 +39,6 @@
 
 - A model for diffuse surfaces where light is reflected equally in all directions, appearing equally bright from any viewing angle.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -68,8 +66,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Light intensity $L$ falls off with the square of the distance $r$ from a point source with power $\Phi$.
 
 - **Use in graphics:** Modeling physically accurate light falloff.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

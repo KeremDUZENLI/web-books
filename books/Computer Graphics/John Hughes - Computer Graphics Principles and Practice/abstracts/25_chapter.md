@@ -35,8 +35,6 @@
 
 - A method for generating isosurfaces that uses Hermite data (positions and normals) to produce meshes with potentially sharp features and better topology than standard marching cubes.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Describes the difference between a vertex and the weighted average of its neighbors.
 
 - **Use in graphics:** Mesh smoothing, parameterization, and detail-preserving deformation.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

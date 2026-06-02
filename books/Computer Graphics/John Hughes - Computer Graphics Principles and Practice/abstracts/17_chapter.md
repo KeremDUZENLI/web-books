@@ -35,8 +35,6 @@
 
 - A sequence of pre-calculated, optimized images used to increase rendering speed and reduce aliasing artifacts.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Correctly downsampling an image with alpha requires weighting colors by their respective alpha values.
 
 - **Use in graphics:** Generating lower-resolution textures without color bleeding artifacts from transparent pixels.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

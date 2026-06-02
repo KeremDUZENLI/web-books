@@ -35,8 +35,6 @@
 
 - A light source located at a specific position that radiates outward in all directions, with intensity typically attenuating with distance.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -56,8 +54,6 @@ _(Add only the essential terms.)_
 - **Meaning:** A point $P$ is translated to a new position by adding a translation vector $\mathbf{v}$.
 
 - **Use in graphics:** Used to position objects (like stacking spheres for a snowman) or move the camera.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

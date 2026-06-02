@@ -39,8 +39,6 @@
 
 - A variance-reduction technique that combines multiple sampling strategies (e.g., sampling the light source vs. sampling the BSDF) to robustly estimate light integrals.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -76,8 +74,6 @@ _(Add only the essential terms.)_
 - **Meaning:** An unbiased estimate of an integral $\int f(x)dx$ is obtained by averaging samples weighted by the inverse of their probability density $p(x)$.
 
 - **Use in graphics:** Numerical integration of lighting over surfaces and hemispheres.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

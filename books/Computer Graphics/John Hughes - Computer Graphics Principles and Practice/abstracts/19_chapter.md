@@ -31,8 +31,6 @@
 
 - A technique to reduce ringing artifacts near image edges by normalizing the weighted sum of filter coefficients.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -68,8 +66,6 @@ _(Add only the essential terms.)_
 - **Meaning:** A practical compromise between B-spline and Catmull-Rom filters.
 
 - **Use in graphics:** Standard high-quality resampling filter in rendering software.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

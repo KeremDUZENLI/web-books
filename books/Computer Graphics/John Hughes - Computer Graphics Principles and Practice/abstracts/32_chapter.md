@@ -35,8 +35,6 @@
 
 - A statistical technique used to terminate random paths without introducing bias by randomly stopping with probability $q$ and weighting surviving paths by $1/(1-q)$.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Estimating reflected radiance by summing the power of $N$ nearest photons within radius $r$, weighted by the BRDF.
 
 - **Use in graphics:** Computing caustics and indirect diffuse illumination.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

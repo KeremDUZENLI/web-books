@@ -35,8 +35,6 @@
 
 - A texture synthesis method based on simulating the chemical interaction and diffusion of morphogens to create biological patterns.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -64,8 +62,6 @@ _(Add only the essential terms.)_
 - **Meaning:** The frequency decomposition of a square wave pattern.
 
 - **Use in graphics:** Understanding aliasing and constructing band-limited procedural textures.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

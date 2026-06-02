@@ -31,8 +31,6 @@
 
 - A transformation that maps lines to lines but does not necessarily preserve parallelism, defined by a 3x3 (2D) or 4x4 (3D) matrix.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -60,8 +58,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Produces a vector $w$ perpendicular to both $u$ and $v$.
 
 - **Use in graphics:** Constructing coordinate frames (e.g., finding a normal vector from two tangent vectors).
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 

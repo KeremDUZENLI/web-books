@@ -39,8 +39,6 @@
 
 - An operation that flips the shared edge between two adjacent triangles to optimize triangle aspect ratios.
 
-_(Add only the essential terms.)_
-
 ---
 
 ## Formulas
@@ -68,8 +66,6 @@ _(Add only the essential terms.)_
 - **Meaning:** Calculates the position of a smoothed vertex based on its original position $v$ and neighbors $u, w$.
 
 - **Use in graphics:** Smoothing polylines and curves.
-
-_(Include only formulas the chapter actually depends on.)_
 
 ---
 
