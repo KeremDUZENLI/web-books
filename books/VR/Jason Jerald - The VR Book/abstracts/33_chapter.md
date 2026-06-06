@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter focuses on the validation and refinement phase of VR development, emphasizing that "learning" is an active process of discovery through experimentation rather than just debugging code.
-- It details how to apply the **scientific method** to VR design—moving from assumptions to hypotheses to validated knowledge—and outlines various methods for data collection, experimental design, and ethical considerations when testing with human subjects.
+- It details how to apply the **scientific method** to VR design, moving from assumptions to hypotheses to validated knowledge, and outlines various methods for data collection, experimental design, and ethical considerations when testing with human subjects.
 
 ---
 
@@ -19,15 +19,15 @@
 **Qualitative vs. Quantitative Data**
 
 - **Definition:**
-    -   **Qualitative:** Subjective, descriptive data collected via interviews, focus groups, and observation. It answers "Why is this happening?"
-    -   **Quantitative:** Objective, numerical data collected via automated logging (time, errors), physiological sensors, and standardized questionnaires. It answers "What is happening?" and "How often?"
+  - **Qualitative:** Subjective, descriptive data collected via interviews, focus groups, and observation. It answers "Why is this happening?"
+  - **Quantitative:** Objective, numerical data collected via automated logging (time, errors), physiological sensors, and standardized questionnaires. It answers "What is happening?" and "How often?"
 - **Design Implication:** Use qualitative methods early (formative evaluation) to find broad usability issues, and quantitative methods later (summative evaluation) to benchmark performance.
 
 **Experimental Design Strategies**
 
 - **Definition:** How participants are assigned to different test conditions.
-    -   **Between-Subjects:** Each participant experiences only *one* condition (e.g., Group A uses Joystick, Group B uses Gaze). This avoids learning effects and sickness transfer but requires more people.
-    -   **Within-Subjects:** Each participant experiences *all* conditions. This reduces noise (individual differences) and requires fewer people but risks "carryover effects" (fatigue or learning from the first task affecting the second).
+  - **Between-Subjects:** Each participant experiences only _one_ condition (e.g., Group A uses Joystick, Group B uses Gaze). This avoids learning effects and sickness transfer but requires more people.
+  - **Within-Subjects:** Each participant experiences _all_ conditions. This reduces noise (individual differences) and requires fewer people but risks "carryover effects" (fatigue or learning from the first task affecting the second).
 - **Design Implication:** For VR, **Between-Subjects** is often safer to prevent motion sickness from one technique ruining the data for the next, though **Within-Subjects** is more powerful if sickness is not a factor.
 
 **Heuristic Evaluation**

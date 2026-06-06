@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter outlines high-level strategies for creating compelling VR content, focusing on storytelling, the importance of a consistent "core experience," and maintaining conceptual integrity throughout development.
-- It also applies Gestalt psychology principles—such as grouping and segregation—to explain how users perceptually organize visual information in virtual worlds.
+- It also applies Gestalt psychology principles, such as grouping and segregation, to explain how users perceptually organize visual information in virtual worlds.
 
 ---
 
@@ -19,10 +19,10 @@
 **Attributes of Great Experiences**
 
 - **Definition:** Four primary characteristics identified by VR researchers:
-    1.  **Strong Emotion:** Joy, excitement, or surprise occurring without conscious effort.
-    2.  **Deep Engagement:** A state of "flow" where users lose track of time and space.
-    3.  **Massive Stimulation:** High sensory input across multiple congruent modalities.
-    4.  **Escape from Reality:** Psychological removal from the real world's demands.
+  1.  **Strong Emotion:** Joy, excitement, or surprise occurring without conscious effort.
+  2.  **Deep Engagement:** A state of "flow" where users lose track of time and space.
+  3.  **Massive Stimulation:** High sensory input across multiple congruent modalities.
+  4.  **Escape from Reality:** Psychological removal from the real world's demands.
 
 **The Core Experience**
 
@@ -38,12 +38,12 @@
 
 - **Definition:** The principle that the mind perceives objects as organized patterns (wholes) rather than just collections of parts.
 - **Design Implication:** VR interfaces and worlds should leverage these sub-principles:
-    -   **Simplicity:** Figures are perceived in their simplest forms (e.g., a bent pipe is seen as a pipe, not abstract polygons).
-    -   **Continuity:** Aligned elements are perceived as a single group following a smooth path.
-    -   **Proximity:** Elements close to each other are perceived as a group.
-    -   **Similarity:** Elements with similar properties (color, shape) are perceived as grouped.
-    -   **Closure:** The mind fills in gaps to perceive incomplete shapes as whole objects (e.g., temporal closure in film editing).
-    -   **Common Fate:** Elements moving together are perceived as grouped (critical for motion parallax).
+  - **Simplicity:** Figures are perceived in their simplest forms (e.g., a bent pipe is seen as a pipe, not abstract polygons).
+  - **Continuity:** Aligned elements are perceived as a single group following a smooth path.
+  - **Proximity:** Elements close to each other are perceived as a group.
+  - **Similarity:** Elements with similar properties (color, shape) are perceived as grouped.
+  - **Closure:** The mind fills in gaps to perceive incomplete shapes as whole objects (e.g., temporal closure in film editing).
+  - **Common Fate:** Elements moving together are perceived as grouped (critical for motion parallax).
 
 **Figure-Ground Segregation**
 
@@ -56,8 +56,8 @@
 
 **Disney’s VR Lessons**
 
-- Experiences from the *Aladdin* VR attraction suggest: provide a relatable backstory before immersion; focus on believability rather than photorealism; keep the goal simple and clear; and minimize breaks-in-presence (like interpenetrating objects).
+- Experiences from the _Aladdin_ VR attraction suggest: provide a relatable backstory before immersion; focus on believability rather than photorealism; keep the goal simple and clear; and minimize breaks-in-presence (like interpenetrating objects).
 
 **The Director Model**
 
-- To maintain conceptual integrity in a team, empower a single director who listens to input but makes the final call. The director focuses on *what* the experience is, while the team determines *how* to implement it.
+- To maintain conceptual integrity in a team, empower a single director who listens to input but makes the final call. The director focuses on _what_ the experience is, while the team determines _how_ to implement it.

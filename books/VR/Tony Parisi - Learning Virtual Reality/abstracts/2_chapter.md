@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter surveys the landscape of consumer Virtual Reality hardware, categorizing devices into high-performance tethered systems (like the Oculus Rift) and portable mobile platforms (Samsung Gear VR, Google Cardboard).
-- It highlights the evolution of hardware capabilities—from simple rotational tracking to positional tracking and low-persistence displays—and explores the emerging solutions for user input when physical vision is blocked by a Head-Mounted Display (HMD).
+- It highlights the evolution of hardware capabilities, from simple rotational tracking to positional tracking and low-persistence displays, and explores the emerging solutions for user input when physical vision is blocked by a Head-Mounted Display (HMD).
 
 ---
 

@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter focuses on "interrogation," the process of extracting specific geometric properties from subdivision surfaces for analysis, manufacturing, and rendering. It demonstrates how the subdivision paradigm—breaking a complex problem into smaller, simpler parts—is applied to tasks like finding intersections between surfaces, calculating volumes, and generating offset surfaces for machining.
+This chapter focuses on "interrogation," the process of extracting specific geometric properties from subdivision surfaces for analysis, manufacturing, and rendering. It demonstrates how the subdivision paradigm, breaking a complex problem into smaller, simpler parts, is applied to tasks like finding intersections between surfaces, calculating volumes, and generating offset surfaces for machining.
 
 ---
 
@@ -18,7 +18,6 @@ A "divide and conquer" algorithmic strategy where a surface is repeatedly split 
 
 **Bounding Volume:**
 A simple geometric shape (like a box or sphere) that completely encloses a complex surface patch. If the bounding volumes of two patches do not overlap, the patches themselves definitely do not intersect.
-
 
 **Ray Casting:**
 A rendering technique that determines the visibility of a surface by tracing a line from the eye point through a pixel to find the first point of intersection with the surface.

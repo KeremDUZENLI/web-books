@@ -6,7 +6,7 @@
 
 - This chapter traces the evolution of virtual reality from ancient "analog" illusions and 19th-century stereoscopes to the development of modern head-mounted displays (HMDs) and the recent consumer resurgence.
 
-- It highlights that while the core goal of capturing the imagination through artificial worlds has existed for millennia, the sophistication of instruments—from the Link Trainer to the Oculus Rift—has significantly advanced the power and ease of creating these experiences.
+- It highlights that while the core goal of capturing the imagination through artificial worlds has existed for millennia, the sophistication of instruments, from the Link Trainer to the Oculus Rift, has significantly advanced the power and ease of creating these experiences.
 
 ---
 

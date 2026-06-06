@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter applies theoretical knowledge of VR sickness to provide concrete, practical solutions for minimizing adverse effects, ranging from user adaptation protocols to specific software techniques like predictive tracking and warning grids.
-- It emphasizes that while hardware limitations (like latency) exist, clever design choices—such as using static rest frames, avoiding artificial camera movement, and managing exposure time—can significantly improve user comfort and safety.
+- It emphasizes that while hardware limitations (like latency) exist, clever design choices, such as using static rest frames, avoiding artificial camera movement, and managing exposure time, can significantly improve user comfort and safety.
 
 ---
 
@@ -28,7 +28,7 @@
 
 **Predictive Tracking**
 
-- **Definition:** Algorithms that extrapolate the user's future head position/orientation based on current velocity and acceleration to render the frame where the head *will* be when the display updates.
+- **Definition:** Algorithms that extrapolate the user's future head position/orientation based on current velocity and acceleration to render the frame where the head _will_ be when the display updates.
 - **Design Implication:** This technique reduces "effective latency," ensuring the virtual world remains stable relative to the real world during head movements, thus preventing the "swimming" effect.
 
 **Warning Grids (Chaperone Systems)**

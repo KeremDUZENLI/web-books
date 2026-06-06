@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter argues that VR is a distinct medium from traditional video games and film, requiring a fundamental paradigm shift in design thinking rather than simply "porting" existing content.
-- It highlights the specific challenges of adapting traditional mechanics—such as camera control, avatars, and Heads-Up Displays (HUDs)—emphasizing that successful VR prioritizes user autonomy and physiological comfort over cinematic conventions.
+- It highlights the specific challenges of adapting traditional mechanics, such as camera control, avatars, and Heads-Up Displays (HUDs), emphasizing that successful VR prioritizes user autonomy and physiological comfort over cinematic conventions.
 
 ---
 
@@ -13,7 +13,7 @@
 
 **Paradigm Shift: The User is the Camera**
 
-- **Definition:** In film and games, the director or designer controls the camera framing. In VR, the user's head *is* the camera.
+- **Definition:** In film and games, the director or designer controls the camera framing. In VR, the user's head _is_ the camera.
 - **Design Implication:** Never seize control of the camera. Forced rotations, cinematic cuts, or moving the view without user input disconnects the visual system from the vestibular system, causing immediate motion sickness and breaking presence.
 
 **The Avatar (Self-Embodiment)**

@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter examines the biological hardware of human vision—from the eye's anatomy and photoreceptors to neural processing and eye movements—to understand how the brain interprets visual stimuli.
+- This chapter examines the biological hardware of human vision, from the eye's anatomy and photoreceptors to neural processing and eye movements, to understand how the brain interprets visual stimuli.
 
 - It details how VR hardware limitations (resolution, latency, scanout) interact with physiological mechanisms (VOR, accommodation, retinal slip), often resulting in artifacts, fatigue, or motion sickness.
 

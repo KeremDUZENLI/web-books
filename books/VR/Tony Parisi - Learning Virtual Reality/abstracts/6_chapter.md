@@ -16,16 +16,14 @@
 - **Definition:** A software rendering technique used to counteract the physical "pincushion" distortion introduced by the magnifying lenses in VR viewers.
 - **Design Implication:** Without this correction, straight lines appear curved and the image looks warped. The software must pre-distort the image in the opposite direction (barrel shape) so that when viewed through the lenses, it appears correct to the user.
 
-
 **The Distortion Mesh**
 
 - **Definition:** A 2D rendering technique where the scene is projected onto a tessellated grid (mesh) rather than a simple flat plane. The vertices of this grid are mathematically displaced in a vertex shader to create the required barrel distortion.
 - **Design Implication:** Using a mesh is more efficient for mobile GPUs than processing every pixel in a fragment shader. The mesh density (e.g., 40x40 cells) balances performance with visual accuracy.
 
-
 **Sensor Fusion**
 
-- **Definition:** The process of combining data from multiple physical sensors—specifically the gyroscope, accelerometer, and magnetometer—to determine the device's orientation.
+- **Definition:** The process of combining data from multiple physical sensors, specifically the gyroscope, accelerometer, and magnetometer, to determine the device's orientation.
 - **Design Implication:** Raw sensor data is often noisy or subject to drift. Fusion algorithms (like a Kalman filter or complimentary filter) smooth this data to provide stable, low-latency head tracking essential for preventing motion sickness.
 
 ---
@@ -46,7 +44,6 @@
 - **Activity & SurfaceView:** The application uses a standard Android `Activity` hosting a `GLSurfaceView` to manage the OpenGL context.
 - **Renderer:** A custom renderer draws the scene twice per frame (once for each eye) into off-screen framebuffers (textures).
 - **Compositing:** The final step draws the distortion mesh to the screen, sampling from the previously rendered eye textures to produce the final side-by-side output.
-
 
 **DIY Hardware Constraints**
 

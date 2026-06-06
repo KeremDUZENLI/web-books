@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter introduces advanced geometric systems—such as sphere geometry, line geometry, and non-Euclidean geometry—that simplify complex design problems. Instead of just working with points in standard space, it teaches how to map shapes like spheres or lines into "points" in higher dimensions to make difficult calculations (like offsets or surface fitting) much easier.
+This chapter introduces advanced geometric systems, such as sphere geometry, line geometry, and non-Euclidean geometry, that simplify complex design problems. Instead of just working with points in standard space, it teaches how to map shapes like spheres or lines into "points" in higher dimensions to make difficult calculations (like offsets or surface fitting) much easier.
 
 ---
 

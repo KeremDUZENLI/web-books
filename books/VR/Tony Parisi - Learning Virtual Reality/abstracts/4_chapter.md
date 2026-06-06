@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter shifts focus from desktop to mobile Virtual Reality, specifically for the Samsung Gear VR, which pairs a high-resolution smartphone (Galaxy Note 4 or S6) with a headset containing dedicated Oculus sensors.
-- It guides the reader through the specific setup requirements for Android development—including the Android SDK, Oculus Mobile SDK, and unique device signature files—and demonstrates how to build Unity3D applications that utilize the Gear VR's touchpad for input.
+- It guides the reader through the specific setup requirements for Android development, including the Android SDK, Oculus Mobile SDK, and unique device signature files, and demonstrates how to build Unity3D applications that utilize the Gear VR's touchpad for input.
 
 ---
 

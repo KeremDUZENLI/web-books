@@ -11,15 +11,13 @@ This chapter explains **Solid Modeling**, a method used to represent 3D objects 
 ## Keywords
 
 **Informational Completeness:**
-A property of a computer model meaning it contains enough data to answer *any* geometric question about the object (like "is this point inside?" or "what is the volume?") without ambiguity.
+A property of a computer model meaning it contains enough data to answer _any_ geometric question about the object (like "is this point inside?" or "what is the volume?") without ambiguity.
 
 **Constructive Solid Geometry (CSG):**
 A method of building complex shapes by combining simple primitive shapes (like cubes, spheres, and cylinders) using logical operations.
 
-
 **Boundary Representation (B-rep):**
-A method of defining a solid by listing all its surface parts—faces, edges, and vertices—and how they connect to enclose a volume.
-
+A method of defining a solid by listing all its surface parts, faces, edges, and vertices, and how they connect to enclose a volume.
 
 **Boolean Operations:**
 Logical actions used to combine solids: **Union** (adding), **Difference** (subtracting), and **Intersection** (keeping the overlapping part).

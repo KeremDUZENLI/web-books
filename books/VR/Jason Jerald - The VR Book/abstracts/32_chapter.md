@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter focuses on the implementation phase of VR development, where theoretical designs are converted into tangible experiences through code, hardware integration, and asset creation.
-- It advocates for using existing development engines (like Unity or Unreal) over custom engines and details the technical challenges unique to VR—such as "fighting physics," maintaining frame rates, and managing complex networked environments—while emphasizing the importance of diverse prototyping methods.
+- It advocates for using existing development engines (like Unity or Unreal) over custom engines and details the technical challenges unique to VR, such as "fighting physics," maintaining frame rates, and managing complex networked environments, while emphasizing the importance of diverse prototyping methods.
 
 ---
 
@@ -19,10 +19,10 @@
 **Design Specifications**
 
 - **Definition:** Tools used to document the system architecture before and during build.
-    -   **Sketches:** Quick, disposable drawings to explore ideas (not finished art).
-    -   **Block Diagrams:** High-level views of system components (inputs, outputs, processing).
-    -   **Use Cases:** Step-by-step descriptions of interactions from the user's perspective.
-    -   **Software Patterns:** Reusable code structures (e.g., Singletons, Factories) to speed up development.
+  - **Sketches:** Quick, disposable drawings to explore ideas (not finished art).
+  - **Block Diagrams:** High-level views of system components (inputs, outputs, processing).
+  - **Use Cases:** Step-by-step descriptions of interactions from the user's perspective.
+  - **Software Patterns:** Reusable code structures (e.g., Singletons, Factories) to speed up development.
 
 **System Considerations**
 
@@ -33,14 +33,14 @@
 
 - **Definition:** The conflict that occurs when a user's absolute hand position (tracked hardware) disagrees with the physics engine's calculated position (virtual object collision).
 - **Design Implication:** If a user pushes a virtual object into a wall, the physics engine tries to push it out while the hand holds it in. This causes **jitter** or massive forces that send objects flying.
-    -   **Solution:** Disable physics on an object while it is being held (kinematic mode), or allow the virtual hand to separate from the physical hand (ghosting) during collision.
+  - **Solution:** Disable physics on an object while it is being held (kinematic mode), or allow the virtual hand to separate from the physical hand (ghosting) during collision.
 
 **Networked Environments**
 
 - **Definition:** Distributed systems where multiple users share a state.
-    -   **Consistency:** Ensuring all users see the same thing (Synchronization, Causality, Concurrency).
-    -   **Dead Reckoning:** Estimating where a remote user is moving between network packets to smooth out motion and reduce bandwidth.
-    -   **Protocols:** Use **UDP** for fast, non-critical data (position updates); use **TCP** for critical, one-time events (game state changes).
+  - **Consistency:** Ensuring all users see the same thing (Synchronization, Causality, Concurrency).
+  - **Dead Reckoning:** Estimating where a remote user is moving between network packets to smooth out motion and reduce bandwidth.
+  - **Protocols:** Use **UDP** for fast, non-critical data (position updates); use **TCP** for critical, one-time events (game state changes).
 
 **Prototyping Types**
 

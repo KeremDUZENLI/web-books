@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter addresses the most common negative health effect of VR—motion sickness (or cybersickness)—by analyzing its causes, symptoms, and the underlying physiological mechanisms.
+- This chapter addresses the most common negative health effect of VR, motion sickness (or cybersickness), by analyzing its causes, symptoms, and the underlying physiological mechanisms.
 - It details several competing and complementary theories (Sensory Conflict, Evolutionary, Postural Instability, Rest Frame, and Eye Movement) and culminates in a unified model, emphasizing that sickness usually stems from a mismatch between the user's internal mental model, their physical state, and the sensory feedback provided by the VR system.
 
 ---

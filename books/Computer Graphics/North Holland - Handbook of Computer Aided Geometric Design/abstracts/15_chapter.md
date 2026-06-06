@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter applies tools from classical algebraic geometry—specifically resultants and Gröbner bases—to solve fundamental problems in CAGD such as implicitization, inversion, and intersection. It contrasts these exact algebraic methods with numerical approaches, demonstrating how they provide robust solutions for converting between parametric and implicit forms and for finding common points between curves and surfaces.
+This chapter applies tools from classical algebraic geometry, specifically resultants and Gröbner bases, to solve fundamental problems in CAGD such as implicitization, inversion, and intersection. It contrasts these exact algebraic methods with numerical approaches, demonstrating how they provide robust solutions for converting between parametric and implicit forms and for finding common points between curves and surfaces.
 
 ---
 

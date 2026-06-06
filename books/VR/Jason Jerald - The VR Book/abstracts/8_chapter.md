@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter examines the biological and perceptual mechanisms of the human senses—sight, hearing, touch, proprioception, balance, smell, and taste—and how they function individually and interact multimodally.
+- This chapter examines the biological and perceptual mechanisms of the human senses, sight, hearing, touch, proprioception, balance, smell, and taste, and how they function individually and interact multimodally.
 - It highlights that effective VR design requires a deep understanding of these sensory channels (e.g., the visual system's varying acuity, the vestibular system's response to motion) to create convincing illusions and avoid conflicts like motion sickness.
 
 ---

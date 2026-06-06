@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter defines the virtual scene and its components—background, contextual geometry, fundamental geometry, and interactive objects—providing a framework for environmental designers to create coherent virtual worlds.
+- This chapter defines the virtual scene and its components, background, contextual geometry, fundamental geometry, and interactive objects, providing a framework for environmental designers to create coherent virtual worlds.
 - It illustrates the power of VR environmental design through scientific visualization, demonstrating how physically navigating through complex datasets (like biological structures) provides insights and understanding not possible with traditional 2D displays.
 
 ---
@@ -14,10 +14,10 @@
 **The Scene Taxonomy**
 
 - **Definition:** The environment is categorized into four layers based on distance and interaction:
-    -   **Background:** Scenery in the far periphery (vista space) like the sky or mountains.
-    -   **Contextual Geometry:** Objects in action space (landmarks, trees) that define the setting and aid wayfinding but have no affordances.
-    -   **Fundamental Geometry:** Nearby structures (implied).
-    -   **Interactive Objects:** Objects that users can manipulate.
+  - **Background:** Scenery in the far periphery (vista space) like the sky or mountains.
+  - **Contextual Geometry:** Objects in action space (landmarks, trees) that define the setting and aid wayfinding but have no affordances.
+  - **Fundamental Geometry:** Nearby structures (implied).
+  - **Interactive Objects:** Objects that users can manipulate.
 - **Design Implication:** Designers should optimize based on these categories. For example, the **background** can be a simple textured box because depth cues are non-existent at that distance. **Contextual geometry** can often use "faked" low-detail geometry (billboards) since users cannot interact with it.
 
 **Contextual Geometry and Affordances**

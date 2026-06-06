@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter categorizes and explains methods for visualizing vector fields (like fluid flow) and tensor fields (like stress or diffusion). It progresses from simple local icons (arrows) to global integration methods (streamlines) and texture-based techniques (Line Integral Convolution), highlighting the importance of topological analysis to extract the structural skeleton—critical points and separatrices—of complex datasets.
+This chapter categorizes and explains methods for visualizing vector fields (like fluid flow) and tensor fields (like stress or diffusion). It progresses from simple local icons (arrows) to global integration methods (streamlines) and texture-based techniques (Line Integral Convolution), highlighting the importance of topological analysis to extract the structural skeleton, critical points and separatrices, of complex datasets.
 
 ---
 
@@ -12,7 +12,6 @@ This chapter categorizes and explains methods for visualizing vector fields (lik
 
 **Vector Field:**
 A data set where a direction and magnitude vector is assigned to every point in space. It is commonly used to model fluid flow, wind velocity, or electromagnetic fields.
-
 
 **Streamline:**
 A curve that is tangent to the vector field at every point. It represents the path a massless particle would take if released in a steady (time-invariant) flow.
@@ -25,7 +24,6 @@ A data set where a tensor (often a $3 \times 3$ matrix) is assigned to every poi
 
 **Topology:**
 The study of the essential structure of a field, governed by critical points (where the vector is zero) and the curves connecting them. It provides a simplified "map" of complex flow patterns.
-
 
 **Line Integral Convolution (LIC):**
 A texture-based visualization technique that smears a random noise image along the direction of the vector field, creating a dense, painterly representation of the flow.

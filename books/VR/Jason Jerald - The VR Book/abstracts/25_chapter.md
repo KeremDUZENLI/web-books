@@ -4,8 +4,8 @@
 
 ## Main Idea
 
-- This chapter shifts the focus from hardware capabilities to the human user, arguing that effective VR interaction design must be "human-centered"—prioritizing intuitive, frustration-free workflows where the interface becomes transparent.
-- It adapts foundational HCI concepts—such as affordances, signifiers, mappings, and bimanual interaction theories—to virtual environments, guiding creators to build worlds that users can understand and manipulate naturally.
+- This chapter shifts the focus from hardware capabilities to the human user, arguing that effective VR interaction design must be "human-centered", prioritizing intuitive, frustration-free workflows where the interface becomes transparent.
+- It adapts foundational HCI concepts, such as affordances, signifiers, mappings, and bimanual interaction theories, to virtual environments, guiding creators to build worlds that users can understand and manipulate naturally.
 
 ---
 
@@ -19,9 +19,9 @@
 **Affordances (Gibson vs. Norman)**
 
 - **Definition:**
-    -   **Real (Gibson):** The actual action possibilities of an object (e.g., a chair affords sitting, regardless of whether the user realizes it).
-    -   **Perceived (Norman):** What the user *thinks* they can do with an object.
-- **Design Implication:** In VR, "real" physical affordances (like the solidity of a table) do not exist. Designers must artificially program these properties and ensure *perceived* affordances match the programmed rules to prevent users from falling through virtual objects.
+  - **Real (Gibson):** The actual action possibilities of an object (e.g., a chair affords sitting, regardless of whether the user realizes it).
+  - **Perceived (Norman):** What the user _thinks_ they can do with an object.
+- **Design Implication:** In VR, "real" physical affordances (like the solidity of a table) do not exist. Designers must artificially program these properties and ensure _perceived_ affordances match the programmed rules to prevent users from falling through virtual objects.
 
 **Signifiers**
 
@@ -31,9 +31,9 @@
 **Constraints**
 
 - **Definition:** Limits that restrict interaction to prevent errors or guide behavior.
-    -   **Physical Constraints:** Limiting movement (hard in VR without haptics).
-    -   **Logical Constraints:** Relying on reasoning (e.g., only fitting a square peg in a square hole).
-    -   **Cultural Constraints:** Relying on learned conventions (e.g., red means stop).
+  - **Physical Constraints:** Limiting movement (hard in VR without haptics).
+  - **Logical Constraints:** Relying on reasoning (e.g., only fitting a square peg in a square hole).
+  - **Cultural Constraints:** Relying on learned conventions (e.g., red means stop).
 - **Design Implication:** Use logical and cultural constraints to simplify choices. If an object shouldn't be moved, don't put a handle on it.
 
 **Mapping**
@@ -44,15 +44,15 @@
 **The Gulfs of Execution and Evaluation**
 
 - **Definition:**
-    -   **Gulf of Execution:** The gap between knowing what you want to do and knowing how to do it with the system.
-    -   **Gulf of Evaluation:** The gap between the system changing state and the user perceiving that change.
+  - **Gulf of Execution:** The gap between knowing what you want to do and knowing how to do it with the system.
+  - **Gulf of Evaluation:** The gap between the system changing state and the user perceiving that change.
 - **Design Implication:** Bridge the first gulf with clear signifiers/mappings. Bridge the second with immediate feedback (audio/visual confirmation) so users know their action succeeded.
 
 **Bimanual Interaction (Symmetric vs. Asymmetric)**
 
 - **Definition:** theories on how hands work together.
-    -   **Symmetric:** Both hands perform the same action (e.g., lifting a heavy box).
-    -   **Asymmetric:** The **non-dominant hand** sets the frame of reference (holds the potato), while the **dominant hand** performs the fine-motor task (peels the potato).
+  - **Symmetric:** Both hands perform the same action (e.g., lifting a heavy box).
+  - **Asymmetric:** The **non-dominant hand** sets the frame of reference (holds the potato), while the **dominant hand** performs the fine-motor task (peels the potato).
 - **Design Implication:** Don't force one-handed interaction. Utilize the non-dominant hand for coarse positioning (like holding a menu or object) to allow the dominant hand to work with greater precision and comfort.
 
 ---

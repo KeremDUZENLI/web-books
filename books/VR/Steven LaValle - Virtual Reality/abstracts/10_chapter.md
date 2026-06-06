@@ -6,7 +6,7 @@
 
 - This chapter explores how users interface with virtual worlds, encompassing locomotion, object manipulation, and social interaction, guided by the principle that VR can simulate any real-world mechanism or invent entirely new ones.
 
-- It emphasizes the importance of "remapping"—creating new sensorimotor relationships that map physical body movements to potentially different virtual actions to maximize effectiveness, learnability, and comfort.
+- It emphasizes the importance of "remapping", creating new sensorimotor relationships that map physical body movements to potentially different virtual actions to maximize effectiveness, learnability, and comfort.
 
 ---
 

@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter categorizes and details the methods for solving intersection problems between geometric entities—such as points, curves, and surfaces—which are critical operations in geometric modeling, analysis, and manufacturing. It surveys various algorithmic approaches including subdivision (divide-and-conquer), marching (tracing), and algebraic methods (substitution), while addressing complex issues such as loop detection and handling singularities where surfaces touch tangentially.
+This chapter categorizes and details the methods for solving intersection problems between geometric entities, such as points, curves, and surfaces, which are critical operations in geometric modeling, analysis, and manufacturing. It surveys various algorithmic approaches including subdivision (divide-and-conquer), marching (tracing), and algebraic methods (substitution), while addressing complex issues such as loop detection and handling singularities where surfaces touch tangentially.
 
 ---
 
@@ -16,10 +16,8 @@ The fundamental task of finding the common points or curves shared by two or mor
 **Subdivision Method:**
 A robust, recursive algorithm that divides the geometric domain into smaller regions (like quadtrees or octrees) to isolate areas where intersections might occur.
 
-
 **Marching Method:**
 An algorithm that traces an intersection curve by starting from a known point and taking small steps along the local tangent direction, refining the position at each step.
-
 
 **Loop Detection:**
 The challenging process of identifying closed intersection curves that lie entirely within the interior of a surface patch and do not intersect its boundaries.

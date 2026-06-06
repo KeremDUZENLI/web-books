@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter investigates how humans perceive the spatial layout (depth, distance) and temporal flow (motion, duration) of the world, highlighting that these are mental constructions rather than direct reflections of reality.
-- It provides a comprehensive taxonomy of depth cues—ranging from static pictorial cues to dynamic motion and oculomotor cues—and explains how VR systems must adhere to the brain's temporal rules to maintain illusions like motion continuity and self-motion (vection) while avoiding artifacts like judder.
+- It provides a comprehensive taxonomy of depth cues, ranging from static pictorial cues to dynamic motion and oculomotor cues, and explains how VR systems must adhere to the brain's temporal rules to maintain illusions like motion continuity and self-motion (vection) while avoiding artifacts like judder.
 
 ---
 

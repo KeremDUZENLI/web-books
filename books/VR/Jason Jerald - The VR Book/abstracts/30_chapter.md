@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter defines VR design as a holistic process blending "art" (creative innovation) and "science" (hypothesis testing), arguing that because human intuition about VR is often flawed, success depends on a rapid, iterative cycle of prototyping, testing, and refining.
-- It emphasizes the necessity of cross-disciplinary collaboration, warning that "cancerous" attitudes—such as close-mindedness or a refusal to co-create—can destroy a project more effectively than technical limitations.
+- It emphasizes the necessity of cross-disciplinary collaboration, warning that "cancerous" attitudes, such as close-mindedness or a refusal to co-create, can destroy a project more effectively than technical limitations.
 
 ---
 
@@ -19,13 +19,13 @@
 **VR as Art and Science**
 
 - **Definition:** The dual nature of VR development.
-    -   **Art:** Requires creative, "outside-the-box" thinking to invent new metaphors and break real-world rules.
-    -   **Science:** Requires objective data collection and analysis to determine if those inventions actually work for human physiology and perception.
+  - **Art:** Requires creative, "outside-the-box" thinking to invent new metaphors and break real-world rules.
+  - **Science:** Requires objective data collection and analysis to determine if those inventions actually work for human physiology and perception.
 - **Design Implication:** A purely artistic approach fails if it ignores user comfort; a purely scientific approach fails if it lacks engagement. Successful VR requires both.
 
 **Co-Creation**
 
-- **Definition:** The team dynamic where every member—regardless of role (programmer, artist, subject-matter expert)—actively contributes to the design and prototyping process, rather than just critiquing.
+- **Definition:** The team dynamic where every member, regardless of role (programmer, artist, subject-matter expert), actively contributes to the design and prototyping process, rather than just critiquing.
 - **Design Implication:** When everyone builds, they are less likely to become attached to a single idea, making them more willing to discard what doesn't work. This prevents the "siloing" of expertise.
 
 **Team Dynamics and "Cancer"**

@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter examines spatial data structures—such as grids, BSP trees, k-d trees, octrees, and bounding volume hierarchies (BVHs)—which organize geometric primitives in $k$-dimensional space to accelerate intersection queries.
+- This chapter examines spatial data structures, such as grids, BSP trees, k-d trees, octrees, and bounding volume hierarchies (BVHs), which organize geometric primitives in $k$-dimensional space to accelerate intersection queries.
 - It provides a theoretical and practical analysis of these structures, discussing interface design, asymptotic performance, and strategies for tuning implementations for specific applications like ray tracing and collision detection.
 
 ---

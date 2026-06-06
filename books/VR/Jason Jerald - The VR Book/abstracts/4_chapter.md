@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter differentiates between **immersion** (the objective technological capability to deliver sensory stimuli) and **presence** (the subjective psychological sense of "being there").
-- It explores the illusions that support presence—such as spatial stability and self-embodiment—and discusses design trade-offs like the "Uncanny Valley," arguing that hyper-realism is not always necessary or desirable for compelling VR experiences.
+- It explores the illusions that support presence, such as spatial stability and self-embodiment, and discusses design trade-offs like the "Uncanny Valley," arguing that hyper-realism is not always necessary or desirable for compelling VR experiences.
 
 ---
 
@@ -27,7 +27,7 @@
 
 **The Uncanny Valley**
 
-- **Definition:** A phenomenon where a character that is very close to human-like—but not perfect—provokes a sense of creepiness or revulsion rather than empathy.
+- **Definition:** A phenomenon where a character that is very close to human-like, but not perfect, provokes a sense of creepiness or revulsion rather than empathy.
 - **Design Implication:** It is often safer and more effective to use stylized or cartoon-like characters than to attempt near-photorealism and fall into the valley.
 
 **Fidelity Continua**

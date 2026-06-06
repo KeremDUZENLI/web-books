@@ -26,7 +26,7 @@ A segmentation strategy for free-form objects where the user defines a hierarchy
 An automatic method for conventional objects that detects regions by analyzing surface properties (like planarity or curvature) to identify simple geometric primitives like planes, cylinders, and cones.
 
 **Constrained Fitting:**
-A surface fitting technique that enforces specific geometric relationships—such as tangency, perpendicularity, or concentricity—between multiple surfaces simultaneously to ensure the final model is engineering-valid.
+A surface fitting technique that enforces specific geometric relationships, such as tangency, perpendicularity, or concentricity, between multiple surfaces simultaneously to ensure the final model is engineering-valid.
 
 **Beautification:**
 A post-processing step that cleans up the reconstructed model by detecting and enforcing intended regularities, such as symmetries, exact angles (e.g., 90 degrees), or aligned axes.

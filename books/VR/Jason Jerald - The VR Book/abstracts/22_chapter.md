@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter discusses how the strong sense of presence in VR allows content creators to influence user behavior significantly more than in other media, particularly through environmental cues and social interactions.
-- It details specific design mechanisms—such as wayfinding aids (maps, landmarks, trails) and social norms (personal space, body language)—that help users navigate, understand, and interact socially within virtual worlds.
+- It details specific design mechanisms, such as wayfinding aids (maps, landmarks, trails) and social norms (personal space, body language), that help users navigate, understand, and interact socially within virtual worlds.
 
 ---
 
@@ -19,8 +19,8 @@
 **Landmarks (Global vs. Local)**
 
 - **Definition:** Distinct objects that aid navigation.
-    -   **Global Landmarks:** Distant, visible from everywhere (e.g., a mountain, the sun) to provide heading information.
-    -   **Local Landmarks:** Distinct objects in the immediate vicinity (e.g., a statue) to define specific locations.
+  - **Global Landmarks:** Distant, visible from everywhere (e.g., a mountain, the sun) to provide heading information.
+  - **Local Landmarks:** Distinct objects in the immediate vicinity (e.g., a statue) to define specific locations.
 - **Design Implication:** Global landmarks act as a compass, helping users maintain a stable sense of direction. Designers should place them strategically to prevent users from getting lost in open worlds.
 
 **Trails (Breadcrumbs)**
@@ -36,8 +36,8 @@
 **Social Interaction & Body Language**
 
 - **Definition:** The behavioral norms and non-verbal cues that transfer from the real world to VR.
-    -   **Personal Space:** Users feel a strong urge to back away if an avatar invades their intimate zone.
-    -   **Involuntary Motion:** Fidgeting and subtle movements are hard to hide in VR.
+  - **Personal Space:** Users feel a strong urge to back away if an avatar invades their intimate zone.
+  - **Involuntary Motion:** Fidgeting and subtle movements are hard to hide in VR.
 - **Design Implication:** To make NPCs feel real, they must follow biological motion hierarchies: eyes turn first, then the head, then the body. Ignoring this sequence makes characters feel robotic.
 
 ---

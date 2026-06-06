@@ -14,8 +14,8 @@
 **Physical Fatigue and "Gorilla Arm"**
 
 - **Definition:**
-    -   **General Fatigue:** Exhaustion caused by heavy equipment or holding unnatural poses.
-    -   **Gorilla Arm:** Specific arm fatigue resulting from extended use of mid-air gestural interfaces without arm support.
+  - **General Fatigue:** Exhaustion caused by heavy equipment or holding unnatural poses.
+  - **Gorilla Arm:** Specific arm fatigue resulting from extended use of mid-air gestural interfaces without arm support.
 - **Design Implication:** Interaction techniques should not require users to hold their hands high and in front of them for more than a few seconds. Allow users to work comfortably with hands in their laps or at their sides.
 
 **HMD Weight and Center of Mass**
@@ -30,17 +30,17 @@
 
 **Hygiene (Hardware as Fomites)**
 
-- **Definition:** VR hardware acts as a **fomite**—an inanimate object capable of harboring and transmitting pathogens (bacteria, viruses, fungi, lice) between users.
+- **Definition:** VR hardware acts as a **fomite**, an inanimate object capable of harboring and transmitting pathogens (bacteria, viruses, fungi, lice) between users.
 - **Design Implication:**
-    -   **Materials:** Porous materials (foam) are comfortable but hard to disinfect; non-porous materials (rubber/plastic) are cleaner but less breathable.
-    -   **Protocol:** Use wipeable/removable liners or personal covers (like the "About Face VR" system). Avoid UV sterilization if it degrades the plastic.
+  - **Materials:** Porous materials (foam) are comfortable but hard to disinfect; non-porous materials (rubber/plastic) are cleaner but less breathable.
+  - **Protocol:** Use wipeable/removable liners or personal covers (like the "About Face VR" system). Avoid UV sterilization if it degrades the plastic.
 
 **Injury Prevention**
 
 - **Definition:** Risks associated with being blind to the real world while active.
-    -   **Physical Trauma:** Hitting walls or tripping over cables.
-    -   **Repetitive Strain Injury (RSI):** Damage from repeated rapid movements (e.g., button mashing).
-    -   **Noise-Induced Hearing Loss:** Damage from continuous loud audio (>85 dB) or impulse sounds (>130 dB).
+  - **Physical Trauma:** Hitting walls or tripping over cables.
+  - **Repetitive Strain Injury (RSI):** Damage from repeated rapid movements (e.g., button mashing).
+  - **Noise-Induced Hearing Loss:** Damage from continuous loud audio (>85 dB) or impulse sounds (>130 dB).
 - **Design Implication:** Sitting is safer than standing. Use spotters for walking users. Limit maximum audio levels in software to prevent ear damage.
 
 ---

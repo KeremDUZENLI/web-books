@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter eases the transition from 2D to 3D programming by introducing "Framework-3," a simplified object-oriented wrapper around the underlying graphics platform (WPF 3D).
-- It covers the fundamental components of a 3D scene—coordinate systems, camera setup, geometric primitives, lighting models, and material properties—and demonstrates how to construct hierarchical scenes and implement basic user interaction.
+- It covers the fundamental components of a 3D scene, coordinate systems, camera setup, geometric primitives, lighting models, and material properties, and demonstrates how to construct hierarchical scenes and implement basic user interaction.
 
 ---
 

@@ -13,7 +13,7 @@
 
 **Stereoscopic Rendering Pipeline**
 
-- **Definition:** The process of rendering a 3D scene twice—once for each eye—slightly offset to simulate interpupillary distance and generate depth perception.
+- **Definition:** The process of rendering a 3D scene twice, once for each eye, slightly offset to simulate interpupillary distance and generate depth perception.
 - **Design Implication:** Developers must manage three camera perspectives: a main camera for game logic, and two "anchor" cameras (left and right) for actual rendering.
 
 **3D Coordinate Systems (Left-Handed)**

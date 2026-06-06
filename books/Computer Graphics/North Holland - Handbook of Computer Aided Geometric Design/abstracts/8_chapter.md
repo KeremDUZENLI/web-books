@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter addresses the problem of joining independent curves and surfaces smoothly to form complex shapes, distinguishing between strict mathematical continuity ($C^k$) and visual geometric continuity ($G^k$). It defines the conditions required—such as matching tangent planes or curvature—to ensure that boundaries between patches are invisible (smooth) even if the underlying parameterization speed changes.
+This chapter addresses the problem of joining independent curves and surfaces smoothly to form complex shapes, distinguishing between strict mathematical continuity ($C^k$) and visual geometric continuity ($G^k$). It defines the conditions required, such as matching tangent planes or curvature, to ensure that boundaries between patches are invisible (smooth) even if the underlying parameterization speed changes.
 
 ---
 

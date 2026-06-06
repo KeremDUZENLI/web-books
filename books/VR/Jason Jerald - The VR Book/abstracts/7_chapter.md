@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter explores various physiological and psychological models—including afference/efference, iterative processing, and Neuro-Linguistic Programming (NLP)—to explain how the human brain interprets sensory data.
+- This chapter explores various physiological and psychological models, including afference/efference, iterative processing, and Neuro-Linguistic Programming (NLP), to explain how the human brain interprets sensory data.
 - It emphasizes that perception is a constructive process where the mind filters and interprets "proximal" stimuli (sensory inputs) based on "top-down" expectations and internal mental models, requiring VR creators to design for both subconscious reflexes and conscious reflection.
 
 ---

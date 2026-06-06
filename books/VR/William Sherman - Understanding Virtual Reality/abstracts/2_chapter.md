@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter reframes Virtual Reality (VR) not merely as a technology, but as a medium of communication—a conduit through which a creator transmits a virtual world to a participant.
+- This chapter reframes Virtual Reality (VR) not merely as a technology, but as a medium of communication, a conduit through which a creator transmits a virtual world to a participant.
 - It explores the history of media to contextualize VR, emphasizing that the "receiver" in VR is an active participant who co-creates the experience through interaction, rather than a passive observer.
 
 ---
@@ -14,7 +14,7 @@
 **VR as a Communication Medium**
 
 - **Definition:** A medium is a channel or system of communication, information, or entertainment. In VR, it serves as the intermediary that facilitates the transfer of a synthetic world from the creator's mind to the participant's senses.
-- **Design Implication:** Developers must view their role as "creators" or "composers" rather than just engineers, focusing on the *message* and the *experience* being conveyed rather than just the hardware specifications.
+- **Design Implication:** Developers must view their role as "creators" or "composers" rather than just engineers, focusing on the _message_ and the _experience_ being conveyed rather than just the hardware specifications.
 
 **The Receiver as Participant**
 

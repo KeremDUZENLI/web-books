@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter establishes the mathematical foundation of univariate splines—smooth piecewise polynomial functions—by defining them as weighted sums of B-splines. It details the construction of B-splines via recurrence relations, explores their geometric properties (such as the convex hull property and variation diminution), and provides algorithms for stable evaluation, differentiation, and knot insertion used in curve design.
+This chapter establishes the mathematical foundation of univariate splines, smooth piecewise polynomial functions, by defining them as weighted sums of B-splines. It details the construction of B-splines via recurrence relations, explores their geometric properties (such as the convex hull property and variation diminution), and provides algorithms for stable evaluation, differentiation, and knot insertion used in curve design.
 
 ---
 

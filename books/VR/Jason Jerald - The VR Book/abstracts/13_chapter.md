@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-- This chapter addresses adverse health effects arising from non-moving visual stimuli in VR—specifically eye strain and seizures—as well as the potential for perceptual aftereffects that persist after the experience ends.
+- This chapter addresses adverse health effects arising from non-moving visual stimuli in VR, specifically eye strain and seizures, as well as the potential for perceptual aftereffects that persist after the experience ends.
 - It highlights critical physiological conflicts (like accommodation-vergence) and hardware artifacts (like flicker) that designers must minimize to ensure physical comfort and safety during and after VR usage.
 
 ---
@@ -28,14 +28,14 @@
 
 **VR Aftereffects**
 
-- **Definition:** Adverse symptoms (e.g., postural instability, disturbed hand-eye coordination, flashbacks) that occur *after* leaving VR, resulting from the brain's attempt to "readapt" to the real world.
+- **Definition:** Adverse symptoms (e.g., postural instability, disturbed hand-eye coordination, flashbacks) that occur _after_ leaving VR, resulting from the brain's attempt to "readapt" to the real world.
 - **Design Implication:** Symptoms can mimic alcohol intoxication. Users should be advised against driving or operating heavy machinery for 30–45 minutes after prolonged or intense VR exposure.
 
 **Readaptation (Natural vs. Active)**
 
 - **Definition:** The process of the sensory system recalibrating to reality after adapting to VR distortions (e.g., FOV mismatch).
-    -   **Natural Decay:** Resting with eyes closed; less sickening but takes longer.
-    -   **Active Readaptation:** Performing physical tasks to force recalibration; faster but may trigger sickness.
+  - **Natural Decay:** Resting with eyes closed; less sickening but takes longer.
+  - **Active Readaptation:** Performing physical tasks to force recalibration; faster but may trigger sickness.
 - **Design Implication:** "Dual adaptation" is possible, where expert users become proficient at switching between real and virtual environments with fewer side effects.
 
 ---

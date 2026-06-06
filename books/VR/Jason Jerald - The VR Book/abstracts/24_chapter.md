@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter acts as a summary and practical checklist for the preceding chapters on content creation (Chapters 20–23), consolidating high-level concepts into actionable guidelines.
-- It emphasizes that creating for VR requires a fundamental shift from desktop development—focusing on the "core experience," maintaining conceptual integrity, optimizing environments for performance and clarity, and strictly avoiding direct ports of 2D interface elements like HUDs.
+- It emphasizes that creating for VR requires a fundamental shift from desktop development, focusing on the "core experience," maintaining conceptual integrity, optimizing environments for performance and clarity, and strictly avoiding direct ports of 2D interface elements like HUDs.
 
 ---
 
@@ -25,9 +25,9 @@
 
 - **Definition:** Structuring the scene based on interaction distance.
 - **Design Implication:**
-    -   **Background:** Use simple textured boxes for far vistas (no depth cues).
-    -   **Contextual Geometry:** Use billboards or low-poly assets for non-interactive setting elements.
-    -   **Interactive Objects:** Ensure objects clearly communicate their affordances (that they can be touched/used).
+  - **Background:** Use simple textured boxes for far vistas (no depth cues).
+  - **Contextual Geometry:** Use billboards or low-poly assets for non-interactive setting elements.
+  - **Interactive Objects:** Ensure objects clearly communicate their affordances (that they can be touched/used).
 
 **Wayfinding and Behavior**
 
@@ -38,10 +38,10 @@
 
 - **Definition:** The process of adapting existing non-VR content for immersion.
 - **Design Implication:**
-    -   **Don't Port Directly:** Reuse assets but refactor code and mechanics.
-    -   **Avoid HUDs:** Traditional 2D Heads-Up Displays cause binocular-occlusion conflicts (eyes struggle to focus on near text over a far world).
-    -   **3D Interaction:** Replace 2D cursors with 3D models. Replace "floating arms" with inverse kinematics (IK) if possible, or avoid rendering arms if IK isn't available.
-    -   **Zoom:** Be extremely careful with sniper scopes or zoom modes; changing the FOV while the head moves causes sickness.
+  - **Don't Port Directly:** Reuse assets but refactor code and mechanics.
+  - **Avoid HUDs:** Traditional 2D Heads-Up Displays cause binocular-occlusion conflicts (eyes struggle to focus on near text over a far world).
+  - **3D Interaction:** Replace 2D cursors with 3D models. Replace "floating arms" with inverse kinematics (IK) if possible, or avoid rendering arms if IK isn't available.
+  - **Zoom:** Be extremely careful with sniper scopes or zoom modes; changing the FOV while the head moves causes sickness.
 
 ---
 

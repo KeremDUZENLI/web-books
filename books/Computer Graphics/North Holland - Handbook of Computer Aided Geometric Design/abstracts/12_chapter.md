@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter describes subdivision surfaces, a powerful method for creating smooth organic shapes by repeatedly refining a coarse polygon mesh (like a cage) into a finer and finer one. Unlike standard NURBS patches which are rectangular, subdivision surfaces can handle arbitrary topologies—shapes with holes, branches, or handles—making them the standard for character animation and complex engineering design.
+This chapter describes subdivision surfaces, a powerful method for creating smooth organic shapes by repeatedly refining a coarse polygon mesh (like a cage) into a finer and finer one. Unlike standard NURBS patches which are rectangular, subdivision surfaces can handle arbitrary topologies, shapes with holes, branches, or handles, making them the standard for character animation and complex engineering design.
 
 ---
 
@@ -12,7 +12,6 @@ This chapter describes subdivision surfaces, a powerful method for creating smoo
 
 **Control Polyhedron:**
 The initial coarse mesh (vertices, edges, and faces) that defines the general shape of the object. It acts like a scaffold.
-
 
 **Limit Surface:**
 The mathematically smooth surface that is formed after the subdivision process is repeated infinitely many times.
@@ -59,7 +58,7 @@ A 2D map used to visualize the behavior of the surface around irregular points (
 ## Practical Use
 
 **Character Animation**
-Studios use subdivision surfaces to model characters (like in *Toy Story* or *Shrek*) because they stay smooth no matter how much the camera zooms in, and they don't crack when limbs bend.
+Studios use subdivision surfaces to model characters (like in _Toy Story_ or _Shrek_) because they stay smooth no matter how much the camera zooms in, and they don't crack when limbs bend.
 
 **Complex Engineering Components**
 Designers use these surfaces to model single-piece parts with complex branching (like engine manifolds or car interiors) that would be a nightmare to stitch together using separate rectangular patches.

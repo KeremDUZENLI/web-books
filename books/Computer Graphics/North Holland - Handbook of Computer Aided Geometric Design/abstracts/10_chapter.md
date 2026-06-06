@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter introduces box splines and half-box splines as multivariate generalizations of B-splines, defined either inductively via convolution or geometrically as shadows of higher-dimensional hypercubes. It details their mathematical properties—such as derivatives, linear precision, and convergence under subdivision—and demonstrates their application in constructing smooth surfaces over triangular grids, including methods for handling non-planar domains and filling n-sided holes.
+This chapter introduces box splines and half-box splines as multivariate generalizations of B-splines, defined either inductively via convolution or geometrically as shadows of higher-dimensional hypercubes. It details their mathematical properties, such as derivatives, linear precision, and convergence under subdivision, and demonstrates their application in constructing smooth surfaces over triangular grids, including methods for handling non-planar domains and filling n-sided holes.
 
 ---
 

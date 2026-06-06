@@ -5,7 +5,7 @@
 ## Main Idea
 
 - This chapter details the "Define Stage" of VR project management, advocating for a balance between clear initial planning and the flexibility of iterative design to avoid "analysis paralysis."
-- It introduces specific methodologies—such as SMART objectives, personas, user stories, and constraint analysis—to establish the project's vision, scope, and requirements while actively managing risks and stakeholder expectations.
+- It introduces specific methodologies, such as SMART objectives, personas, user stories, and constraint analysis, to establish the project's vision, scope, and requirements while actively managing risks and stakeholder expectations.
 
 ---
 
@@ -24,11 +24,11 @@
 **Project Constraints Taxonomy**
 
 - **Definition:** Categorizing limitations to understand what is truly fixed and what is flexible.
-    -   **Real:** True impediments (e.g., physics, rules).
-    -   **Resource:** Supply limitations (money, time, CPU/GPU budget).
-    -   **Obsolete:** Constraints that no longer apply due to tech improvements.
-    -   **Misperceived:** False beliefs that limit solutions (e.g., assuming real-world gravity must apply in VR).
-    -   **Intentional Artificial:** Constraints added by the designer to simplify interaction.
+  - **Real:** True impediments (e.g., physics, rules).
+  - **Resource:** Supply limitations (money, time, CPU/GPU budget).
+  - **Obsolete:** Constraints that no longer apply due to tech improvements.
+  - **Misperceived:** False beliefs that limit solutions (e.g., assuming real-world gravity must apply in VR).
+  - **Intentional Artificial:** Constraints added by the designer to simplify interaction.
 - **Design Implication:** Identifying "misperceived constraints" allows creators to think outside the box, while adding "intentional constraints" can guide users and improve usability.
 
 **Personas**

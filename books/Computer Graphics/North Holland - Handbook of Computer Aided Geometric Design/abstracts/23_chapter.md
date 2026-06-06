@@ -4,7 +4,7 @@
 
 ## Main Idea
 
-This chapter explores Dupin cyclides, a family of algebraic surfaces characterized by having constant principal curvatures along their lines of curvature. It details their dual geometric definitions—both as envelopes of moving spheres and as inversions of tori or cones—and demonstrates their utility in CAGD for tasks like blending pipes and constructing rational transition surfaces between quadrics.
+This chapter explores Dupin cyclides, a family of algebraic surfaces characterized by having constant principal curvatures along their lines of curvature. It details their dual geometric definitions, both as envelopes of moving spheres and as inversions of tori or cones, and demonstrates their utility in CAGD for tasks like blending pipes and constructing rational transition surfaces between quadrics.
 
 ---
 
@@ -12,7 +12,6 @@ This chapter explores Dupin cyclides, a family of algebraic surfaces characteriz
 
 **Dupin Cyclide:**
 A surface defined as the envelope of a one-parameter family of spheres. It has the special property that its principal curvatures are constant along its lines of curvature.
-
 
 **Principal Curvature:**
 The maximum and minimum bending values of a surface at a specific point. For cyclides, these values do not change as you move along a curvature line.
